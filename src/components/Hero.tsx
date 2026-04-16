@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useI18n } from "@/i18n";
 
 const stagger = {
   hidden: {},
@@ -13,6 +14,7 @@ const fadeUp = {
 };
 
 export default function Hero() {
+  const { t } = useI18n();
   return (
     <section className="relative min-h-screen flex items-center bg-navy overflow-hidden">
       {/* Gradient overlay */}
@@ -42,21 +44,20 @@ export default function Hero() {
           >
             {/* Eyebrow */}
             <motion.p variants={fadeUp} className="text-[13px] font-semibold text-gold uppercase tracking-[4px] mb-6">
-              Santé collective · Zone CIMA
+              {t.hero.eyebrow}
             </motion.p>
 
             {/* Title */}
             <motion.h1 variants={fadeUp} className="font-[var(--font-heading)] font-extrabold text-[clamp(2.5rem,5.5vw,4.5rem)] text-white leading-[1.08] tracking-tight">
-              Décidez mieux vos primes{" "}
+              {t.hero.titleStart}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light">
-                santé collective.
+                {t.hero.titleHighlight}
               </span>
             </motion.h1>
 
             {/* Subtitle */}
             <motion.p variants={fadeUp} className="mt-6 text-lg text-white/45 leading-relaxed max-w-xl font-light">
-              PrimeActuaire aide les assureurs à renforcer leur performance technique
-              grâce à la tarification, au pilotage et à la technologie.
+              {t.hero.subtitle}
             </motion.p>
 
             {/* CTAs */}
@@ -65,19 +66,19 @@ export default function Hero() {
                 href="#contact"
                 className="px-7 py-3.5 rounded-full bg-coral text-white font-semibold text-[15px] hover:bg-coral-dark transition-colors duration-200 shadow-lg shadow-coral/20"
               >
-                Demander une démo
+                {t.hero.cta1}
               </a>
               <a
                 href="#piliers"
                 className="px-7 py-3.5 rounded-full border border-gold/20 text-gold/70 font-medium text-[15px] hover:text-gold hover:border-gold/40 transition-all duration-200"
               >
-                Découvrir l&apos;approche
+                {t.hero.cta2}
               </a>
             </motion.div>
 
             {/* Trust line */}
             <motion.p variants={fadeUp} className="mt-14 text-[12px] text-white/20 tracking-wide">
-              Tarification · Pilotage portefeuille · Gouvernance technique · Outil + Expertise
+              {t.hero.trustLine}
             </motion.p>
           </motion.div>
 
@@ -94,7 +95,7 @@ export default function Hero() {
                 <div className="w-2.5 h-2.5 rounded-full bg-coral/50" />
                 <div className="w-2.5 h-2.5 rounded-full bg-gold/50" />
                 <div className="w-2.5 h-2.5 rounded-full bg-teal/50" />
-                <span className="ml-3 text-[10px] text-white/30 font-medium">Tarif Santé Pro — Dashboard</span>
+                <span className="ml-3 text-[10px] text-white/30 font-medium">{t.hero.dashTitle} — Dashboard</span>
               </div>
 
               {/* Mock content */}
@@ -122,7 +123,7 @@ export default function Hero() {
                   >
                     <div className="h-2 w-10 bg-coral/20 rounded mb-2" />
                     <p className="font-[var(--font-heading)] font-extrabold text-xl text-coral">94%</p>
-                    <p className="text-[9px] text-white/30 mt-0.5">S/P actuel</p>
+                    <p className="text-[9px] text-white/30 mt-0.5">{t.hero.dashLabel1}</p>
                   </motion.div>
                   <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
@@ -132,7 +133,7 @@ export default function Hero() {
                   >
                     <div className="h-2 w-10 bg-teal/20 rounded mb-2" />
                     <p className="font-[var(--font-heading)] font-extrabold text-xl text-teal">1 247</p>
-                    <p className="text-[9px] text-white/30 mt-0.5">Adhérents</p>
+                    <p className="text-[9px] text-white/30 mt-0.5">{t.hero.dashLabel2}</p>
                   </motion.div>
                 </div>
               </div>
@@ -145,7 +146,7 @@ export default function Hero() {
               transition={{ delay: 1.8, duration: 0.5 }}
               className="absolute -bottom-4 -left-4 bg-navy border border-gold/20 text-gold px-4 py-2 rounded-full text-[12px] font-semibold shadow-xl"
             >
-              Calibré sur votre portefeuille
+              {t.solution.badge}
             </motion.div>
           </motion.div>
         </div>

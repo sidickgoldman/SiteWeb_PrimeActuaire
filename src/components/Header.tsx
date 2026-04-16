@@ -4,19 +4,30 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useI18n } from "@/i18n";
 
-const navLinks = [
-  { label: "Plateforme", href: "/plateforme" },
-  { label: "Expertises", href: "/#piliers" },
-  { label: "Cas d'usage", href: "/#cas-usage" },
-  { label: "Méthode", href: "/#methode" },
-  { label: "Insights", href: "/insights" },
-  { label: "À propos", href: "/a-propos" },
+const navHrefs = [
+  "/plateforme",
+  "/#piliers",
+  "/#cas-usage",
+  "/#methode",
+  "/insights",
+  "/a-propos",
 ];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { t, locale, toggleLocale } = useI18n();
+
+  const navLinks = [
+    { label: t.nav.plateforme, href: navHrefs[0] },
+    { label: t.nav.expertises, href: navHrefs[1] },
+    { label: t.nav.casUsage, href: navHrefs[2] },
+    { label: t.nav.methode, href: navHrefs[3] },
+    { label: t.nav.insights, href: navHrefs[4] },
+    { label: t.nav.aPropos, href: navHrefs[5] },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -62,8 +73,15 @@ export default function Header() {
             href="#contact"
             className="ml-4 px-5 py-2 text-[13px] font-semibold rounded-full bg-coral text-white hover:bg-coral-dark transition-colors duration-200"
           >
-            Demander une démo
+            {t.nav.cta}
           </a>
+          <button
+            onClick={toggleLocale}
+            className="ml-2 px-3 py-1.5 text-[12px] font-bold rounded-full border border-gold/20 text-gold/70 hover:text-gold hover:border-gold/40 transition-all duration-200"
+            aria-label="Toggle language"
+          >
+            {locale === "fr" ? "EN" : "FR"}
+          </button>
         </nav>
 
         <button
@@ -104,8 +122,14 @@ export default function Header() {
             onClick={() => setOpen(false)}
             className="mt-2 px-5 py-2.5 text-sm font-semibold rounded-full bg-coral text-white text-center"
           >
-            Demander une démo
+            {t.nav.cta}
           </a>
+          <button
+            onClick={() => { toggleLocale(); setOpen(false); }}
+            className="mt-2 px-5 py-2.5 text-sm font-bold rounded-full border border-gold/20 text-gold/70 text-center"
+          >
+            {locale === "fr" ? "🇬🇧 English" : "🇫🇷 Français"}
+          </button>
         </motion.nav>
       )}
     </motion.header>

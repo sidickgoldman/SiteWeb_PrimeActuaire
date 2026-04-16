@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useI18n } from "@/i18n";
 
 const articles = [
   {
@@ -25,6 +26,7 @@ const articles = [
 ];
 
 export default function Insights() {
+  const { t } = useI18n();
   return (
     <section className="bg-white py-24" id="insights">
       <div className="max-w-7xl mx-auto px-6">
@@ -35,7 +37,7 @@ export default function Insights() {
           transition={{ duration: 0.5 }}
           className="text-[13px] font-semibold text-navy uppercase tracking-[4px] text-center mb-4"
         >
-          Insights
+          {t.insights.eyebrow}
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 15 }}
@@ -44,7 +46,7 @@ export default function Insights() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl text-navy text-center mb-16"
         >
-          Perspectives sur la santé collective.
+          {t.insights.title}
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -67,7 +69,7 @@ export default function Insights() {
                   {a.excerpt}
                 </p>
                 <span className="inline-block mt-5 text-[13px] font-semibold text-gold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Lire →
+                  {t.insights.readMore}
                 </span>
               </Link>
             </motion.article>
@@ -85,7 +87,7 @@ export default function Insights() {
             href="/insights"
             className="inline-block px-7 py-3.5 rounded-full border border-gold/20 text-gold/70 font-medium text-[15px] hover:text-gold hover:border-gold/40 transition-all duration-200"
           >
-            Tous les articles →
+            {t.insights.allArticles}
           </Link>
         </motion.div>
       </div>

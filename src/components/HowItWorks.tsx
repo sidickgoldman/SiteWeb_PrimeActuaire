@@ -1,26 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-const steps = [
-  {
-    num: "01",
-    title: "Importez vos bordereaux",
-    desc: "Même incomplets. Nous travaillons à partir de vos données réelles de sinistres.",
-  },
-  {
-    num: "02",
-    title: "La plateforme analyse",
-    desc: "Tarification, segmentation, dérives, provisions ENR — calibré sur votre portefeuille.",
-  },
-  {
-    num: "03",
-    title: "Vous décidez",
-    desc: "Avec un tarif chiffré, défendable, auditable. En comité, face au courtier, en renouvellement.",
-  },
-];
+import { useI18n } from "@/i18n";
 
 export default function HowItWorks() {
+  const { t } = useI18n();
   return (
     <section className="bg-navy py-20">
       <div className="max-w-7xl mx-auto px-6">
@@ -31,7 +15,7 @@ export default function HowItWorks() {
           transition={{ duration: 0.5 }}
           className="text-[13px] font-semibold text-gold uppercase tracking-[4px] text-center mb-4"
         >
-          Comment ça marche
+          {t.howItWorks.eyebrow}
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 15 }}
@@ -40,11 +24,11 @@ export default function HowItWorks() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl text-white text-center mb-16"
         >
-          Trois étapes. Aucune complexité.
+          {t.howItWorks.title}
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {steps.map((step, i) => (
+          {t.howItWorks.steps.map((step, i) => (
             <motion.div
               key={step.num}
               initial={{ opacity: 0, y: 40 }}

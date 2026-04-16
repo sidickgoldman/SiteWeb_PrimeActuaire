@@ -1,8 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useI18n } from "@/i18n";
+
+const factColors = ["text-gold", "text-teal", "text-coral", "text-navy"];
 
 export default function APropos() {
+  const { t } = useI18n();
   return (
     <section className="bg-bg-light py-24" id="apropos">
       <div className="max-w-7xl mx-auto px-6">
@@ -15,60 +19,33 @@ export default function APropos() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
             <p className="text-[13px] font-semibold text-gold uppercase tracking-[4px] mb-4">
-              À propos
+              {t.aPropos.eyebrow}
             </p>
             <h2 className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-[2.75rem] text-navy leading-tight">
-              Un actuaire.
+              {t.aPropos.titleLine1}
               <span className="block text-text-muted font-normal text-xl lg:text-2xl mt-2">
-                Un outil. Une mission claire.
+                {t.aPropos.titleLine2}
               </span>
             </h2>
             <p className="mt-6 text-[16px] text-text-muted leading-relaxed">
-              PrimeActuaire est né d&apos;un constat simple : les directions techniques
-              en zone CIMA prennent des décisions tarifaires majeures — souvent sans
-              les outils adaptés pour les défendre.
+              {t.aPropos.p1}
             </p>
             <p className="mt-4 text-[16px] text-text-muted leading-relaxed">
-              J&apos;ai construit cette plateforme après des années à modéliser des
-              portefeuilles santé collective, à constater les mêmes dérives, les mêmes
-              angles morts. L&apos;objectif : donner aux DT et DG les moyens de décider
-              avec des données, pas des intuitions.
+              {t.aPropos.p2}
             </p>
 
             {/* Key facts */}
             <div className="mt-10 grid grid-cols-2 gap-6">
-              <div>
-                <p className="font-[var(--font-heading)] font-extrabold text-2xl text-gold">
-                  Zone CIMA
-                </p>
-                <p className="text-[13px] text-text-muted mt-1">
-                  Marché de spécialisation
-                </p>
-              </div>
-              <div>
-                <p className="font-[var(--font-heading)] font-extrabold text-2xl text-teal">
-                  Santé collective
-                </p>
-                <p className="text-[13px] text-text-muted mt-1">
-                  Focus exclusif
-                </p>
-              </div>
-              <div>
-                <p className="font-[var(--font-heading)] font-extrabold text-2xl text-coral">
-                  Actuaire
-                </p>
-                <p className="text-[13px] text-text-muted mt-1">
-                  Fondateur & praticien
-                </p>
-              </div>
-              <div>
-                <p className="font-[var(--font-heading)] font-extrabold text-2xl text-navy">
-                  Outil + conseil
-                </p>
-                <p className="text-[13px] text-text-muted mt-1">
-                  Approche intégrée
-                </p>
-              </div>
+              {t.aPropos.facts.map((fact, i) => (
+                <div key={i}>
+                  <p className={`font-[var(--font-heading)] font-extrabold text-2xl ${factColors[i]}`}>
+                    {fact.title}
+                  </p>
+                  <p className="text-[13px] text-text-muted mt-1">
+                    {fact.subtitle}
+                  </p>
+                </div>
+              ))}
             </div>
           </motion.div>
 
@@ -81,31 +58,21 @@ export default function APropos() {
           >
             <div className="bg-navy rounded-2xl p-10 text-white">
               <p className="text-[13px] font-semibold text-gold/60 uppercase tracking-[3px] mb-6">
-                Philosophie
+                {t.aPropos.philosophyLabel}
               </p>
               <blockquote className="font-[var(--font-heading)] font-bold text-xl lg:text-2xl leading-snug">
-                &ldquo;Un tarif technique doit être une position défendable —
-                pas une opinion ajustée à la marge.&rdquo;
+                &ldquo;{t.aPropos.quote}&rdquo;
               </blockquote>
               <p className="mt-6 text-white/40 text-[14px] leading-relaxed">
-                Chaque fonctionnalité de la plateforme, chaque mission de conseil,
-                répond à cette exigence : produire des analyses que le DT peut poser
-                sur la table en comité et défendre face au courtier.
+                {t.aPropos.philosophyText}
               </p>
 
               <div className="mt-8 pt-6 border-t border-white/10">
                 <p className="text-[13px] text-white/30 uppercase tracking-widest mb-3">
-                  Domaines d&apos;expertise
+                  {t.aPropos.expertiseLabel}
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {[
-                    "Tarification santé",
-                    "Provisions ENR",
-                    "Stress tests",
-                    "Segmentation",
-                    "Gouvernance technique",
-                    "Conformité CIMA",
-                  ].map((tag) => (
+                  {t.aPropos.expertiseTags.map((tag) => (
                     <span
                       key={tag}
                       className="px-3 py-1.5 text-[12px] font-medium text-gold/70 bg-gold/10 rounded-full"
