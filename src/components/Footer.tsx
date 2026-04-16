@@ -47,10 +47,10 @@ export default function Footer() {
         <div>
           <p className="text-[11px] font-semibold text-gold/40 uppercase tracking-widest mb-4">Pages</p>
           <ul className="space-y-2 text-sm text-white/50">
-            <li><a href="#solution" className="hover:text-gold transition-colors">Solution</a></li>
-            <li><a href="#piliers" className="hover:text-gold transition-colors">Expertises</a></li>
-            <li><a href="#cas-usage" className="hover:text-gold transition-colors">Cas d&apos;usage</a></li>
-            <li><a href="#insights" className="hover:text-gold transition-colors">Insights</a></li>
+            <li><a href="/plateforme" className="hover:text-gold transition-colors">Plateforme</a></li>
+            <li><a href="/#piliers" className="hover:text-gold transition-colors">Expertises</a></li>
+            <li><a href="/#cas-usage" className="hover:text-gold transition-colors">Cas d&apos;usage</a></li>
+            <li><a href="/#insights" className="hover:text-gold transition-colors">Insights</a></li>
           </ul>
         </div>
 
@@ -58,9 +58,9 @@ export default function Footer() {
         <div>
           <p className="text-[11px] font-semibold text-gold/40 uppercase tracking-widest mb-4">Entreprise</p>
           <ul className="space-y-2 text-sm text-white/50">
-            <li><a href="#methode" className="hover:text-gold transition-colors">Méthode</a></li>
-            <li><a href="#apropos" className="hover:text-gold transition-colors">À propos</a></li>
-            <li><a href="#contact" className="hover:text-gold transition-colors">Contact</a></li>
+            <li><a href="/#methode" className="hover:text-gold transition-colors">Méthode</a></li>
+            <li><a href="/a-propos" className="hover:text-gold transition-colors">À propos</a></li>
+            <li><a href="/#contact" className="hover:text-gold transition-colors">Contact</a></li>
           </ul>
         </div>
 

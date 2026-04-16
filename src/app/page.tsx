@@ -8,6 +8,7 @@ import Solution from "@/components/Solution";
 import CasUsage from "@/components/CasUsage";
 import Methode from "@/components/Methode";
 import Insights from "@/components/Insights";
+import APropos from "@/components/APropos";
 import CTAFinal from "@/components/CTAFinal";
 import Footer from "@/components/Footer";
 
@@ -25,6 +26,7 @@ export default function Home() {
         <CasUsage />
         <Methode />
         <Insights />
+        <APropos />
         <CTAFinal />
       </main>
       <Footer />

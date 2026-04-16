@@ -6,12 +6,12 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { label: "Solution", href: "#solution" },
-  { label: "Expertises", href: "#piliers" },
-  { label: "Cas d'usage", href: "#cas-usage" },
-  { label: "Méthode", href: "#methode" },
-  { label: "Insights", href: "#insights" },
-  { label: "À propos", href: "#apropos" },
+  { label: "Plateforme", href: "/plateforme" },
+  { label: "Expertises", href: "/#piliers" },
+  { label: "Cas d'usage", href: "/#cas-usage" },
+  { label: "Méthode", href: "/#methode" },
+  { label: "Insights", href: "/#insights" },
+  { label: "À propos", href: "/a-propos" },
 ];
 
 export default function Header() {
