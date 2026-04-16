@@ -18,7 +18,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://siteweb-primeactuaire.vercel.app"),
+  metadataBase: new URL("https://primeactuaire.com"),
   title: {
     default: "PrimeActuaire — Gouvernance technique · Santé collective · Zone CIMA",
     template: "%s | PrimeActuaire",
