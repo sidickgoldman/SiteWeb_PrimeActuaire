@@ -50,7 +50,7 @@ export default function Header() {
 
       <div className={`max-w-7xl mx-auto px-6 flex items-center justify-between transition-all duration-500 ${scrolled ? "h-14" : "h-16"}`}>
         <Link href="/" className="flex items-center gap-3">
-          <Image src="/logo.png" alt="PrimeActuaire" width={36} height={36} className="rounded" />
+          <Image src="/logo.webp" alt="PrimeActuaire" width={36} height={36} className="rounded" />
           <span className="font-[var(--font-heading)] font-extrabold text-white text-lg tracking-wide">
             PrimeActuaire
           </span>

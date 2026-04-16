@@ -9,19 +9,32 @@ export default function CTAFinal() {
   const [form, setForm] = useState({ nom: "", email: "", societe: "", message: "" });
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
+  const [honey, setHoney] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSending(true);
-    const subject = encodeURIComponent(`Demande de démo — ${form.societe || "Non renseigné"}`);
-    const body = encodeURIComponent(
-      `Nom : ${form.nom}\nEmail : ${form.email}\nSociété : ${form.societe}\n\n${form.message}`
-    );
-    window.location.href = `mailto:contact@primeactuaire.com?subject=${subject}&body=${body}`;
-    setTimeout(() => {
-      setSending(false);
+    setError("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...form, _honey: honey }),
+      });
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || "Erreur");
+      }
+
       setSent(true);
-    }, 1000);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Erreur lors de l'envoi.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -99,6 +112,16 @@ export default function CTAFinal() {
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="bg-white/[0.04] border border-white/[0.08] rounded-2xl p-8 space-y-5">
+                {/* Honeypot — hidden from real users */}
+                <input
+                  type="text"
+                  name="_honey"
+                  value={honey}
+                  onChange={(e) => setHoney(e.target.value)}
+                  className="absolute opacity-0 pointer-events-none h-0 w-0"
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label className="block text-[12px] font-semibold text-white/30 uppercase tracking-widest mb-2">
@@ -151,6 +174,9 @@ export default function CTAFinal() {
                     placeholder={t.ctaFinal.form.messagePlaceholder}
                   />
                 </div>
+                {error && (
+                  <p className="text-coral text-[13px] text-center">{error}</p>
+                )}
                 <button
                   type="submit"
                   disabled={sending}

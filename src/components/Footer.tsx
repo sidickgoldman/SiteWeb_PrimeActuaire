@@ -52,6 +52,8 @@ export default function Footer() {
             <li><a href="/#methode" className="hover:text-gold transition-colors">{t.nav.methode}</a></li>
             <li><a href="/a-propos" className="hover:text-gold transition-colors">{t.nav.aPropos}</a></li>
             <li><a href="/#contact" className="hover:text-gold transition-colors">Contact</a></li>
+            <li><a href="/mentions-legales" className="hover:text-gold transition-colors">{t.footer.links.mentionsLegales}</a></li>
+            <li><a href="/confidentialite" className="hover:text-gold transition-colors">{t.footer.links.confidentialite}</a></li>
           </ul>
         </div>
 

@@ -285,8 +285,69 @@ export const fr = {
       aPropos: "À propos",
       methode: "Méthode",
       casUsage: "Cas d'usage",
+      mentionsLegales: "Mentions légales",
+      confidentialite: "Confidentialité",
     },
     copyright: "PrimeActuaire. Tous droits réservés.",
+  },
+
+  // ───── Page: Mentions légales ─────
+  mentionsLegales: {
+    title: "Mentions légales",
+    sections: [
+      {
+        title: "Éditeur du site",
+        content: "PrimeActuaire\nActivité : Conseil en actuariat et technologie pour l'assurance santé collective\nSiège : Abidjan, Côte d'Ivoire\nEmail : contact@primeactuaire.com\nTéléphone : +225 01 70 90 33 54",
+      },
+      {
+        title: "Hébergement",
+        content: "Ce site est hébergé par Vercel Inc.\n440 N Baxter St, Los Angeles, CA 90012, États-Unis\nhttps://vercel.com",
+      },
+      {
+        title: "Propriété intellectuelle",
+        content: "L'ensemble des contenus présents sur ce site (textes, images, graphismes, logo, icônes) est la propriété exclusive de PrimeActuaire, sauf mention contraire. Toute reproduction, distribution, modification ou utilisation de ces contenus sans autorisation préalable écrite est interdite.",
+      },
+      {
+        title: "Responsabilité",
+        content: "PrimeActuaire s'efforce de fournir des informations aussi précises que possible. Toutefois, il ne pourra être tenu responsable des omissions, inexactitudes ou difficultés d'accès au site. Les données présentées sur le site sont à titre informatif et ne constituent pas un conseil actuariel ou commercial.",
+      },
+      {
+        title: "Liens externes",
+        content: "Le site peut contenir des liens vers des sites tiers. PrimeActuaire décline toute responsabilité quant au contenu de ces sites externes.",
+      },
+    ],
+  },
+
+  // ───── Page: Politique de confidentialité ─────
+  confidentialite: {
+    title: "Politique de confidentialité",
+    lastUpdated: "Dernière mise à jour : avril 2026",
+    sections: [
+      {
+        title: "Données collectées",
+        content: "Lorsque vous utilisez le formulaire de contact, nous collectons les informations suivantes :\n\u2022 Nom\n\u2022 Adresse email\n\u2022 Nom de société (optionnel)\n\u2022 Message\n\nCes données sont collectées uniquement pour répondre à votre demande.",
+      },
+      {
+        title: "Utilisation des données",
+        content: "Vos données personnelles sont utilisées exclusivement pour :\n\u2022 Répondre à votre demande de contact ou de démonstration\n\u2022 Vous recontacter dans le cadre de la relation commerciale\n\nElles ne sont jamais vendues, louées ou partagées avec des tiers.",
+      },
+      {
+        title: "Durée de conservation",
+        content: "Vos données sont conservées pendant une durée maximale de 24 mois après le dernier échange, sauf obligation légale contraire.",
+      },
+      {
+        title: "Sécurité",
+        content: "Nous mettons en \u0153uvre des mesures de sécurité techniques et organisationnelles pour protéger vos données personnelles contre tout accès non autorisé, modification, divulgation ou destruction.",
+      },
+      {
+        title: "Vos droits",
+        content: "Vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition sur vos données personnelles. Pour exercer ces droits, contactez-nous à : contact@primeactuaire.com",
+      },
+      {
+        title: "Cookies",
+        content: "Ce site n'utilise aucun cookie de suivi ni outil d'analyse tiers. Aucune donnée de navigation n'est collectée à des fins publicitaires.",
+      },
+    ],
   },
 
   // ───── Dashboard mockup ─────

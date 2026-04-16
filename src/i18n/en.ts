@@ -287,8 +287,69 @@ export const en: Dictionary = {
       aPropos: "About",
       methode: "Method",
       casUsage: "Use Cases",
+      mentionsLegales: "Legal Notice",
+      confidentialite: "Privacy Policy",
     },
     copyright: "PrimeActuaire. All rights reserved.",
+  },
+
+  // ───── Page: Legal Notice ─────
+  mentionsLegales: {
+    title: "Legal Notice",
+    sections: [
+      {
+        title: "Website Publisher",
+        content: "PrimeActuaire\nActivity: Actuarial consulting and technology for group health insurance\nHeadquarters: Abidjan, C\u00f4te d'Ivoire\nEmail: contact@primeactuaire.com\nPhone: +225 01 70 90 33 54",
+      },
+      {
+        title: "Hosting",
+        content: "This website is hosted by Vercel Inc.\n440 N Baxter St, Los Angeles, CA 90012, United States\nhttps://vercel.com",
+      },
+      {
+        title: "Intellectual Property",
+        content: "All content on this website (text, images, graphics, logo, icons) is the exclusive property of PrimeActuaire unless otherwise stated. Any reproduction, distribution, modification, or use of this content without prior written authorization is prohibited.",
+      },
+      {
+        title: "Liability",
+        content: "PrimeActuaire strives to provide information as accurately as possible. However, it cannot be held liable for omissions, inaccuracies, or difficulties accessing the site. The data presented on the site is for informational purposes and does not constitute actuarial or commercial advice.",
+      },
+      {
+        title: "External Links",
+        content: "The site may contain links to third-party websites. PrimeActuaire disclaims any responsibility for the content of these external sites.",
+      },
+    ],
+  },
+
+  // ───── Page: Privacy Policy ─────
+  confidentialite: {
+    title: "Privacy Policy",
+    lastUpdated: "Last updated: April 2026",
+    sections: [
+      {
+        title: "Data Collected",
+        content: "When you use the contact form, we collect the following information:\n\u2022 Name\n\u2022 Email address\n\u2022 Company name (optional)\n\u2022 Message\n\nThis data is collected solely to respond to your inquiry.",
+      },
+      {
+        title: "Use of Data",
+        content: "Your personal data is used exclusively to:\n\u2022 Respond to your contact or demonstration request\n\u2022 Follow up within the business relationship\n\nIt is never sold, rented, or shared with third parties.",
+      },
+      {
+        title: "Retention Period",
+        content: "Your data is retained for a maximum of 24 months after the last exchange, unless otherwise required by law.",
+      },
+      {
+        title: "Security",
+        content: "We implement technical and organizational security measures to protect your personal data against unauthorized access, modification, disclosure, or destruction.",
+      },
+      {
+        title: "Your Rights",
+        content: "You have the right to access, rectify, delete, and object to the processing of your personal data. To exercise these rights, contact us at: contact@primeactuaire.com",
+      },
+      {
+        title: "Cookies",
+        content: "This site does not use tracking cookies or third-party analytics tools. No browsing data is collected for advertising purposes.",
+      },
+    ],
   },
 
   // ───── Dashboard mockup ─────

@@ -8,9 +8,10 @@ interface Props {
   alt: string;
   caption?: string;
   variant?: "dark" | "light";
+  priority?: boolean;
 }
 
-export default function ScreenshotFrame({ src, alt, caption, variant = "dark" }: Props) {
+export default function ScreenshotFrame({ src, alt, caption, variant = "dark", priority = false }: Props) {
   const dk = variant === "dark";
 
   return (
@@ -42,7 +43,7 @@ export default function ScreenshotFrame({ src, alt, caption, variant = "dark" }:
           height={800}
           className="w-full h-auto block"
           quality={90}
-          priority
+          priority={priority}
         />
       </div>
     </div>

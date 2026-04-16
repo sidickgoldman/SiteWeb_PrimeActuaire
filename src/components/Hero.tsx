@@ -95,6 +95,7 @@ export default function Hero() {
               alt={t.screenshots.dashboardKpis.alt}
               caption={t.screenshots.dashboardKpis.caption}
               variant="dark"
+              priority
             />
 
             {/* Floating badge */}
