@@ -291,6 +291,18 @@ export const en: Dictionary = {
     copyright: "PrimeActuaire. All rights reserved.",
   },
 
+  // ───── Dashboard mockup ─────
+  dashboard: {
+    title: "Tarif Santé Pro",
+    navItems: ["Overview", "Pricing", "Provisions", "Loss ratio"],
+    kpis: [
+      { label: "Loss ratio", value: "68%" },
+      { label: "Active members", value: "1,247" },
+      { label: "IBNR provisions", value: "245M" },
+    ],
+    donutLabels: ["Hosp.", "Pharma.", "Optical", "Dental", "Other"],
+  },
+
   // ───── Page: Platform ─────
   plateformePage: {
     heroEyebrow: "Tarif Santé Pro",

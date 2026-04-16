@@ -289,6 +289,18 @@ export const fr = {
     copyright: "PrimeActuaire. Tous droits réservés.",
   },
 
+  // ───── Dashboard mockup ─────
+  dashboard: {
+    title: "Tarif Santé Pro",
+    navItems: ["Vue d'ensemble", "Tarification", "Provisions", "Suivi S/P"],
+    kpis: [
+      { label: "Ratio S/P", value: "68%" },
+      { label: "Adhérents actifs", value: "1 247" },
+      { label: "Provisions ENR", value: "245M" },
+    ],
+    donutLabels: ["Hospi.", "Pharma.", "Optique", "Dentaire", "Autres"],
+  },
+
   // ───── Page: Plateforme ─────
   plateformePage: {
     heroEyebrow: "Tarif Santé Pro",

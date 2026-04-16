@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useI18n } from "@/i18n";
+import DashboardPreview from "./DashboardPreview";
 
 const stagger = {
   hidden: {},
@@ -89,55 +90,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="hidden lg:block relative"
           >
-            <div className="bg-white/[0.06] backdrop-blur-sm rounded-2xl shadow-2xl shadow-gold/10 border border-white/10 p-5 aspect-[4/3] flex flex-col">
-              {/* Title bar */}
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-2.5 h-2.5 rounded-full bg-coral/50" />
-                <div className="w-2.5 h-2.5 rounded-full bg-gold/50" />
-                <div className="w-2.5 h-2.5 rounded-full bg-teal/50" />
-                <span className="ml-3 text-[10px] text-white/30 font-medium">{t.hero.dashTitle} — Dashboard</span>
-              </div>
-
-              {/* Mock content */}
-              <div className="flex-1 grid grid-cols-3 gap-3">
-                <div className="col-span-2 bg-white/[0.04] rounded-xl p-4">
-                  <div className="h-2.5 w-20 bg-white/10 rounded mb-3" />
-                  <div className="flex items-end gap-1.5 h-28">
-                    {[60, 80, 45, 90, 70, 85, 55, 75, 95, 65, 88, 72].map((h, i) => (
-                      <motion.div
-                        key={i}
-                        initial={{ height: 0 }}
-                        animate={{ height: `${h}%` }}
-                        transition={{ duration: 0.6, delay: 1 + i * 0.05, ease: [0.22, 1, 0.36, 1] }}
-                        className="flex-1 rounded-t bg-gradient-to-t from-gold/50 to-gold/15"
-                      />
-                    ))}
-                  </div>
-                </div>
-                <div className="flex flex-col gap-3">
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 1.3, duration: 0.4 }}
-                    className="bg-white/[0.04] rounded-xl p-3 flex-1"
-                  >
-                    <div className="h-2 w-10 bg-coral/20 rounded mb-2" />
-                    <p className="font-[var(--font-heading)] font-extrabold text-xl text-coral">94%</p>
-                    <p className="text-[9px] text-white/30 mt-0.5">{t.hero.dashLabel1}</p>
-                  </motion.div>
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: 1.5, duration: 0.4 }}
-                    className="bg-white/[0.04] rounded-xl p-3 flex-1"
-                  >
-                    <div className="h-2 w-10 bg-teal/20 rounded mb-2" />
-                    <p className="font-[var(--font-heading)] font-extrabold text-xl text-teal">1 247</p>
-                    <p className="text-[9px] text-white/30 mt-0.5">{t.hero.dashLabel2}</p>
-                  </motion.div>
-                </div>
-              </div>
-            </div>
+            <DashboardPreview variant="dark" />
 
             {/* Floating badge */}
             <motion.div

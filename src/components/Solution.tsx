@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useI18n } from "@/i18n";
+import DashboardPreview from "./DashboardPreview";
 
 export default function Solution() {
   const { t } = useI18n();
@@ -60,43 +61,7 @@ export default function Solution() {
             transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="relative"
           >
-            <div className="bg-white rounded-2xl shadow-2xl shadow-gold/10 border border-gold/10 p-6 aspect-[4/3] flex flex-col">
-              {/* Title bar */}
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-3 h-3 rounded-full bg-coral/40" />
-                <div className="w-3 h-3 rounded-full bg-gold/40" />
-                <div className="w-3 h-3 rounded-full bg-teal/40" />
-                <span className="ml-3 text-[11px] text-text-muted font-medium">Tarif Santé Pro — Dashboard</span>
-              </div>
-
-              {/* Mock content */}
-              <div className="flex-1 grid grid-cols-3 gap-3">
-                <div className="col-span-2 bg-bg-light rounded-xl p-4">
-                  <div className="h-3 w-24 bg-navy/10 rounded mb-3" />
-                  <div className="flex items-end gap-2 h-32">
-                    {[60, 80, 45, 90, 70, 85, 55, 75, 95, 65, 88, 72].map((h, i) => (
-                      <div
-                        key={i}
-                        className="flex-1 rounded-t bg-gradient-to-t from-gold/40 to-gold/10"
-                        style={{ height: `${h}%` }}
-                      />
-                    ))}
-                  </div>
-                </div>
-                <div className="flex flex-col gap-3">
-                  <div className="bg-bg-light rounded-xl p-4 flex-1">
-                    <div className="h-2 w-12 bg-coral/20 rounded mb-2" />
-                    <p className="font-[var(--font-heading)] font-extrabold text-2xl text-coral">94%</p>
-                    <p className="text-[10px] text-text-muted mt-1">{t.hero.dashLabel1}</p>
-                  </div>
-                  <div className="bg-bg-light rounded-xl p-4 flex-1">
-                    <div className="h-2 w-12 bg-teal/20 rounded mb-2" />
-                    <p className="font-[var(--font-heading)] font-extrabold text-2xl text-teal">1 247</p>
-                    <p className="text-[10px] text-text-muted mt-1">{t.hero.dashLabel2}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <DashboardPreview variant="light" />
 
             {/* Floating badge */}
             <motion.div
