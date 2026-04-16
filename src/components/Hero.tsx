@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useI18n } from "@/i18n";
-import DashboardPreview from "./DashboardPreview";
+import ScreenshotFrame from "./ScreenshotFrame";
 
 const stagger = {
   hidden: {},
@@ -90,7 +90,12 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="hidden lg:block relative"
           >
-            <DashboardPreview variant="dark" />
+            <ScreenshotFrame
+              src="/screenshots/dashboard-kpis.png"
+              alt={t.screenshots.dashboardKpis.alt}
+              caption={t.screenshots.dashboardKpis.caption}
+              variant="dark"
+            />
 
             {/* Floating badge */}
             <motion.div

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useI18n } from "@/i18n";
-import DashboardPreview from "./DashboardPreview";
+import ScreenshotFrame from "./ScreenshotFrame";
 
 export default function Solution() {
   const { t } = useI18n();
@@ -61,7 +61,12 @@ export default function Solution() {
             transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="relative"
           >
-            <DashboardPreview variant="light" />
+            <ScreenshotFrame
+              src="/screenshots/sp-evolution.png"
+              alt={t.screenshots.spEvolution.alt}
+              caption={t.screenshots.spEvolution.caption}
+              variant="light"
+            />
 
             {/* Floating badge */}
             <motion.div

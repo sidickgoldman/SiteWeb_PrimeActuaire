@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useI18n } from "@/i18n";
-import DashboardPreview from "@/components/DashboardPreview";
+import ScreenshotFrame from "@/components/ScreenshotFrame";
 
 const categoryStyles = [
   { color: "border-gold", accent: "text-gold", bg: "bg-gold/5" },
@@ -59,7 +59,12 @@ export default function PlateformeClient() {
                 transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
                 className="hidden lg:block"
               >
-                <DashboardPreview variant="dark" />
+                <ScreenshotFrame
+                  src="/screenshots/dashboard-kpis.png"
+                  alt={t.screenshots.dashboardKpis.alt}
+                  caption={t.screenshots.dashboardKpis.caption}
+                  variant="dark"
+                />
               </motion.div>
             </div>
           </div>
@@ -138,6 +143,73 @@ export default function PlateformeClient() {
                   </div>
                 );
               })}
+            </div>
+          </div>
+        </section>
+
+        {/* Screenshots showcase */}
+        <section className="bg-bg-solution py-24" id="apercu">
+          <div className="max-w-7xl mx-auto px-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="text-center mb-16"
+            >
+              <p className="text-[13px] font-semibold text-gold uppercase tracking-[4px] mb-4">
+                {p.screenshotsEyebrow}
+              </p>
+              <h2 className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl text-navy">
+                {p.screenshotsTitle}
+              </h2>
+            </motion.div>
+
+            <div className="space-y-12">
+              {/* Dashboard KPIs — full width */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.6 }}
+              >
+                <ScreenshotFrame
+                  src="/screenshots/dashboard-kpis.png"
+                  alt={t.screenshots.dashboardKpis.alt}
+                  caption={t.screenshots.dashboardKpis.caption}
+                  variant="light"
+                />
+              </motion.div>
+
+              {/* S/P Evolution + Stress Test — side by side */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <motion.div
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, margin: "-60px" }}
+                  transition={{ duration: 0.6 }}
+                >
+                  <ScreenshotFrame
+                    src="/screenshots/sp-evolution.png"
+                    alt={t.screenshots.spEvolution.alt}
+                    caption={t.screenshots.spEvolution.caption}
+                    variant="light"
+                  />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, margin: "-60px" }}
+                  transition={{ duration: 0.6, delay: 0.15 }}
+                >
+                  <ScreenshotFrame
+                    src="/screenshots/stress-test.png"
+                    alt={t.screenshots.stressTest.alt}
+                    caption={t.screenshots.stressTest.caption}
+                    variant="light"
+                  />
+                </motion.div>
+              </div>
             </div>
           </div>
         </section>

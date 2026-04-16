@@ -301,6 +301,22 @@ export const fr = {
     donutLabels: ["Hospi.", "Pharma.", "Optique", "Dentaire", "Autres"],
   },
 
+  // ───── Screenshots ─────
+  screenshots: {
+    dashboardKpis: {
+      alt: "Dashboard Tarif Santé Pro — KPIs et suivi par groupe",
+      caption: "Tarif Santé Pro — Vue d'ensemble",
+    },
+    spEvolution: {
+      alt: "Évolution du ratio S/P sur 3 ans avec seuils de rentabilité",
+      caption: "Suivi S/P — Évolution pluriannuelle",
+    },
+    stressTest: {
+      alt: "Stress tests Monte Carlo — Couverture de la prime et risque de perte",
+      caption: "Stress tests — Analyse de risque",
+    },
+  },
+
   // ───── Page: Plateforme ─────
   plateformePage: {
     heroEyebrow: "Tarif Santé Pro",
@@ -351,6 +367,8 @@ export const fr = {
       { title: "Dashboards interactifs", desc: "Visualisez les résultats. Filtrez par groupe, poste, période." },
       { title: "Export & restitution", desc: "Rapports PDF, PowerPoint, Excel. Prêts pour le comité." },
     ],
+    screenshotsEyebrow: "Aperçu",
+    screenshotsTitle: "Ce que voit le DT dans Tarif Santé Pro.",
     ctaTitle: "Prêt à voir Tarif Santé Pro en action ?",
     ctaDesc: "20 minutes suffisent pour un diagnostic sur votre portefeuille.",
     ctaButton: "Planifier une démo",

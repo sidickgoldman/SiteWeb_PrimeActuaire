@@ -303,6 +303,22 @@ export const en: Dictionary = {
     donutLabels: ["Hosp.", "Pharma.", "Optical", "Dental", "Other"],
   },
 
+  // ───── Screenshots ─────
+  screenshots: {
+    dashboardKpis: {
+      alt: "Tarif Santé Pro dashboard — KPIs and group monitoring",
+      caption: "Tarif Santé Pro — Overview",
+    },
+    spEvolution: {
+      alt: "Loss ratio evolution over 3 years with profitability thresholds",
+      caption: "Loss Ratio — Multi-year tracking",
+    },
+    stressTest: {
+      alt: "Monte Carlo stress tests — Premium coverage and loss risk",
+      caption: "Stress Tests — Risk analysis",
+    },
+  },
+
   // ───── Page: Platform ─────
   plateformePage: {
     heroEyebrow: "Tarif Santé Pro",
@@ -353,6 +369,8 @@ export const en: Dictionary = {
       { title: "Interactive dashboards", desc: "Visualize results. Filter by group, cost category, period." },
       { title: "Export & presentation", desc: "PDF, PowerPoint, Excel reports. Ready for the board." },
     ],
+    screenshotsEyebrow: "Preview",
+    screenshotsTitle: "What the technical director sees in Tarif Santé Pro.",
     ctaTitle: "Ready to see Tarif Santé Pro in action?",
     ctaDesc: "20 minutes is enough for a portfolio diagnosis.",
     ctaButton: "Schedule a Demo",
