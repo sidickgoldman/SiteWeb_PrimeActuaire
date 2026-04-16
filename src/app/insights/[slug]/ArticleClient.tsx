@@ -5,8 +5,13 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import type { Article } from "../data";
+import { useI18n } from "@/i18n";
 
 export default function ArticleClient({ article }: { article: Article }) {
+  const { t, locale } = useI18n();
+  const p = t.articlePage;
+  const dateLang = locale === "fr" ? "fr-FR" : "en-US";
+
   return (
     <>
       <Header />
@@ -27,7 +32,7 @@ export default function ArticleClient({ article }: { article: Article }) {
                   href="/insights"
                   className="inline-flex items-center gap-2 text-[13px] text-gold/60 hover:text-gold transition-colors duration-200 mb-8"
                 >
-                  ← Tous les articles
+                  {p.backLink}
                 </Link>
 
                 <div className="flex items-center gap-3 mb-6">
@@ -38,7 +43,7 @@ export default function ArticleClient({ article }: { article: Article }) {
                     {article.readingTime}
                   </span>
                   <span className="text-[12px] text-white/30">
-                    {new Date(article.date).toLocaleDateString("fr-FR", {
+                    {new Date(article.date).toLocaleDateString(dateLang, {
                       day: "numeric",
                       month: "long",
                       year: "numeric",
@@ -91,11 +96,10 @@ export default function ArticleClient({ article }: { article: Article }) {
                 </div>
                 <div>
                   <p className="font-[var(--font-heading)] font-bold text-navy">
-                    Sidibé — Fondateur, PrimeActuaire
+                    {p.authorName}
                   </p>
                   <p className="mt-1 text-[14px] text-text-muted">
-                    Actuaire spécialisé en santé collective, zone CIMA.
-                    Accompagnement DT/DG et plateforme Tarif Santé Pro.
+                    {p.authorBio}
                   </p>
                 </div>
               </motion.div>
@@ -108,13 +112,13 @@ export default function ArticleClient({ article }: { article: Article }) {
                 className="mt-12 text-center"
               >
                 <p className="text-text-muted text-[15px] mb-4">
-                  Ce sujet résonne avec vos enjeux ?
+                  {p.ctaLine}
                 </p>
                 <a
                   href="/#contact"
                   className="inline-block px-8 py-4 rounded-full bg-coral text-white font-semibold text-[15px] hover:bg-coral-dark transition-colors duration-200 shadow-lg shadow-coral/20"
                 >
-                  Planifier un échange
+                  {p.ctaButton}
                 </a>
               </motion.div>
             </div>

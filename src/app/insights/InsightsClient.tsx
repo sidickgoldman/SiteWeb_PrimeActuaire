@@ -5,8 +5,13 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { articles } from "./data";
+import { useI18n } from "@/i18n";
 
 export default function InsightsClient() {
+  const { t, locale } = useI18n();
+  const p = t.insightsPage;
+  const dateLang = locale === "fr" ? "fr-FR" : "en-US";
+
   return (
     <>
       <Header />
@@ -24,14 +29,13 @@ export default function InsightsClient() {
               className="max-w-3xl"
             >
               <p className="text-[13px] font-semibold text-gold uppercase tracking-[4px] mb-6">
-                Insights
+                {p.heroEyebrow}
               </p>
               <h1 className="font-[var(--font-heading)] font-extrabold text-[clamp(2.2rem,5vw,3.8rem)] text-white leading-[1.1] tracking-tight">
-                Perspectives sur la santé collective.
+                {p.heroTitle}
               </h1>
               <p className="mt-6 text-lg text-white/45 leading-relaxed max-w-xl font-light">
-                Analyses, retours terrain et réflexions sur la tarification, la gouvernance
-                technique et le pilotage de portefeuille en zone CIMA.
+                {p.heroDesc}
               </p>
             </motion.div>
           </div>
@@ -71,14 +75,14 @@ export default function InsightsClient() {
                       </p>
                       <div className="mt-5 flex items-center justify-between">
                         <span className="text-[12px] text-text-muted">
-                          {new Date(a.date).toLocaleDateString("fr-FR", {
+                          {new Date(a.date).toLocaleDateString(dateLang, {
                             day: "numeric",
                             month: "long",
                             year: "numeric",
                           })}
                         </span>
                         <span className="text-[13px] font-semibold text-gold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          Lire →
+                          {p.readMore}
                         </span>
                       </div>
                     </article>
@@ -99,17 +103,17 @@ export default function InsightsClient() {
             className="max-w-3xl mx-auto px-6 text-center"
           >
             <h2 className="font-[var(--font-heading)] font-extrabold text-3xl text-white">
-              Un sujet vous parle ?
+              {p.ctaTitle}
             </h2>
             <p className="mt-4 text-white/40 text-[16px]">
-              Échangeons sur votre portefeuille. 20 minutes suffisent pour un premier diagnostic.
+              {p.ctaDesc}
             </p>
             <div className="mt-8">
               <a
                 href="/#contact"
                 className="px-8 py-4 rounded-full bg-coral text-white font-semibold text-[16px] hover:bg-coral-dark transition-colors duration-200 shadow-xl shadow-coral/25"
               >
-                Planifier un échange
+                {p.ctaButton}
               </a>
             </div>
           </motion.div>

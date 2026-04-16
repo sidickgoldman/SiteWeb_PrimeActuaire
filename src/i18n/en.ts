@@ -290,4 +290,114 @@ export const en: Dictionary = {
     },
     copyright: "PrimeActuaire. All rights reserved.",
   },
+
+  // ───── Page: Platform ─────
+  plateformePage: {
+    heroEyebrow: "Tarif Santé Pro",
+    heroTitle: "The platform that structures your pricing decisions.",
+    heroDesc: "Built by an actuary, for actuaries and decision-makers. Every view answers a question the technical or general director asks before a renewal, a board meeting, or a negotiation.",
+    heroCta1: "Request a Demo",
+    heroCta2: "View Features",
+    keyNumbers: [
+      { value: "15 min", label: "for a complete analysis" },
+      { value: "3 days", label: "with traditional manual methods" },
+      { value: "100%", label: "data under your control" },
+      { value: "Article 334-8", label: "CIMA-compliant provisions" },
+    ],
+    featuresEyebrow: "Features",
+    featuresTitle: "Everything a technical director needs. Nothing superfluous.",
+    categories: [
+      {
+        label: "Pricing",
+        items: [
+          { title: "Renewal scenarios", desc: "Simulate the impact of an increase, a discount, or a scope change before committing." },
+          { title: "Premium backtesting", desc: "Compare the technical premium to actual claims experience. Measure the gap. Adjust assumptions." },
+          { title: "Group segmentation", desc: "Identify loss-making groups dragging down the portfolio." },
+        ],
+      },
+      {
+        label: "Monitoring",
+        items: [
+          { title: "In-year loss ratio tracking", desc: "No need to wait for year-end. Visualize drift as soon as it appears." },
+          { title: "Cost category analysis", desc: "Pharmacy, hospitalization, optical, dental — isolate the cause of the drift." },
+          { title: "Fraud & anomaly detection", desc: "Identify providers and policyholders with abnormal behavior." },
+        ],
+      },
+      {
+        label: "Provisions & compliance",
+        items: [
+          { title: "IBNR estimates (provisions)", desc: "Provisions compliant with CIMA Article 334-8. Traceable, auditable, justified." },
+          { title: "Monte Carlo stress tests", desc: "Confidence interval on the premium. The rate is no longer an opinion — it's a quantified position." },
+          { title: "Hypothesis traceability", desc: "Every parameter, every choice is documented. Ideal for audits and board meetings." },
+        ],
+      },
+    ],
+    workflowEyebrow: "User Journey",
+    workflowTitle: "From claims data to report. In 5 steps.",
+    workflowSteps: [
+      { title: "Data import", desc: "CSV, Excel, or direct extraction. Even incomplete data." },
+      { title: "Automatic cleaning", desc: "Duplicate detection, anomalies, missing fields." },
+      { title: "Actuarial analysis", desc: "Models calibrated on your history. Automatic segmentation." },
+      { title: "Interactive dashboards", desc: "Visualize results. Filter by group, cost category, period." },
+      { title: "Export & presentation", desc: "PDF, PowerPoint, Excel reports. Ready for the board." },
+    ],
+    ctaTitle: "Ready to see Tarif Santé Pro in action?",
+    ctaDesc: "20 minutes is enough for a portfolio diagnosis.",
+    ctaButton: "Schedule a Demo",
+  },
+
+  // ───── Page: About ─────
+  aProposPage: {
+    heroEyebrow: "About",
+    heroTitle: "An actuary building the tools he wished he had.",
+    heroDesc: "PrimeActuaire was born from a field observation: technical directors in the CIMA zone lack the right tools to defend their pricing decisions.",
+    quote: "A technical premium must be a defensible position — not an opinion adjusted at the margins.",
+    quoteAuthor: "Sidibé",
+    quoteRole: "Founder · Actuary",
+    missionEyebrow: "Mission",
+    missionTitle: "Give technical directors the means to decide with data.",
+    missionDesc: "Not with intuition. Not under sales pressure. With traceable analyses, defensible figures, and tools built for the CIMA landscape.",
+    valeurs: [
+      { icon: "📐", title: "Actuarial rigor", desc: "Every figure we produce is traceable, testable, and defensible in committee. Assumptions are documented." },
+      { icon: "🎯", title: "Exclusive focus", desc: "Group health in the CIMA zone. No auto insurance, no P&C, no diversification. One discipline, mastered in depth." },
+      { icon: "⚡", title: "Decision speed", desc: "15 minutes for a complete diagnosis vs 3 days with manual methods. The technical director shouldn't have to wait to decide." },
+      { icon: "🔒", title: "Data sovereignty", desc: "Your data stays under your control. Dedicated server, no shared cloud, full CIMA compliance." },
+    ],
+    parcoursEyebrow: "Journey",
+    parcoursTitle: "Why PrimeActuaire exists.",
+    parcours: [
+      { periode: "Foundation", title: "From actuary to builder", desc: "After years of group health pricing engagements, a recurring observation: technical directors make major decisions with inadequate tools. Excel, intuition, sales pressure. PrimeActuaire was born from this observation." },
+      { periode: "Conviction", title: "The CIMA market deserves its own tools", desc: "European solutions don't fit. Local medical inflation, group contract specifics, CIMA regulations — everything demands a tool calibrated to field realities." },
+      { periode: "Today", title: "Tool + Expertise = Governance", desc: "PrimeActuaire combines a technology platform (Tarif Santé Pro) and expert advisory. The tool without advisory is a dashboard. Advisory without the tool is an opinion. Together, they form technical governance." },
+    ],
+    expertiseEyebrow: "Areas of Expertise",
+    expertiseTags: [
+      "Group health pricing", "IBNR provisions (Article 334-8)", "Monte Carlo stress tests",
+      "Portfolio segmentation", "Technical governance", "CIMA regulatory compliance",
+      "Loss ratio tracking & drift", "Fraud detection", "Cost category analysis", "TD / CEO advisory",
+    ],
+    ctaTitle: "Let's work on your portfolio together.",
+    ctaDesc: "A 20-minute conversation is enough to identify the levers.",
+    ctaButton: "Schedule a call",
+  },
+
+  // ───── Page: Insights listing ─────
+  insightsPage: {
+    heroEyebrow: "Insights",
+    heroTitle: "Perspectives on group health insurance.",
+    heroDesc: "Analyses, field insights, and reflections on pricing, technical governance, and portfolio management in the CIMA zone.",
+    readMore: "Read →",
+    ctaTitle: "Does a topic resonate?",
+    ctaDesc: "Let's discuss your portfolio. 20 minutes is enough for an initial assessment.",
+    ctaButton: "Schedule a call",
+  },
+
+  // ───── Page: Article detail ─────
+  articlePage: {
+    backLink: "← All articles",
+    authorName: "Sidibé — Founder, PrimeActuaire",
+    authorBio: "Actuary specialized in group health, CIMA zone. TD/CEO advisory and Tarif Santé Pro platform.",
+    ctaLine: "Does this topic resonate with your challenges?",
+    ctaButton: "Schedule a call",
+  },
 };

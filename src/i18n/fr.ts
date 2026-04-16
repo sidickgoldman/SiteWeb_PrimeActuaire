@@ -288,6 +288,116 @@ export const fr = {
     },
     copyright: "PrimeActuaire. Tous droits réservés.",
   },
+
+  // ───── Page: Plateforme ─────
+  plateformePage: {
+    heroEyebrow: "Tarif Santé Pro",
+    heroTitle: "La plateforme qui structure vos décisions tarifaires.",
+    heroDesc: "Conçue par un actuaire, pour des actuaires et des décideurs. Chaque vue répond à une question que le DT ou DG se pose avant un renouvellement, un comité ou une négociation.",
+    heroCta1: "Demander une démo",
+    heroCta2: "Voir les fonctionnalités",
+    keyNumbers: [
+      { value: "15 min", label: "pour une analyse complète" },
+      { value: "3 jours", label: "en méthode manuelle traditionnelle" },
+      { value: "100%", label: "des données sous votre contrôle" },
+      { value: "Article 334-8", label: "Provisions conformes CIMA" },
+    ],
+    featuresEyebrow: "Fonctionnalités",
+    featuresTitle: "Tout ce dont un DT a besoin. Rien de superflu.",
+    categories: [
+      {
+        label: "Tarification",
+        items: [
+          { title: "Scénarios de renouvellement", desc: "Simulez l'impact d'une hausse, d'une remise ou d'un changement de périmètre avant de vous engager." },
+          { title: "Backtesting du tarif", desc: "Comparez le tarif technique à la sinistralité réelle. Mesurez l'écart. Ajustez les hypothèses." },
+          { title: "Segmentation par groupe", desc: "Identifiez les groupes déficitaires qui tirent le portefeuille vers le bas." },
+        ],
+      },
+      {
+        label: "Pilotage",
+        items: [
+          { title: "Suivi S/P en cours d'année", desc: "Pas besoin d'attendre la clôture. Visualisez les dérives dès qu'elles apparaissent." },
+          { title: "Analyse par poste de soins", desc: "Pharmacie, hospitalisation, optique, dentaire — isolez la cause de la dérive." },
+          { title: "Détection de fraude et atypies", desc: "Identifiez les prestataires et les assurés aux comportements anormaux." },
+        ],
+      },
+      {
+        label: "Provisions & conformité",
+        items: [
+          { title: "ENR estimatif (provisions)", desc: "Provisions conformes à l'article 334-8 CIMA. Traçables, auditables, justifiées." },
+          { title: "Stress tests Monte Carlo", desc: "Fourchette de confiance sur le tarif. Le tarif n'est plus une opinion — c'est une position chiffrée." },
+          { title: "Traçabilité des hypothèses", desc: "Chaque paramètre, chaque choix est documenté. Idéal pour les audits et les comités." },
+        ],
+      },
+    ],
+    workflowEyebrow: "Parcours utilisateur",
+    workflowTitle: "Du bordereau au rapport. En 5 étapes.",
+    workflowSteps: [
+      { title: "Import des bordereaux", desc: "CSV, Excel, ou extraction directe. Même des données incomplètes." },
+      { title: "Nettoyage automatique", desc: "Détection des doublons, des anomalies, des champs manquants." },
+      { title: "Analyse actuarielle", desc: "Modèles calibrés sur votre historique. Segmentation automatique." },
+      { title: "Dashboards interactifs", desc: "Visualisez les résultats. Filtrez par groupe, poste, période." },
+      { title: "Export & restitution", desc: "Rapports PDF, PowerPoint, Excel. Prêts pour le comité." },
+    ],
+    ctaTitle: "Prêt à voir Tarif Santé Pro en action ?",
+    ctaDesc: "20 minutes suffisent pour un diagnostic sur votre portefeuille.",
+    ctaButton: "Planifier une démo",
+  },
+
+  // ───── Page: À propos ─────
+  aProposPage: {
+    heroEyebrow: "À propos",
+    heroTitle: "Un actuaire qui construit les outils qu'il aurait voulu avoir.",
+    heroDesc: "PrimeActuaire est né d'un constat terrain : les directions techniques en zone CIMA manquent d'outils adaptés pour défendre leurs décisions tarifaires.",
+    quote: "Un tarif technique doit être une position défendable — pas une opinion ajustée à la marge.",
+    quoteAuthor: "Sidibé",
+    quoteRole: "Fondateur · Actuaire",
+    missionEyebrow: "Mission",
+    missionTitle: "Donner aux directions techniques les moyens de décider avec des données.",
+    missionDesc: "Pas avec des intuitions. Pas sous la pression du commercial. Avec des analyses traçables, des chiffres défendables, et des outils conçus pour le terrain CIMA.",
+    valeurs: [
+      { icon: "📐", title: "Rigueur actuarielle", desc: "Chaque chiffre que nous produisons est traçable, testable, et défendable en comité. Les hypothèses sont documentées." },
+      { icon: "🎯", title: "Focus exclusif", desc: "Santé collective en zone CIMA. Pas d'assurance auto, pas d'IARD, pas de diversification. Un seul métier, maîtrisé en profondeur." },
+      { icon: "⚡", title: "Vitesse de décision", desc: "15 minutes pour un diagnostic complet vs 3 jours en méthode manuelle. Le DT ne devrait pas attendre pour décider." },
+      { icon: "🔒", title: "Souveraineté des données", desc: "Vos données restent sous votre contrôle. Serveur dédié, pas de cloud partagé, conformité CIMA intégrale." },
+    ],
+    parcoursEyebrow: "Parcours",
+    parcoursTitle: "Pourquoi PrimeActuaire existe.",
+    parcours: [
+      { periode: "Fondation", title: "D'actuaire à bâtisseur", desc: "Après des années de missions en tarification santé collective, un constat récurrent : les DT prennent des décisions majeures avec des outils inadaptés. Excel, intuition, pression commerciale. PrimeActuaire naît de ce constat." },
+      { periode: "Conviction", title: "Le marché CIMA mérite ses propres outils", desc: "Les solutions venues d'Europe ne conviennent pas. L'inflation médicale locale, les spécificités des contrats groupe, la réglementation CIMA — tout exige un outil calibré sur les réalités du terrain." },
+      { periode: "Aujourd'hui", title: "Outil + Expertise = Gouvernance", desc: "PrimeActuaire combine une plateforme technologique (Tarif Santé Pro) et un accompagnement expert. L'outil sans le conseil est un tableau de bord. Le conseil sans l'outil est une opinion. Les deux ensemble, c'est une gouvernance technique." },
+    ],
+    expertiseEyebrow: "Domaines d'expertise",
+    expertiseTags: [
+      "Tarification santé collective", "Provisions ENR (article 334-8)", "Stress tests Monte Carlo",
+      "Segmentation portefeuille", "Gouvernance technique", "Conformité réglementaire CIMA",
+      "Suivi S/P et dérives", "Détection de fraude", "Analyse par poste de soins", "Accompagnement DT / DG",
+    ],
+    ctaTitle: "Travaillons ensemble sur votre portefeuille.",
+    ctaDesc: "Un échange de 20 minutes suffit pour voir où se trouvent les leviers.",
+    ctaButton: "Planifier un échange",
+  },
+
+  // ───── Page: Insights listing ─────
+  insightsPage: {
+    heroEyebrow: "Insights",
+    heroTitle: "Perspectives sur la santé collective.",
+    heroDesc: "Analyses, retours terrain et réflexions sur la tarification, la gouvernance technique et le pilotage de portefeuille en zone CIMA.",
+    readMore: "Lire →",
+    ctaTitle: "Un sujet vous parle ?",
+    ctaDesc: "Échangeons sur votre portefeuille. 20 minutes suffisent pour un premier diagnostic.",
+    ctaButton: "Planifier un échange",
+  },
+
+  // ───── Page: Article detail ─────
+  articlePage: {
+    backLink: "← Tous les articles",
+    authorName: "Sidibé — Fondateur, PrimeActuaire",
+    authorBio: "Actuaire spécialisé en santé collective, zone CIMA. Accompagnement DT/DG et plateforme Tarif Santé Pro.",
+    ctaLine: "Ce sujet résonne avec vos enjeux ?",
+    ctaButton: "Planifier un échange",
+  },
 };
 
 export type Dictionary = typeof fr;
