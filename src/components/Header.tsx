@@ -10,7 +10,7 @@ const navLinks = [
   { label: "Expertises", href: "/#piliers" },
   { label: "Cas d'usage", href: "/#cas-usage" },
   { label: "Méthode", href: "/#methode" },
-  { label: "Insights", href: "/#insights" },
+  { label: "Insights", href: "/insights" },
   { label: "À propos", href: "/a-propos" },
 ];
 
