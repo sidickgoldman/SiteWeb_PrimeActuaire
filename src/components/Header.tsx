@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { label: "Solution", href: "#solution" },
@@ -15,12 +16,28 @@ const navLinks = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-md border-b border-white/5">
-      <div className="h-[3px] bg-gradient-to-r from-gold via-coral to-gold" />
+    <motion.header
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b transition-all duration-500 ${
+        scrolled
+          ? "bg-navy/98 border-white/10 shadow-lg shadow-black/20"
+          : "bg-navy/95 border-white/5"
+      }`}
+    >
+      <div className={`bg-gradient-to-r from-gold via-coral to-gold transition-all duration-500 ${scrolled ? "h-[2px]" : "h-[3px]"}`} />
 
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
+      <div className={`max-w-7xl mx-auto px-6 flex items-center justify-between transition-all duration-500 ${scrolled ? "h-14" : "h-16"}`}>
         <Link href="/" className="flex items-center gap-3">
           <Image src="/logo.png" alt="PrimeActuaire" width={36} height={36} className="rounded" />
           <span className="font-[var(--font-heading)] font-extrabold text-white text-lg tracking-wide">
@@ -65,7 +82,13 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav className="lg:hidden bg-navy border-t border-white/5 px-6 py-6 flex flex-col gap-4">
+        <motion.nav
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: "auto" }}
+          exit={{ opacity: 0, height: 0 }}
+          transition={{ duration: 0.3 }}
+          className="lg:hidden bg-navy border-t border-white/5 px-6 py-6 flex flex-col gap-4"
+        >
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -83,8 +106,8 @@ export default function Header() {
           >
             Demander une démo
           </a>
-        </nav>
+        </motion.nav>
       )}
-    </header>
+    </motion.header>
   );
 }

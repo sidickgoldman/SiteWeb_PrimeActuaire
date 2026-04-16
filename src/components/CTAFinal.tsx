@@ -1,9 +1,25 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function CTAFinal() {
   return (
     <section className="bg-navy py-24" id="contact">
-      <div className="max-w-3xl mx-auto px-6 text-center">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-80px" }}
+        transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+        className="max-w-3xl mx-auto px-6 text-center"
+      >
         {/* Accent line — gold to coral */}
-        <div className="w-20 h-1 bg-gradient-to-r from-gold to-coral rounded-full mx-auto mb-10" />
+        <motion.div
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="w-20 h-1 bg-gradient-to-r from-gold to-coral rounded-full mx-auto mb-10 origin-left"
+        />
 
         <h2 className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-[2.75rem] text-white leading-tight">
           Vous voulez voir comment PrimeActuaire peut structurer vos décisions tarifaires ?
@@ -37,7 +53,7 @@ export default function CTAFinal() {
           <span className="hidden sm:inline">·</span>
           <span>WhatsApp : +1 (514) 578-8207</span>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

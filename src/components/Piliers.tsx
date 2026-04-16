@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 const piliers = [
   {
     num: "01",
@@ -32,17 +36,33 @@ export default function Piliers() {
   return (
     <section className="bg-bg-light py-24" id="piliers">
       <div className="max-w-7xl mx-auto px-6">
-        <p className="text-[13px] font-semibold text-gold uppercase tracking-[4px] text-center mb-4">
+        <motion.p
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-[13px] font-semibold text-gold uppercase tracking-[4px] text-center mb-4"
+        >
           Ce que fait PrimeActuaire
-        </p>
-        <h2 className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl text-navy text-center mb-16">
+        </motion.p>
+        <motion.h2
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl text-navy text-center mb-16"
+        >
           Trois piliers. Une gouvernance technique complète.
-        </h2>
+        </motion.h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {piliers.map((p) => (
-            <div
+          {piliers.map((p, i) => (
+            <motion.div
               key={p.num}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.6, delay: i * 0.15, ease: [0.22, 1, 0.36, 1] }}
               className={`rounded-2xl p-8 border-l-4 ${p.color} ${p.bg} hover:shadow-xl transition-shadow duration-300`}
             >
               <span className={`text-[13px] font-semibold uppercase tracking-[3px] ${p.accent}`}>
@@ -54,7 +74,7 @@ export default function Piliers() {
               <p className="mt-4 text-[15px] text-text-muted leading-relaxed">
                 {p.desc}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

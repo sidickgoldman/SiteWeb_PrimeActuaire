@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 const features = [
   "Scénarios de renouvellement",
   "Segmentation par groupe et poste",
@@ -15,7 +19,12 @@ export default function Solution() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left — Text */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          >
             <p className="text-[13px] font-semibold text-gold uppercase tracking-[4px] mb-4">
               Tarif Santé Pro
             </p>
@@ -52,10 +61,16 @@ export default function Solution() {
                 Voir les cas d&apos;usage
               </a>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right — Dashboard mockup */}
-          <div className="relative">
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            className="relative"
+          >
             <div className="bg-white rounded-2xl shadow-2xl shadow-gold/10 border border-gold/10 p-6 aspect-[4/3] flex flex-col">
               {/* Title bar */}
               <div className="flex items-center gap-2 mb-4">
@@ -95,10 +110,16 @@ export default function Solution() {
             </div>
 
             {/* Floating badge */}
-            <div className="absolute -bottom-4 -right-4 bg-navy text-gold px-5 py-2.5 rounded-full text-[13px] font-semibold shadow-xl">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="absolute -bottom-4 -right-4 bg-navy text-gold px-5 py-2.5 rounded-full text-[13px] font-semibold shadow-xl"
+            >
               Calibré sur votre portefeuille
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>

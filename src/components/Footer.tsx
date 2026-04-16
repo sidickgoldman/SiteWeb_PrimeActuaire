@@ -1,6 +1,16 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function Footer() {
   return (
-    <footer className="bg-navy text-white">
+    <motion.footer
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.6 }}
+      className="bg-navy text-white"
+    >
       {/* Stats ribbon */}
       <div className="border-t border-white/5 bg-navy-mid">
         <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -73,6 +83,6 @@ export default function Footer() {
       <div className="border-t border-white/5 py-5 text-center text-[11px] text-white/20">
         © {new Date().getFullYear()} PrimeActuaire. Tous droits réservés.
       </div>
-    </footer>
+    </motion.footer>
   );
 }

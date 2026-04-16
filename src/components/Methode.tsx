@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 const etapes = [
   {
     num: "01",
@@ -32,7 +36,12 @@ export default function Methode() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          >
             <p className="text-[13px] font-semibold text-teal uppercase tracking-[4px] mb-4">
               Notre méthode
             </p>
@@ -57,13 +66,19 @@ export default function Methode() {
                 Données sous votre contrôle, serveur dédié.
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right — Steps */}
           <div className="space-y-6">
-            {etapes.map((e) => (
-              <div key={e.num} className="flex gap-5 group">
-                <div className="flex flex-col items-center">
+            {etapes.map((e, i) => (
+              <motion.div
+                key={e.num}
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.5, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+                className="flex gap-5 group"
+              >                <div className="flex flex-col items-center">
                   <span className="w-10 h-10 rounded-full bg-teal/10 border border-teal/20 flex items-center justify-center text-[13px] font-bold text-teal group-hover:bg-teal group-hover:text-white transition-all duration-300">
                     {e.num}
                   </span>
@@ -79,7 +94,7 @@ export default function Methode() {
                     {e.desc}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

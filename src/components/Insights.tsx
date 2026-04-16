@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 const articles = [
   {
     tag: "Gouvernance",
@@ -20,17 +24,33 @@ export default function Insights() {
   return (
     <section className="bg-white py-24" id="insights">
       <div className="max-w-7xl mx-auto px-6">
-        <p className="text-[13px] font-semibold text-navy uppercase tracking-[4px] text-center mb-4">
+        <motion.p
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-[13px] font-semibold text-navy uppercase tracking-[4px] text-center mb-4"
+        >
           Insights
-        </p>
-        <h2 className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl text-navy text-center mb-16">
+        </motion.p>
+        <motion.h2
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl text-navy text-center mb-16"
+        >
           Perspectives sur la santé collective.
-        </h2>
+        </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {articles.map((a, i) => (
-            <article
+            <motion.article
               key={i}
+              initial={{ opacity: 0, y: 30, scale: 0.97 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.5, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] }}
               className="group bg-bg-light rounded-2xl p-8 hover:shadow-xl hover:shadow-gold/5 border border-transparent hover:border-gold/15 transition-all duration-300 cursor-pointer"
             >
               <span className="inline-block px-3 py-1 text-[11px] font-semibold text-gold bg-gold/10 rounded-full mb-5">
@@ -45,7 +65,7 @@ export default function Insights() {
               <span className="inline-block mt-5 text-[13px] font-semibold text-gold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Lire →
               </span>
-            </article>
+            </motion.article>
           ))}
         </div>
       </div>

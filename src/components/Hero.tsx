@@ -1,36 +1,65 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+const stagger = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.15, delayChildren: 0.3 } },
+};
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const } },
+};
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center bg-navy overflow-hidden">
-      {/* Gradient overlay — deep navy like carousel */}
+      {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0B1628] via-[#122240] to-[#0E1A34] pointer-events-none" />
 
-      {/* Decorative glows */}
-      <div className="absolute top-1/4 right-0 w-[500px] h-[500px] rounded-full bg-gold/[0.04] blur-3xl" />
-      <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] rounded-full bg-coral/[0.04] blur-3xl" />
+      {/* Decorative glows — animate in */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 2, ease: "easeOut" }}
+        className="absolute top-1/4 right-0 w-[500px] h-[500px] rounded-full bg-gold/[0.04] blur-3xl"
+      />
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 2, delay: 0.3, ease: "easeOut" }}
+        className="absolute bottom-0 left-1/4 w-[400px] h-[400px] rounded-full bg-coral/[0.04] blur-3xl"
+      />
 
       <div className="relative max-w-7xl mx-auto px-6 pt-32 pb-20 lg:pt-40 lg:pb-28">
-        <div className="max-w-3xl">
+        <motion.div
+          className="max-w-3xl"
+          variants={stagger}
+          initial="hidden"
+          animate="show"
+        >
           {/* Eyebrow */}
-          <p className="text-[13px] font-semibold text-gold uppercase tracking-[4px] mb-6">
+          <motion.p variants={fadeUp} className="text-[13px] font-semibold text-gold uppercase tracking-[4px] mb-6">
             Santé collective · Zone CIMA
-          </p>
+          </motion.p>
 
-          {/* Title — gold gradient accent */}
-          <h1 className="font-[var(--font-heading)] font-extrabold text-[clamp(2.5rem,5.5vw,4.5rem)] text-white leading-[1.08] tracking-tight">
+          {/* Title */}
+          <motion.h1 variants={fadeUp} className="font-[var(--font-heading)] font-extrabold text-[clamp(2.5rem,5.5vw,4.5rem)] text-white leading-[1.08] tracking-tight">
             Décidez mieux vos primes{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light">
               santé collective.
             </span>
-          </h1>
+          </motion.h1>
 
           {/* Subtitle */}
-          <p className="mt-6 text-lg text-white/45 leading-relaxed max-w-xl font-light">
+          <motion.p variants={fadeUp} className="mt-6 text-lg text-white/45 leading-relaxed max-w-xl font-light">
             PrimeActuaire aide les assureurs à renforcer leur performance technique
             grâce à la tarification, au pilotage et à la technologie.
-          </p>
+          </motion.p>
 
           {/* CTAs */}
-          <div className="mt-10 flex flex-wrap items-center gap-4">
+          <motion.div variants={fadeUp} className="mt-10 flex flex-wrap items-center gap-4">
             <a
               href="#contact"
               className="px-7 py-3.5 rounded-full bg-coral text-white font-semibold text-[15px] hover:bg-coral-dark transition-colors duration-200 shadow-lg shadow-coral/20"
@@ -43,20 +72,29 @@ export default function Hero() {
             >
               Découvrir l&apos;approche
             </a>
-          </div>
+          </motion.div>
 
           {/* Trust line */}
-          <p className="mt-14 text-[12px] text-white/20 tracking-wide">
+          <motion.p variants={fadeUp} className="mt-14 text-[12px] text-white/20 tracking-wide">
             Tarification · Pilotage portefeuille · Gouvernance technique · Outil + Expertise
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 1 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+      >
         <span className="text-[11px] text-white/15 tracking-widest uppercase">Scroll</span>
-        <div className="w-px h-8 bg-gradient-to-b from-gold/30 to-transparent" />
-      </div>
+        <motion.div
+          animate={{ scaleY: [1, 0.5, 1] }}
+          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+          className="w-px h-8 bg-gradient-to-b from-gold/30 to-transparent origin-top"
+        />
+      </motion.div>
     </section>
   );
 }

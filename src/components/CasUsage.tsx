@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 const cases = [
   {
     title: "Renouvellement sous tension",
@@ -35,20 +39,36 @@ export default function CasUsage() {
   return (
     <section className="bg-navy py-24" id="cas-usage">
       <div className="max-w-7xl mx-auto px-6">
-        <p className="text-[13px] font-semibold text-gold uppercase tracking-[4px] text-center mb-4">
+        <motion.p
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-[13px] font-semibold text-gold uppercase tracking-[4px] text-center mb-4"
+        >
           Cas d&apos;usage
-        </p>
-        <h2 className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl text-white text-center mb-4">
+        </motion.p>
+        <motion.h2
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl text-white text-center mb-4"
+        >
           Des situations que vous connaissez.
-        </h2>
+        </motion.h2>
         <p className="text-center text-white/40 text-[16px] mb-16 max-w-xl mx-auto">
           Chaque cas est issu de missions réelles en zone CIMA. Les données sont anonymisées.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {cases.map((c, i) => (
-            <div
+            <motion.div
               key={i}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.5, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
               className={`bg-white/[0.04] border-l-4 ${c.accent} rounded-2xl p-7 hover:bg-white/[0.07] transition-colors duration-300`}
             >
               <span className="inline-block px-3 py-1 text-[11px] font-semibold text-gold/60 bg-gold/[0.08] rounded-full mb-4">
@@ -60,7 +80,7 @@ export default function CasUsage() {
               <p className="mt-3 text-[14px] text-white/40 leading-relaxed">
                 {c.desc}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
 
