@@ -4,20 +4,6 @@ import { Resend } from "resend";
 const TO_EMAIL = process.env.CONTACT_EMAIL || "sidickgoldman@gmail.com";
 const FROM_EMAIL = process.env.FROM_EMAIL || "PrimeActuaire <noreply@primeactuaire.com>";
 
-// Rate limiting: max 3 submissions per IP per 15 minutes
-const rateMap = new Map<string, number[]>();
-const RATE_LIMIT = 3;
-const RATE_WINDOW = 15 * 60 * 1000;
-
-function isRateLimited(ip: string): boolean {
-  const now = Date.now();
-  const timestamps = rateMap.get(ip)?.filter((t) => now - t < RATE_WINDOW) || [];
-  if (timestamps.length >= RATE_LIMIT) return true;
-  timestamps.push(now);
-  rateMap.set(ip, timestamps);
-  return false;
-}
-
 export async function POST(req: NextRequest) {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
@@ -30,15 +16,6 @@ export async function POST(req: NextRequest) {
   const resend = new Resend(apiKey);
 
   try {
-    // Rate limit check
-    const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
-    if (isRateLimited(ip)) {
-      return NextResponse.json(
-        { error: "Trop de demandes. Réessayez dans quelques minutes." },
-        { status: 429 }
-      );
-    }
-
     const body = await req.json();
     const { nom, email, societe, message } = body as {
       nom: string;
