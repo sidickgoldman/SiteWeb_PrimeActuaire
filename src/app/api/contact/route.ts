@@ -44,7 +44,7 @@ export async function POST(req: NextRequest) {
     }
 
     await resend.emails.send({
-      from: "PrimeActuaire <onboarding@resend.dev>",
+      from: "PrimeActuaire <noreply@send.primeactuaire.com>",
       to: TO_EMAIL,
       replyTo: email,
       subject: `Demande de démo — ${societe || "Non renseigné"}`,
