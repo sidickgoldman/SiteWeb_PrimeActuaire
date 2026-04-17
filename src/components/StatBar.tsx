@@ -22,7 +22,7 @@ export default function StatBar() {
             <p className={`font-[var(--font-heading)] font-extrabold text-4xl lg:text-5xl ${colors[i]}`}>
               {s.value}
             </p>
-            <p className="mt-2 text-[13px] text-white/35 leading-snug">{s.label}</p>
+            <p className="mt-2 text-[13px] text-white/55 leading-snug">{s.label}</p>
           </motion.div>
         ))}
       </div>

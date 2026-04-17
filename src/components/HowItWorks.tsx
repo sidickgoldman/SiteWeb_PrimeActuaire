@@ -27,7 +27,7 @@ export default function HowItWorks() {
           {t.howItWorks.title}
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
           {t.howItWorks.steps.map((step, i) => (
             <motion.div
               key={step.num}
@@ -43,7 +43,7 @@ export default function HowItWorks() {
               <h3 className="mt-4 font-[var(--font-heading)] font-bold text-xl text-white">
                 {step.title}
               </h3>
-              <p className="mt-3 text-[15px] text-white/40 leading-relaxed">
+              <p className="mt-3 text-[15px] text-white/55 leading-relaxed">
                 {step.desc}
               </p>
             </motion.div>

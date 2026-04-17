@@ -31,7 +31,7 @@ export default function Probleme() {
           </span>
         </motion.h2>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           {t.probleme.tensions.map((tension, i) => (
             <motion.div
               key={i}

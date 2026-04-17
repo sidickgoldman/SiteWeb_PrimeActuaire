@@ -63,12 +63,12 @@ export default function APropos() {
               <blockquote className="font-[var(--font-heading)] font-bold text-xl lg:text-2xl leading-snug">
                 &ldquo;{t.aPropos.quote}&rdquo;
               </blockquote>
-              <p className="mt-6 text-white/40 text-[14px] leading-relaxed">
+              <p className="mt-6 text-white/55 text-[14px] leading-relaxed">
                 {t.aPropos.philosophyText}
               </p>
 
               <div className="mt-8 pt-6 border-t border-white/10">
-                <p className="text-[13px] text-white/30 uppercase tracking-widest mb-3">
+                <p className="text-[13px] text-white/50 uppercase tracking-widest mb-3">
                   {t.aPropos.expertiseLabel}
                 </p>
                 <div className="flex flex-wrap gap-2">

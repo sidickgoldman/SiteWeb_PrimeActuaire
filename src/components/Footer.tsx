@@ -21,7 +21,7 @@ export default function Footer() {
           {t.footer.stats.map((s, i) => (
             <div key={i}>
               <p className={`font-[var(--font-heading)] font-extrabold text-3xl ${statColors[i]}`}>{s.value}</p>
-              <p className="text-xs text-white/40 mt-1">{s.label}</p>
+              <p className="text-xs text-white/55 mt-1">{s.label}</p>
             </div>
           ))}
         </div>
@@ -31,7 +31,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
         <div className="md:col-span-1">
           <p className="font-[var(--font-heading)] font-extrabold text-lg text-gold">PrimeActuaire</p>
-          <p className="text-xs text-white/30 mt-2 leading-relaxed">
+          <p className="text-xs text-white/50 mt-2 leading-relaxed">
             {t.footer.tagline}
           </p>
         </div>
@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/5 py-5 text-center text-[11px] text-white/20">
+      <div className="border-t border-white/5 py-5 text-center text-[11px] text-white/40">
         © {new Date().getFullYear()} {t.footer.copyright}
       </div>
     </motion.footer>

@@ -36,3 +36,20 @@ h1, h2, h3, h4, h5, h6 {
   background: #C5963A;
   color: white;
 }
+
+/* Fix 1: Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Fix 2: Visible focus ring on all interactive elements */
+:focus-visible {
+  outline: 2px solid #C5963A;
+  outline-offset: 2px;
+  border-radius: 4px;
+}

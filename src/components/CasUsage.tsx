@@ -28,11 +28,11 @@ export default function CasUsage() {
         >
           {t.casUsage.title}
         </motion.h2>
-        <p className="text-center text-white/40 text-[16px] mb-16 max-w-xl mx-auto">
+        <p className="text-center text-white/55 text-[16px] mb-16 max-w-xl mx-auto">
           {t.casUsage.subtitle}
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {t.casUsage.cases.map((c, i) => (
             <motion.div
               key={i}
@@ -40,7 +40,14 @@ export default function CasUsage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className={`bg-white/[0.04] border-l-4 ${accents[i]} rounded-2xl p-7 hover:bg-white/[0.07] transition-colors duration-300`}
+              className={`bg-white/[0.04] border-l-4 ${accents[i]} rounded-2xl p-7 hover:bg-white/[0.07] transition-colors duration-300 ${
+                t.casUsage.cases.length === 5 && i >= 3 ? "lg:col-span-1 lg:mx-auto lg:max-w-sm" : ""
+              }`}
+              style={
+                t.casUsage.cases.length === 5 && i === 3
+                  ? { gridColumn: "2 / 3" }
+                  : undefined
+              }
             >
               <span className="inline-block px-3 py-1 text-[11px] font-semibold text-gold/60 bg-gold/[0.08] rounded-full mb-4">
                 {c.tag}
@@ -48,7 +55,7 @@ export default function CasUsage() {
               <h3 className="font-[var(--font-heading)] font-bold text-lg text-white leading-snug">
                 {c.title}
               </h3>
-              <p className="mt-3 text-[14px] text-white/40 leading-relaxed">
+              <p className="mt-3 text-[14px] text-white/55 leading-relaxed">
                 {c.desc}
               </p>
             </motion.div>

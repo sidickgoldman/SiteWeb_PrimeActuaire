@@ -52,12 +52,13 @@ export default function Methode() {
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.5, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
                 className="flex gap-5 group"
-              >                <div className="flex flex-col items-center">
+              >
+                <div className="flex flex-col items-center shrink-0">
                   <span className="w-10 h-10 rounded-full bg-teal/10 border border-teal/20 flex items-center justify-center text-[13px] font-bold text-teal group-hover:bg-teal group-hover:text-white transition-all duration-300">
                     {nums[i]}
                   </span>
                   {i < 4 && (
-                    <div className="w-px h-full bg-teal/10 mt-2" />
+                    <div className="w-px flex-1 min-h-[24px] bg-teal/15 mt-2" />
                   )}
                 </div>
                 <div className="pb-2">
