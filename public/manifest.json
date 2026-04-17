@@ -1,0 +1,21 @@
+{
+  "name": "PrimeActuaire — Gouvernance technique · Santé collective",
+  "short_name": "PrimeActuaire",
+  "description": "Plateforme d'aide à la décision pour les directions techniques en assurance santé collective — zone CIMA.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B1628",
+  "theme_color": "#0B1628",
+  "icons": [
+    {
+      "src": "/logo.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -85,6 +85,38 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    // Email de confirmation automatique à l'expéditeur
+    await resend.emails.send({
+      from: FROM_EMAIL,
+      to: email,
+      subject: "Bien reçu — PrimeActuaire",
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <div style="text-align: center; padding: 32px 0 24px;">
+            <h1 style="color: #0B1628; font-size: 24px; margin: 0;">PrimeActuaire</h1>
+          </div>
+          <div style="padding: 24px; background: #f5f3ee; border-radius: 12px;">
+            <p style="color: #333; margin: 0 0 16px; font-size: 16px;">Bonjour ${escapeHtml(nom)},</p>
+            <p style="color: #333; margin: 0 0 16px; line-height: 1.6;">
+              Merci pour votre message. Nous l'avons bien reçu et reviendrons vers vous dans les plus brefs délais.
+            </p>
+            <p style="color: #666; margin: 0; font-size: 14px; line-height: 1.6;">
+              En attendant, n'hésitez pas à visiter notre site pour en savoir plus sur nos solutions :
+              <a href="https://www.primeactuaire.com" style="color: #C5963A;">www.primeactuaire.com</a>
+            </p>
+          </div>
+          <div style="text-align: center; padding: 24px 0; color: #999; font-size: 12px;">
+            <p style="margin: 0;">PrimeActuaire — Gouvernance technique · Santé collective · Zone CIMA</p>
+            <p style="margin: 8px 0 0;">
+              <a href="https://www.primeactuaire.com" style="color: #C5963A; text-decoration: none;">primeactuaire.com</a>
+              &nbsp;·&nbsp;
+              <a href="https://wa.me/15145788207" style="color: #C5963A; text-decoration: none;">WhatsApp</a>
+            </p>
+          </div>
+        </div>
+      `,
+    }).catch((err) => console.error("Confirmation email error:", err));
+
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Contact form error:", error);
