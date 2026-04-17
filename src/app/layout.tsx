@@ -3,6 +3,7 @@ import { Outfit, Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Providers from "./Providers";
+import CookieBanner from "@/components/CookieBanner";
 
 const GA_ID = "G-81H4EP21FM";
 
@@ -86,6 +87,9 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
+            gtag('consent', 'default', {
+              analytics_storage: localStorage.getItem('pa_consent') === 'accepted' ? 'granted' : 'denied'
+            });
             gtag('config', '${GA_ID}');
           `}
         </Script>
@@ -99,6 +103,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col">
         <Providers>{children}</Providers>
+        <CookieBanner />
       </body>
     </html>
   );
