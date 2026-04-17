@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const TO_EMAIL = process.env.CONTACT_EMAIL || "contact@primeactuaire.com";
+const TO_EMAIL = process.env.CONTACT_EMAIL || "sidickgoldman@gmail.com";
+const FROM_EMAIL = process.env.FROM_EMAIL || "PrimeActuaire <onboarding@resend.dev>";
 
 export async function POST(req: NextRequest) {
   const apiKey = process.env.RESEND_API_KEY;
@@ -43,8 +44,8 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ success: true });
     }
 
-    await resend.emails.send({
-      from: "PrimeActuaire <noreply@send.primeactuaire.com>",
+    const result = await resend.emails.send({
+      from: FROM_EMAIL,
       to: TO_EMAIL,
       replyTo: email,
       subject: `Demande de démo — ${societe || "Non renseigné"}`,
@@ -70,11 +71,19 @@ export async function POST(req: NextRequest) {
             <p style="margin: 8px 0 0; color: #333; white-space: pre-wrap;">${escapeHtml(message)}</p>
           </div>
           <p style="margin-top: 24px; font-size: 12px; color: #999;">
-            Envoyé depuis siteweb-primeactuaire.vercel.app
+            Envoyé depuis primeactuaire.com
           </p>
         </div>
       `,
     });
+
+    if (result.error) {
+      console.error("Resend API error:", result.error);
+      return NextResponse.json(
+        { error: result.error.message || "Erreur Resend." },
+        { status: 500 }
+      );
+    }
 
     return NextResponse.json({ success: true });
   } catch (error) {
