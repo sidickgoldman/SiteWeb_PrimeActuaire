@@ -66,7 +66,7 @@ export default function Footer() {
               </a>
             </li>
             <li>+225 01 70 90 33 54</li>
-            <li className="text-xs text-white/30">WhatsApp : +1 (514) 578-8207</li>
+
           </ul>
         </div>
       </div>

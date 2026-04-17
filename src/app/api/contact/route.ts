@@ -109,8 +109,6 @@ export async function POST(req: NextRequest) {
             <p style="margin: 0;">PrimeActuaire — Gouvernance technique · Santé collective · Zone CIMA</p>
             <p style="margin: 8px 0 0;">
               <a href="https://www.primeactuaire.com" style="color: #C5963A; text-decoration: none;">primeactuaire.com</a>
-              &nbsp;·&nbsp;
-              <a href="https://wa.me/15145788207" style="color: #C5963A; text-decoration: none;">WhatsApp</a>
             </p>
           </div>
         </div>
