@@ -443,7 +443,7 @@ export const en: Dictionary = {
     heroTitle: "An actuary building the tools he wished he had.",
     heroDesc: "PrimeActuaire was born from a field observation: technical directors in the CIMA zone lack the right tools to defend their pricing decisions.",
     quote: "A technical premium must be a defensible position — not an opinion adjusted at the margins.",
-    quoteAuthor: "Sidibé",
+    quoteAuthor: "Zana",
     quoteRole: "Founder · Actuary",
     missionEyebrow: "Mission",
     missionTitle: "Give technical directors the means to decide with data.",
@@ -486,7 +486,7 @@ export const en: Dictionary = {
   // ───── Page: Article detail ─────
   articlePage: {
     backLink: "← All articles",
-    authorName: "Sidibé — Founder, PrimeActuaire",
+    authorName: "Zana — Founder, PrimeActuaire",
     authorBio: "Actuary specialized in group health, CIMA zone. TD/CEO advisory and Tarif Santé Pro platform.",
     ctaLine: "Does this topic resonate with your challenges?",
     ctaButton: "Schedule a call",

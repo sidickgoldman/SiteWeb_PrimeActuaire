@@ -441,7 +441,7 @@ export const fr = {
     heroTitle: "Un actuaire qui construit les outils qu'il aurait voulu avoir.",
     heroDesc: "PrimeActuaire est né d'un constat terrain : les directions techniques en zone CIMA manquent d'outils adaptés pour défendre leurs décisions tarifaires.",
     quote: "Un tarif technique doit être une position défendable — pas une opinion ajustée à la marge.",
-    quoteAuthor: "Sidibé",
+    quoteAuthor: "Zana",
     quoteRole: "Fondateur · Actuaire",
     missionEyebrow: "Mission",
     missionTitle: "Donner aux directions techniques les moyens de décider avec des données.",
@@ -484,7 +484,7 @@ export const fr = {
   // ───── Page: Article detail ─────
   articlePage: {
     backLink: "← Tous les articles",
-    authorName: "Sidibé — Fondateur, PrimeActuaire",
+    authorName: "Zana — Fondateur, PrimeActuaire",
     authorBio: "Actuaire spécialisé en santé collective, zone CIMA. Accompagnement DT/DG et plateforme Tarif Santé Pro.",
     ctaLine: "Ce sujet résonne avec vos enjeux ?",
     ctaButton: "Planifier un échange",
