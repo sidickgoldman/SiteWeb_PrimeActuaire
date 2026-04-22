@@ -14,15 +14,16 @@ export const en: Dictionary = {
 
   // Hero
   hero: {
-    eyebrow: "Group Health Insurance · CIMA Zone",
-    titleStart: "Make smarter decisions on your ",
-    titleHighlight: "group health premiums.",
+    eyebrow: "Technical Governance · Group Health · CIMA Zone",
+    titleStart: "Take back control of the ",
+    titleHighlight: "profitability",
+    titleEnd: " of your group health portfolios.",
     subtitle:
-      "PrimeActuaire helps insurers strengthen their technical performance through pricing, portfolio monitoring and technology.",
-    cta1: "Request a Demo",
+      "PrimeActuaire helps technical and general management see where margin erodes, quantify their trade-offs and defend pricing decisions that stand up to scrutiny in group health.",
+    cta1: "Request a targeted demonstration",
     cta2: "Discover Our Approach",
     trustLine:
-      "Pricing · Portfolio Monitoring · Technical Governance · Tools + Expertise",
+      "Defensible pricing · Portfolio monitoring · Quantified trade-offs · Framework",
     dashTitle: "Tarif Santé Pro",
     dashLabel1: "Loss Ratio",
     dashLabel2: "Members",
@@ -121,7 +122,7 @@ export const en: Dictionary = {
     desc: "Not just another tool. Built by an actuary, for actuaries and decision-makers. Every view answers a question the technical or general director asks before a renewal, a board meeting, or a negotiation.",
     cta1: "See a 20-min demo",
     cta2: "View use cases",
-    badge: "Calibrated on your portfolio",
+    badge: "Your trade-offs, quantified on real data",
     features: [
       "Renewal scenarios",
       "Group & cost segmentation",

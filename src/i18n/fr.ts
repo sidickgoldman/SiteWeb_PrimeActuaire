@@ -12,15 +12,16 @@ export const fr = {
 
   // Hero
   hero: {
-    eyebrow: "Santé collective · Zone CIMA",
-    titleStart: "Décidez mieux vos primes ",
-    titleHighlight: "santé collective.",
+    eyebrow: "Gouvernance technique · Santé collective · Zone CIMA",
+    titleStart: "Reprenez la main sur la ",
+    titleHighlight: "rentabilité",
+    titleEnd: " de vos portefeuilles santé collective.",
     subtitle:
-      "PrimeActuaire aide les assureurs à renforcer leur performance technique grâce à la tarification, au pilotage et à la technologie.",
-    cta1: "Demander une démo",
+      "PrimeActuaire aide les directions techniques et générales à voir où la marge se détruit, à chiffrer leurs arbitrages et à défendre des décisions tarifaires opposables en santé collective.",
+    cta1: "Demander une démonstration ciblée",
     cta2: "Découvrir l'approche",
     trustLine:
-      "Tarification · Pilotage portefeuille · Gouvernance technique · Outil + Expertise",
+      "Tarification défendable · Pilotage portefeuille · Arbitrages chiffrés · Dispositif",
     dashTitle: "Tarif Santé Pro",
     dashLabel1: "Ratio S/P",
     dashLabel2: "Adhérents",
@@ -119,7 +120,7 @@ export const fr = {
     desc: "Pas un logiciel de plus. Un outil construit par un actuaire, pour des actuaires et des décideurs. Chaque vue répond à une question que le DT ou le DG se pose avant un renouvellement, un comité, ou une négociation.",
     cta1: "Voir une démo en 20 min",
     cta2: "Voir les cas d'usage",
-    badge: "Calibré sur votre portefeuille",
+    badge: "Vos arbitrages, chiffrés sur données réelles",
     features: [
       "Scénarios de renouvellement",
       "Segmentation par groupe et poste",

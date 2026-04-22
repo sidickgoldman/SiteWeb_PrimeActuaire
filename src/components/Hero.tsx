@@ -54,6 +54,7 @@ export default function Hero() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light">
                 {t.hero.titleHighlight}
               </span>
+              {t.hero.titleEnd}
             </motion.h1>
 
             {/* Subtitle */}
