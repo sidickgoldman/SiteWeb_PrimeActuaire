@@ -33,9 +33,9 @@ export const en: Dictionary = {
   statBar: {
     stats: [
       { value: "23%", label: "Average pricing gap identified" },
-      { value: "15 min", label: "vs 3 days with manual methods" },
-      { value: "+8%/yr", label: "Medical inflation in CIMA zone" },
-      { value: "−14 pts", label: "Loss ratio corrected after diagnosis" },
+      { value: "Unquantified discounts", label: "the main margin leak in portfolios" },
+      { value: "Real-data decisions", label: "not market pressure" },
+      { value: "Up to −14 pts S/P", label: "after targeted diagnostic and correction" },
     ],
   },
 

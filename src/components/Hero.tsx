@@ -122,7 +122,7 @@ export default function Hero() {
         transition={{ delay: 1.5, duration: 1 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
-        <span className="text-[11px] text-white/40 tracking-widest uppercase">Scroll</span>
+        <span className="text-[11px] text-white/40 tracking-widest uppercase">Défiler</span>
         <motion.div
           animate={{ scaleY: [1, 0.5, 1] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}

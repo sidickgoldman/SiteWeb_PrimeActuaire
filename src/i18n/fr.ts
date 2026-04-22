@@ -31,9 +31,9 @@ export const fr = {
   statBar: {
     stats: [
       { value: "23%", label: "Écart tarif moyen constaté" },
-      { value: "15 min", label: "vs 3 jours en méthode manuelle" },
-      { value: "+8%/an", label: "Inflation médicale zone CIMA" },
-      { value: "−14 pts", label: "S/P corrigé après diagnostic" },
+      { value: "Remises non chiffrées", label: "principal point de fuite de marge" },
+      { value: "Décisions sur données réelles", label: "plutôt que sur pression marché" },
+      { value: "Jusqu'à −14 pts de S/P", label: "après diagnostic et correction ciblée" },
     ],
   },
 

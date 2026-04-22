@@ -19,7 +19,9 @@ export default function StatBar() {
             transition={{ duration: 0.5, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="text-center"
           >
-            <p className={`font-[var(--font-heading)] font-extrabold text-4xl lg:text-5xl ${colors[i]}`}>
+            <p className={`font-[var(--font-heading)] font-extrabold leading-tight ${colors[i]} ${
+              s.value.length <= 8 ? "text-4xl lg:text-5xl" : "text-xl lg:text-2xl"
+            }`}>
               {s.value}
             </p>
             <p className="mt-2 text-[13px] text-white/55 leading-snug">{s.label}</p>
