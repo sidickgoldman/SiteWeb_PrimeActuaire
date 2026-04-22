@@ -42,22 +42,22 @@ export const en: Dictionary = {
   // HowItWorks
   howItWorks: {
     eyebrow: "How It Works",
-    title: "Three steps. Zero complexity.",
+    title: "Three steps from raw data to defensible decisions.",
     steps: [
       {
         num: "01",
-        title: "Upload your claims data",
-        desc: "Even incomplete. We work from your actual claims records.",
+        title: "We structure your portfolio",
+        desc: "From your actual claims data, even if incomplete. A usable base, calibrated on your portfolio.",
       },
       {
         num: "02",
-        title: "The platform analyzes",
-        desc: "Pricing, segmentation, drift detection, IBNR provisions — calibrated on your portfolio.",
+        title: "We quantify what destroys profitability",
+        desc: "Under-pricing, drift and unquantified discounts: profitability leaks become visible and measurable.",
       },
       {
         num: "03",
-        title: "You decide",
-        desc: "With a quantified, defensible, auditable premium. In committee, with brokers, at renewal.",
+        title: "You decide on a defensible basis",
+        desc: "In committee, at renewal or facing the broker, with figures grounded in your real data.",
       },
     ],
   },

@@ -40,22 +40,22 @@ export const fr = {
   // HowItWorks
   howItWorks: {
     eyebrow: "Comment ça marche",
-    title: "Trois étapes. Aucune complexité.",
+    title: "Trois étapes pour passer de la donnée à la décision.",
     steps: [
       {
         num: "01",
-        title: "Importez vos bordereaux",
-        desc: "Même incomplets. Nous travaillons à partir de vos données réelles de sinistres.",
+        title: "Nous structurons votre portefeuille",
+        desc: "À partir de vos bordereaux réels, même incomplets. Une base exploitable, calibrée sur votre portefeuille.",
       },
       {
         num: "02",
-        title: "La plateforme analyse",
-        desc: "Tarification, segmentation, dérives, provisions ENR — calibré sur votre portefeuille.",
+        title: "Nous chiffrons ce qui détruit la rentabilité",
+        desc: "Sous-tarification, dérives et remises non chiffrées : les fuites de rentabilité deviennent visibles et mesurables.",
       },
       {
         num: "03",
-        title: "Vous décidez",
-        desc: "Avec un tarif chiffré, défendable, auditable. En comité, face au courtier, en renouvellement.",
+        title: "Vous arbitrez sur une base opposable",
+        desc: "En comité, en renouvellement ou face au courtier, avec des chiffres fondés sur vos données réelles.",
       },
     ],
   },
