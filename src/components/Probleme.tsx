@@ -3,9 +3,15 @@
 import { motion } from "framer-motion";
 import { useI18n } from "@/i18n";
 
+const cardConfig = [
+  { num: "01", borderColor: "border-l-coral", numColor: "text-coral", shadowHover: "hover:shadow-coral/8" },
+  { num: "02", borderColor: "border-l-gold",  numColor: "text-gold",  shadowHover: "hover:shadow-gold/8"  },
+  { num: "03", borderColor: "border-l-teal",  numColor: "text-teal",  shadowHover: "hover:shadow-teal/8"  },
+  { num: "04", borderColor: "border-l-navy",  numColor: "text-navy",  shadowHover: "hover:shadow-navy/8"  },
+];
+
 export default function Probleme() {
   const { t } = useI18n();
-  const nums = ["01", "02", "03", "04"];
   return (
     <section className="bg-bg-light py-24" id="probleme">
       <div className="max-w-7xl mx-auto px-6">
@@ -14,7 +20,7 @@ export default function Probleme() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-[13px] font-semibold text-coral-dark uppercase tracking-[4px] mb-4"
+          className="text-[13px] font-semibold text-coral uppercase tracking-[4px] mb-4"
         >
           {t.probleme.eyebrow}
         </motion.p>
@@ -32,30 +38,33 @@ export default function Probleme() {
         </motion.h2>
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-          {t.probleme.tensions.map((tension, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.5, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className="group bg-white rounded-2xl p-8 border border-transparent hover:border-coral/20 hover:shadow-lg hover:shadow-coral/5 transition-all duration-300"
-            >
-              <div className="flex items-start gap-5">
-                <span className="font-[var(--font-heading)] font-extrabold text-2xl text-coral/30 group-hover:text-coral/60 transition-colors">
-                  {nums[i]}
-                </span>
-                <div>
-                  <h3 className="font-[var(--font-heading)] font-bold text-lg text-navy">
-                    {tension.title}
-                  </h3>
-                  <p className="mt-2 text-[15px] text-text-muted leading-relaxed">
-                    {tension.desc}
-                  </p>
+          {t.probleme.tensions.map((tension, i) => {
+            const c = cardConfig[i];
+            return (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.5, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+                className={`group bg-white rounded-2xl p-8 min-h-[180px] border-l-4 ${c.borderColor} shadow-sm hover:shadow-lg ${c.shadowHover} transition-all duration-300`}
+              >
+                <div className="flex items-start gap-5">
+                  <span className={`font-[var(--font-heading)] font-extrabold text-2xl ${c.numColor} opacity-50 group-hover:opacity-100 transition-opacity shrink-0`}>
+                    {c.num}
+                  </span>
+                  <div>
+                    <h3 className="font-[var(--font-heading)] font-bold text-lg text-navy">
+                      {tension.title}
+                    </h3>
+                    <p className="mt-2 text-[15px] text-text-muted leading-relaxed">
+                      {tension.desc}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
