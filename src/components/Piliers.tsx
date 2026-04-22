@@ -9,8 +9,10 @@ const styles = [
   { color: "border-coral", accent: "text-coral", bg: "bg-coral/5" },
 ];
 
-export default function Piliers() {
+export default function Piliers({ teaser = false }: { teaser?: boolean }) {
   const { t } = useI18n();
+  const title = teaser ? t.piliers.titleTeaser : t.piliers.title;
+  const eyebrow = teaser ? t.piliers.eyebrowTeaser : t.piliers.eyebrow;
   return (
     <section className="bg-bg-light py-24" id="piliers">
       <div className="max-w-7xl mx-auto px-6">
@@ -21,7 +23,7 @@ export default function Piliers() {
           transition={{ duration: 0.5 }}
           className="text-[13px] font-semibold text-gold uppercase tracking-[4px] text-center mb-4"
         >
-          {t.piliers.eyebrow}
+          {eyebrow}
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 15 }}
@@ -30,7 +32,7 @@ export default function Piliers() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl text-navy text-center mb-16"
         >
-          {t.piliers.title}
+          {title}
         </motion.h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
@@ -55,6 +57,18 @@ export default function Piliers() {
             </motion.div>
           ))}
         </div>
+
+        {teaser && (
+          <div className="mt-14 text-center">
+            <a
+              href="/expertises"
+              className="inline-flex items-center gap-2 text-navy font-semibold text-[15px] hover:text-gold transition-colors border-b-2 border-gold/40 hover:border-gold pb-1"
+            >
+              {t.piliers.ctaTeaser}
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );

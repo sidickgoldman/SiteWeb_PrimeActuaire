@@ -92,8 +92,11 @@ export const fr = {
 
   // Piliers
   piliers: {
-    eyebrow: "Ce que fait PrimeActuaire",
+    eyebrow: "Nos expertises",
     title: "Trois piliers. Une gouvernance technique complète.",
+    eyebrowTeaser: "Nos expertises",
+    titleTeaser: "Aperçu de nos trois axes d'intervention.",
+    ctaTeaser: "Voir toutes les expertises",
     items: [
       {
         label: "Tarification",
@@ -139,6 +142,10 @@ export const fr = {
     title: "Des situations que vous connaissez.",
     subtitle:
       "Chaque cas est issu de missions réelles en zone CIMA. Les données sont anonymisées.",
+    eyebrowTeaser: "Cas d'usage",
+    titleTeaser: "Quelques situations concrètes.",
+    subtitleTeaser: "Un aperçu de missions réelles en zone CIMA. Données anonymisées.",
+    ctaTeaser: "Voir tous les cas d'usage",
     cta: "Échangeons sur un de vos portefeuilles",
     cases: [
       {
@@ -384,6 +391,68 @@ export const fr = {
     eyebrow: "Notre méthode",
     title: "De la donnée brute à la décision opposable.",
     desc: "Une méthode actuarielle en trois étapes, calibrée sur vos données réelles. Pour défendre vos décisions tarifaires en comité, en renouvellement ou face au courtier.",
+  },
+
+  // ───── Page: Expertises ─────
+  expertisesPage: {
+    eyebrow: "Nos expertises",
+    title: "Trois axes pour structurer vos décisions techniques.",
+    desc: "PrimeActuaire intervient sur trois terrains où la rentabilité d'un portefeuille santé collective se joue : la tarification, le pilotage technique et la technologie décisionnelle.",
+    deepTitle: "Ce que chaque expertise adresse concrètement.",
+    deepSubtitle: "Chaque pilier répond à des situations précises rencontrées par les directions techniques et générales.",
+    details: [
+      {
+        label: "Tarification",
+        title: "Construire des primes techniquement défendables.",
+        desc: "La tarification ne se limite pas à un calcul. Elle doit pouvoir être défendue face au courtier, justifiée en comité, opposable en renouvellement.",
+        bullets: [
+          "Backtesting sur historique réel de sinistres",
+          "Identification des groupes déficitaires",
+          "Simulation d'impact d'une remise commerciale",
+          "Construction de scénarios de renouvellement",
+          "Traçabilité des hypothèses tarifaires",
+        ],
+      },
+      {
+        label: "Pilotage technique",
+        title: "Détecter les dérives avant qu'elles ne deviennent visibles.",
+        desc: "Un S/P dégradé se voit en clotûre. Une dérive se voit en cours d'année. Nous outillons la direction technique pour anticiper, pas pour constater.",
+        bullets: [
+          "Suivi S/P par groupe et par poste de soins",
+          "Détection de prestataires atypiques",
+          "Analyse des poches déficitaires",
+          "Suivi d'indicateurs techniques en cours d'année",
+          "Alerte sur dérives significatives",
+        ],
+      },
+      {
+        label: "Technologie décisionnelle",
+        title: "Industrialiser la décision avec Tarif Santé Pro.",
+        desc: "Une plateforme conçue par un actuaire, pour des actuaires et des décideurs. Chaque vue répond à une question concrète de DT/DG avant un comité ou un renouvellement.",
+        bullets: [
+          "Scénarios de renouvellement comparables",
+          "Stress tests Monte Carlo",
+          "ENR estimatif (provisions techniques)",
+          "Segmentation par groupe et poste",
+          "Export des livrables pour comité",
+        ],
+      },
+    ],
+  },
+
+  // ───── Page: Cas d'usage ─────
+  casUsagePage: {
+    eyebrow: "Cas d'usage",
+    title: "Des missions réelles. Des arbitrages chiffrés.",
+    desc: "Chaque cas est issu d'une mission réelle en zone CIMA. Les données sont anonymisées mais les situations, les arbitrages et les décisions sont authentiques.",
+    deepTitle: "Ce que nos missions produisent concrètement.",
+    deepSubtitle: "Des résultats mesurables, chiffrés, défendables en comité.",
+    outcomes: [
+      { value: "−14 pts", label: "de S/P corrigé après diagnostic ciblé" },
+      { value: "23%", label: "d'écart de tarif identifié en moyenne" },
+      { value: "3 à 5", label: "groupes déficitaires isolés par portefeuille" },
+      { value: "100%", label: "des arbitrages fondés sur données réelles" },
+    ],
   },
 
   // ───── Page: Plateforme ─────

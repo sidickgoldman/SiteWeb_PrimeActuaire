@@ -8,8 +8,8 @@ import { useI18n } from "@/i18n";
 
 const navHrefs = [
   "/plateforme",
-  "/#piliers",
-  "/#cas-usage",
+  "/expertises",
+  "/cas-usage",
   "/methode",
   "/insights",
   "/a-propos",

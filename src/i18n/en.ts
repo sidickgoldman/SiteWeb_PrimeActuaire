@@ -94,8 +94,11 @@ export const en: Dictionary = {
 
   // Piliers
   piliers: {
-    eyebrow: "What PrimeActuaire Does",
+    eyebrow: "Our expertise",
     title: "Three pillars. Complete technical governance.",
+    eyebrowTeaser: "Our expertise",
+    titleTeaser: "An overview of our three areas of focus.",
+    ctaTeaser: "See all expertise",
     items: [
       {
         label: "Pricing",
@@ -141,6 +144,10 @@ export const en: Dictionary = {
     title: "Situations you'll recognize.",
     subtitle:
       "Each case comes from real engagements in the CIMA zone. Data is anonymized.",
+    eyebrowTeaser: "Use Cases",
+    titleTeaser: "A few concrete situations.",
+    subtitleTeaser: "An overview of real engagements in the CIMA zone. Data is anonymized.",
+    ctaTeaser: "See all use cases",
     cta: "Let's discuss one of your portfolios",
     cases: [
       {
@@ -386,6 +393,68 @@ export const en: Dictionary = {
     eyebrow: "Our method",
     title: "From raw data to defensible decisions.",
     desc: "A three-step actuarial method, calibrated on your real data. To defend your pricing decisions in committee, at renewal or facing the broker.",
+  },
+
+  // ───── Page: Expertise ─────
+  expertisesPage: {
+    eyebrow: "Our expertise",
+    title: "Three focus areas to structure your technical decisions.",
+    desc: "PrimeActuaire operates on three fronts where the profitability of a group health portfolio is decided: pricing, technical monitoring, and decision technology.",
+    deepTitle: "What each expertise tackles concretely.",
+    deepSubtitle: "Each pillar addresses specific situations faced by technical and general management.",
+    details: [
+      {
+        label: "Pricing",
+        title: "Build technically defensible premiums.",
+        desc: "Pricing is more than a calculation. It must be defensible against brokers, justifiable in committee, and stand up at renewal.",
+        bullets: [
+          "Backtesting on real claims history",
+          "Identification of loss-making groups",
+          "Impact simulation of commercial discounts",
+          "Renewal scenario construction",
+          "Full pricing hypothesis traceability",
+        ],
+      },
+      {
+        label: "Technical monitoring",
+        title: "Spot drift before it becomes visible.",
+        desc: "A degraded loss ratio shows up at year-end. Drift shows up mid-year. We equip technical management to anticipate, not merely observe.",
+        bullets: [
+          "Loss ratio tracking by group and cost category",
+          "Atypical provider detection",
+          "Loss pocket analysis",
+          "In-year technical indicators",
+          "Significant drift alerts",
+        ],
+      },
+      {
+        label: "Decision technology",
+        title: "Industrialize decision-making with Tarif Santé Pro.",
+        desc: "A platform built by an actuary, for actuaries and decision-makers. Every view answers a concrete question that technical or general management faces before a committee or renewal.",
+        bullets: [
+          "Comparable renewal scenarios",
+          "Monte Carlo stress tests",
+          "IBNR estimates (technical provisions)",
+          "Group and cost segmentation",
+          "Committee-ready deliverable exports",
+        ],
+      },
+    ],
+  },
+
+  // ───── Page: Use Cases ─────
+  casUsagePage: {
+    eyebrow: "Use cases",
+    title: "Real engagements. Quantified trade-offs.",
+    desc: "Each case comes from a real engagement in the CIMA zone. Data is anonymized, but the situations, trade-offs and decisions are authentic.",
+    deepTitle: "What our engagements produce concretely.",
+    deepSubtitle: "Measurable, quantified, committee-ready outcomes.",
+    outcomes: [
+      { value: "−14 pts", label: "loss ratio corrected after targeted diagnostic" },
+      { value: "23%", label: "average pricing gap identified" },
+      { value: "3 to 5", label: "loss-making groups isolated per portfolio" },
+      { value: "100%", label: "of trade-offs based on real data" },
+    ],
   },
 
   // ───── Page: Platform ─────
