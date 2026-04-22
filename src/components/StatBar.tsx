@@ -22,14 +22,16 @@ export default function StatBar() {
             transition={{ duration: 0.5, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
             className={`border-l-[3px] pl-5 pr-6 ${borderColors[i]}`}
           >
-            <p className={`font-[var(--font-heading)] font-extrabold whitespace-nowrap leading-none ${colors[i]} ${
-              isNumericAnchor(s.value)
-                ? "text-4xl lg:text-[2.75rem]"
-                : "text-[1.1rem] lg:text-[1.3rem]"
-            }`}>
-              {s.value}
-            </p>
-            <p className="mt-3 text-[12px] text-white/45 leading-snug">{s.label}</p>
+            <div className="h-14 flex items-center">
+              <p className={`font-[var(--font-heading)] font-extrabold whitespace-nowrap leading-none ${colors[i]} ${
+                isNumericAnchor(s.value)
+                  ? "text-4xl lg:text-[2.75rem]"
+                  : "text-[1.1rem] lg:text-[1.3rem]"
+              }`}>
+                {s.value}
+              </p>
+            </div>
+            <p className="text-[12px] text-white/45 leading-snug">{s.label}</p>
           </motion.div>
         ))}
       </div>
