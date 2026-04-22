@@ -49,12 +49,12 @@ export const fr = {
       },
       {
         num: "02",
-        title: "Nous chiffrons ce qui détruit la rentabilité",
+        title: "Nous chiffrons les fuites de rentabilité",
         desc: "Sous-tarification, dérives et remises non chiffrées : les fuites de rentabilité deviennent visibles et mesurables.",
       },
       {
         num: "03",
-        title: "Vous arbitrez sur une base opposable",
+        title: "Vous arbitrez sur base opposable",
         desc: "En comité, en renouvellement ou face au courtier, avec des chiffres fondés sur vos données réelles.",
       },
     ],

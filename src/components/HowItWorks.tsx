@@ -27,7 +27,7 @@ export default function HowItWorks() {
           {t.howItWorks.title}
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 items-stretch">
           {t.howItWorks.steps.map((step, i) => (
             <motion.div
               key={step.num}
@@ -35,15 +35,17 @@ export default function HowItWorks() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.6, delay: i * 0.15, ease: [0.22, 1, 0.36, 1] }}
-              className="relative bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8 hover:border-gold/20 transition-colors duration-300"
+              className="flex flex-col bg-white/[0.03] border border-white/[0.06] rounded-2xl p-8 hover:border-gold/20 transition-colors duration-300"
             >
               <span className="font-[var(--font-heading)] font-extrabold text-6xl text-gold/15">
                 {step.num}
               </span>
-              <h3 className="mt-4 font-[var(--font-heading)] font-bold text-xl text-white">
-                {step.title}
-              </h3>
-              <p className="mt-3 text-[15px] text-white/55 leading-relaxed">
+              <div className="mt-4 min-h-[56px] flex items-start">
+                <h3 className="font-[var(--font-heading)] font-bold text-xl text-white leading-snug">
+                  {step.title}
+                </h3>
+              </div>
+              <p className="mt-3 text-[15px] text-white/55 leading-relaxed flex-1">
                 {step.desc}
               </p>
             </motion.div>

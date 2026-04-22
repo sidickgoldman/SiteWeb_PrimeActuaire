@@ -51,7 +51,7 @@ export const en: Dictionary = {
       },
       {
         num: "02",
-        title: "We quantify what destroys profitability",
+        title: "We quantify the profitability leaks",
         desc: "Under-pricing, drift and unquantified discounts: profitability leaks become visible and measurable.",
       },
       {
