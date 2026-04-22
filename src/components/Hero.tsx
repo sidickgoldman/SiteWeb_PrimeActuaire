@@ -49,7 +49,7 @@ export default function Hero() {
             </motion.p>
 
             {/* Title */}
-            <motion.h1 variants={fadeUp} className="font-[var(--font-heading)] font-extrabold text-[clamp(2.5rem,5.5vw,4.5rem)] text-white leading-[1.08] tracking-tight">
+            <motion.h1 variants={fadeUp} className="font-[var(--font-heading)] font-extrabold text-[clamp(2.2rem,4.2vw,3.6rem)] text-white leading-[1.1] tracking-tight">
               {t.hero.titleStart}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light">
                 {t.hero.titleHighlight}
@@ -89,7 +89,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: 60, rotateY: -8 }}
             animate={{ opacity: 1, x: 0, rotateY: 0 }}
             transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="hidden lg:block relative"
+            className="hidden lg:flex lg:items-center relative"
           >
             <ScreenshotFrame
               src="/screenshots/dashboard-kpis.png"
