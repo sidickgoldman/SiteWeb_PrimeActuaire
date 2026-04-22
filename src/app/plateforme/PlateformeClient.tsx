@@ -14,14 +14,6 @@ const categoryStyles = [
 
 const numberColors = ["text-gold", "text-white/30", "text-teal", "text-coral"];
 
-const categoryStyles = [
-  { color: "border-gold", accent: "text-gold", bg: "bg-gold/5" },
-  { color: "border-teal", accent: "text-teal", bg: "bg-teal/5" },
-  { color: "border-coral", accent: "text-coral", bg: "bg-coral/5" },
-];
-
-const numberColors = ["text-gold", "text-white/30", "text-teal", "text-coral"];
-
 export default function PlateformeClient() {
   const { t } = useI18n();
   const p = t.plateformePage;
