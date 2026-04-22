@@ -92,10 +92,10 @@ export const fr = {
 
   // Piliers
   piliers: {
-    eyebrow: "Ce que nous vous aidons à défendre",
-    title: "Trois leviers pour reprendre la main sur la rentabilité du portefeuille.",
-    eyebrowTeaser: "Ce que nous vous aidons à défendre",
-    titleTeaser: "Trois leviers pour reprendre la main sur la rentabilité du portefeuille.",
+    eyebrow: "Nos leviers d'action",
+    title: "Trois piliers pour reprendre la main sur la rentabilité santé collective.",
+    eyebrowTeaser: "Nos leviers d'action",
+    titleTeaser: "Trois piliers pour reprendre la main sur la rentabilité santé collective.",
     ctaTeaser: "Voir les leviers en détail",
     items: [
       {

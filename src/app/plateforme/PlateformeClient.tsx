@@ -110,8 +110,9 @@ export default function PlateformeClient() {
             <div className="space-y-16">
               {p.categories.map((cat, ci) => {
                 const style = categoryStyles[ci];
+                const pilierIds = ["tarification", "pilotage", "tarif-sante-pro"];
                 return (
-                  <div key={ci}>
+                  <div key={ci} id={pilierIds[ci]} className="scroll-mt-28">
                     <motion.h3
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}

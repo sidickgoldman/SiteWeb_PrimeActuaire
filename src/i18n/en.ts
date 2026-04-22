@@ -94,10 +94,10 @@ export const en: Dictionary = {
 
   // Piliers
   piliers: {
-    eyebrow: "What we help you defend",
-    title: "Three levers to take back control of portfolio profitability.",
-    eyebrowTeaser: "What we help you defend",
-    titleTeaser: "Three levers to take back control of portfolio profitability.",
+    eyebrow: "Our levers",
+    title: "Three pillars to take back control of group health profitability.",
+    eyebrowTeaser: "Our levers",
+    titleTeaser: "Three pillars to take back control of group health profitability.",
     ctaTeaser: "See the levers in detail",
     items: [
       {
