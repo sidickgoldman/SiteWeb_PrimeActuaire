@@ -379,6 +379,13 @@ export const fr = {
     },
   },
 
+  // ───── Page: Méthode ─────
+  methodePage: {
+    eyebrow: "Notre méthode",
+    title: "De la donnée brute à la décision opposable.",
+    desc: "Une méthode actuarielle en trois étapes, calibrée sur vos données réelles. Pour défendre vos décisions tarifaires en comité, en renouvellement ou face au courtier.",
+  },
+
   // ───── Page: Plateforme ─────
   plateformePage: {
     heroEyebrow: "Tarif Santé Pro",

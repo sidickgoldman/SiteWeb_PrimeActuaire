@@ -381,6 +381,13 @@ export const en: Dictionary = {
     },
   },
 
+  // ───── Page: Method ─────
+  methodePage: {
+    eyebrow: "Our method",
+    title: "From raw data to defensible decisions.",
+    desc: "A three-step actuarial method, calibrated on your real data. To defend your pricing decisions in committee, at renewal or facing the broker.",
+  },
+
   // ───── Page: Platform ─────
   plateformePage: {
     heroEyebrow: "Tarif Santé Pro",

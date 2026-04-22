@@ -10,7 +10,7 @@ const navHrefs = [
   "/plateforme",
   "/#piliers",
   "/#cas-usage",
-  "/#methode",
+  "/methode",
   "/insights",
   "/a-propos",
 ];
