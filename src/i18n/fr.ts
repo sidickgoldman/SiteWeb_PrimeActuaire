@@ -63,29 +63,29 @@ export const fr = {
   // Probleme
   probleme: {
     eyebrow: "Le constat",
-    titleLine1: "Le sujet n'est pas seulement de tarifer.",
+    titleLine1: "Tarifer ne suffit pas.",
     titleLine2:
-      "Le sujet est de décider avec une vision technique exploitable.",
+      "Le vrai enjeu est de voir où la rentabilité se dégrade, pourquoi, et avec quel impact sur les décisions.",
     tensions: [
       {
         icon: "⏱",
         title: "Renouvellements traités sous pression",
-        desc: "Le courtier arrive avec le tarif du concurrent. Le DT a 48 heures pour répondre — sans analyse actualisée.",
+        desc: "Le courtier arrive avec le tarif du concurrent. Le DT doit répondre vite, sans lecture actualisée du portefeuille.",
       },
       {
         icon: "📉",
-        title: "Dérives détectées trop lentement",
-        desc: "Le S/P se dégrade pendant des mois avant que les suivis ne l'avouent. Quand c'est visible, c'est trop tard.",
+        title: "Dérives visibles trop tard",
+        desc: "Le S/P se dégrade pendant des mois avant d'apparaître clairement dans les suivis. Quand c'est visible, une partie de la marge est déjà perdue.",
       },
       {
         icon: "🔍",
-        title: "Poches déficitaires mal isolées",
-        desc: "Le portefeuille perd de l'argent, mais personne ne sait quel groupe, quel poste, quelle cause.",
+        title: "Poches déficitaires mal identifiées",
+        desc: "Le portefeuille perd de l'argent, sans lecture claire du groupe, du poste de soins ou de la cause qui tire le résultat vers le bas.",
       },
       {
         icon: "🤷",
-        title: "Décisions sans appui technique",
-        desc: "Le commercial lâche 8% de remise sans mesure d'impact. Le DT arrive en comité sans données opposables.",
+        title: "Décisions sans base opposable",
+        desc: "Une remise est accordée sans impact chiffré. Le DT arrive en comité sans données assez solides pour défendre sa position.",
       },
     ],
   },

@@ -65,29 +65,29 @@ export const en: Dictionary = {
   // Probleme
   probleme: {
     eyebrow: "The Challenge",
-    titleLine1: "The issue isn't just pricing.",
+    titleLine1: "Pricing alone isn't enough.",
     titleLine2:
-      "It's making decisions with actionable technical insight.",
+      "The real challenge is seeing where profitability erodes, why, and what that means for decisions.",
     tensions: [
       {
         icon: "⏱",
-        title: "Renewals under pressure",
-        desc: "The broker arrives with a competitor's quote. The technical director has 48 hours to respond — without updated analysis.",
+        title: "Renewals handled under pressure",
+        desc: "The broker arrives with a competitor's quote. The technical director must respond fast, without an updated portfolio read.",
       },
       {
         icon: "📉",
-        title: "Drift detected too late",
-        desc: "The loss ratio deteriorates for months before reports show it. By the time it's visible, it's too late.",
+        title: "Drift visible too late",
+        desc: "The loss ratio deteriorates for months before clearly appearing in reports. By the time it's visible, part of the margin is already gone.",
       },
       {
         icon: "🔍",
-        title: "Loss pockets poorly isolated",
-        desc: "The portfolio is losing money, but nobody knows which group, which cost category, which cause.",
+        title: "Loss pockets poorly identified",
+        desc: "The portfolio is losing money, with no clear read on which group, which cost category, or which cause is pulling results down.",
       },
       {
         icon: "🤷",
-        title: "Decisions without technical backing",
-        desc: "Sales gives an 8% discount without impact assessment. The technical director arrives at the board meeting with no defensible data.",
+        title: "Decisions without defensible data",
+        desc: "A discount is granted without a quantified impact. The technical director arrives at committee without data solid enough to hold a position.",
       },
     ],
   },
