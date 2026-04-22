@@ -92,26 +92,26 @@ export const fr = {
 
   // Piliers
   piliers: {
-    eyebrow: "Nos expertises",
-    title: "Trois piliers. Une gouvernance technique complète.",
-    eyebrowTeaser: "Nos expertises",
-    titleTeaser: "Aperçu de nos trois axes d'intervention.",
-    ctaTeaser: "Voir toutes les expertises",
+    eyebrow: "Ce que nous vous aidons à défendre",
+    title: "Trois leviers pour reprendre la main sur la rentabilité du portefeuille.",
+    eyebrowTeaser: "Ce que nous vous aidons à défendre",
+    titleTeaser: "Trois leviers pour reprendre la main sur la rentabilité du portefeuille.",
+    ctaTeaser: "Voir les leviers en détail",
     items: [
       {
         label: "Tarification",
-        title: "Construire des primes techniquement justifiées",
-        desc: "Backtester un tarif sur l'historique réel. Identifier les groupes déficitaires. Simuler l'impact d'une remise avant de la concéder.",
+        title: "Construire des tarifs techniquement défendables",
+        desc: "Backtester un tarif sur l'historique réel. Identifier les groupes sous-tarifés. Chiffrer l'impact d'une remise avant de la concéder.",
       },
       {
         label: "Pilotage technique",
-        title: "Voir plus vite où le portefeuille se dégrade",
-        desc: "Suivi S/P par groupe et par poste. Détection de fraude et prestataires atypiques. Analyse des dérives en cours d'année, pas à la clôture.",
+        title: "Voir plus tôt où la rentabilité se dégrade",
+        desc: "Suivre le S/P par groupe et par poste. Détecter plus tôt les dérives, les poches déficitaires et les signaux atypiques avant la clôture.",
       },
       {
-        label: "Technologie décisionnelle",
-        title: "Industrialiser les analyses avec Tarif Santé Pro",
-        desc: "Une plateforme qui structure la décision tarifaire. Scénarios de renouvellement, stress tests, ENR estimatif, traçabilité des hypothèses.",
+        label: "Tarif Santé Pro",
+        title: "Industrialiser les arbitrages techniques",
+        desc: "Structurer les analyses de renouvellement, les scénarios, les stress tests et la traçabilité des hypothèses dans un cadre exploitable par la direction.",
       },
     ],
   },
@@ -426,8 +426,8 @@ export const fr = {
         ],
       },
       {
-        label: "Technologie décisionnelle",
-        title: "Industrialiser la décision avec Tarif Santé Pro.",
+        label: "Tarif Santé Pro",
+        title: "Industrialiser les arbitrages techniques.",
         desc: "Une plateforme conçue par un actuaire, pour des actuaires et des décideurs. Chaque vue répond à une question concrète de DT/DG avant un comité ou un renouvellement.",
         bullets: [
           "Scénarios de renouvellement comparables",

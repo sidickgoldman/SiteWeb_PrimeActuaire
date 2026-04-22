@@ -94,26 +94,26 @@ export const en: Dictionary = {
 
   // Piliers
   piliers: {
-    eyebrow: "Our expertise",
-    title: "Three pillars. Complete technical governance.",
-    eyebrowTeaser: "Our expertise",
-    titleTeaser: "An overview of our three areas of focus.",
-    ctaTeaser: "See all expertise",
+    eyebrow: "What we help you defend",
+    title: "Three levers to take back control of portfolio profitability.",
+    eyebrowTeaser: "What we help you defend",
+    titleTeaser: "Three levers to take back control of portfolio profitability.",
+    ctaTeaser: "See the levers in detail",
     items: [
       {
         label: "Pricing",
-        title: "Build technically justified premiums",
-        desc: "Backtest a premium against actual history. Identify loss-making groups. Simulate the impact of a discount before granting it.",
+        title: "Build technically defensible premiums",
+        desc: "Backtest a premium against real claims history. Identify under-priced groups. Quantify the impact of a discount before granting it.",
       },
       {
-        label: "Technical Monitoring",
-        title: "Spot portfolio deterioration faster",
-        desc: "Loss ratio tracking by group and cost category. Fraud and atypical provider detection. In-year drift analysis, not at year-end.",
+        label: "Technical monitoring",
+        title: "See earlier where profitability is eroding",
+        desc: "Track loss ratio by group and cost category. Detect drift, loss pockets, and atypical signals earlier — before year-end close.",
       },
       {
-        label: "Decision Technology",
-        title: "Industrialize analysis with Tarif Santé Pro",
-        desc: "A platform that structures pricing decisions. Renewal scenarios, stress tests, IBNR estimates, hypothesis traceability.",
+        label: "Tarif Santé Pro",
+        title: "Industrialize technical trade-offs",
+        desc: "Structure renewal analyses, scenarios, stress tests and hypothesis traceability in a framework management can actually use.",
       },
     ],
   },
