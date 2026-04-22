@@ -32,10 +32,10 @@ export const en: Dictionary = {
   // StatBar
   statBar: {
     stats: [
-      { value: "23%", label: "Average pricing gap identified" },
-      { value: "Unquantified discounts", label: "the main margin leak in portfolios" },
-      { value: "Real-data decisions", label: "not market pressure" },
-      { value: "Up to −14 pts S/P", label: "after targeted diagnostic and correction" },
+      { value: "23%", label: "average pricing gap identified" },
+      { value: "Unquantified discounts", label: "main portfolio margin leak" },
+      { value: "Real data", label: "not market pressure" },
+      { value: "−14 pts S/P", label: "after targeted diagnostic" },
     ],
   },
 

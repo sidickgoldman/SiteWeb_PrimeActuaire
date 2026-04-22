@@ -30,10 +30,10 @@ export const fr = {
   // StatBar
   statBar: {
     stats: [
-      { value: "23%", label: "Écart tarif moyen constaté" },
+      { value: "23%", label: "d'écart de tarif moyen constaté" },
       { value: "Remises non chiffrées", label: "principal point de fuite de marge" },
-      { value: "Décisions sur données réelles", label: "plutôt que sur pression marché" },
-      { value: "Jusqu'à −14 pts de S/P", label: "après diagnostic et correction ciblée" },
+      { value: "Données réelles", label: "plutôt que pression marché" },
+      { value: "−14 pts S/P", label: "après diagnostic ciblé" },
     ],
   },
 
