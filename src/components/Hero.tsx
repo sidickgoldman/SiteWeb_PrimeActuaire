@@ -87,17 +87,20 @@ export default function Hero() {
           {/* Right — Dashboard mockup */}
           <motion.div
             initial={{ opacity: 0, x: 60, rotateY: -8 }}
-            animate={{ opacity: 1, x: 0, rotateY: 0 }}
+            animate={{ opacity: 1, x: 0, rotateY: 2 }}
             transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="hidden lg:flex lg:items-center relative"
+            style={{ perspective: 1200 }}
+            className="hidden lg:flex lg:items-center self-center relative"
           >
-            <ScreenshotFrame
-              src="/screenshots/dashboard-kpis.png"
-              alt={t.screenshots.dashboardKpis.alt}
-              caption={t.screenshots.dashboardKpis.caption}
-              variant="dark"
-              priority
-            />
+            <div className="rounded-xl ring-1 ring-white/10 shadow-[0_32px_80px_-12px_rgba(0,0,0,0.7),0_0_0_1px_rgba(197,150,58,0.08)] overflow-hidden">
+              <ScreenshotFrame
+                src="/screenshots/dashboard-kpis.png"
+                alt={t.screenshots.dashboardKpis.alt}
+                caption={t.screenshots.dashboardKpis.caption}
+                variant="dark"
+                priority
+              />
+            </div>
 
             {/* Floating badge */}
             <motion.div
