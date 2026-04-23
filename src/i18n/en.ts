@@ -503,7 +503,7 @@ export const en: Dictionary = {
         label: "Pricing",
         headline: "Set the right price without losing the account.",
         body: [
-          "The market pushes prices down. Tarif Santé Pro tests the rate, simulates scenarios and maps the risk zone.",
+          "The market pushes prices down. The platform tests the rate, simulates scenarios and maps the risk zone.",
           "We go further: we help leadership set the floor price, frame discounts and secure decisions.",
         ],
         result: "You stay competitive without selling at a loss.",
@@ -531,7 +531,7 @@ export const en: Dictionary = {
         label: "Decision technology",
         headline: "Decide faster with a quantified, defensible base.",
         body: [
-          "Predictive models, machine learning and scenarios let you anticipate the real impact of decisions before making them.",
+          "The platform leverages predictive models, machine learning and scenarios to anticipate the real impact of decisions before making them.",
           "We turn these analyses into clear, defensible positions for any board meeting.",
         ],
         result: "You decide with more speed, precision and risk control.",

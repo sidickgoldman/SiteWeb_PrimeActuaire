@@ -501,7 +501,7 @@ export const fr = {
         label: "Tarification",
         headline: "Fixez le bon prix sans perdre le compte.",
         body: [
-          "Le marché pousse les tarifs vers le bas. Tarif Santé Pro teste le tarif, simule les scénarios et mesure la zone de risque.",
+          "Le marché pousse les tarifs vers le bas. La plateforme teste le tarif, simule les scénarios et mesure la zone de risque.",
           "Nous allons plus loin : nous aidons la direction à fixer le prix plancher, cadrer les remises et sécuriser les décisions.",
         ],
         result: "Vous restez compétitif sans vendre à perte.",
@@ -529,7 +529,7 @@ export const fr = {
         label: "Technologie décisionnelle",
         headline: "Décidez plus vite avec une base chiffrée et défendable.",
         body: [
-          "Modèles prédictifs, machine learning et scénarios permettent d'anticiper l'impact réel des décisions avant de les prendre.",
+          "La plateforme mobilise modèles prédictifs, machine learning et scénarios pour anticiper l'impact réel des décisions avant de les prendre.",
           "Nous transformons ces analyses en positions claires et défendables en comité.",
         ],
         result: "Vous décidez avec plus de vitesse, de précision et de maîtrise du risque.",
