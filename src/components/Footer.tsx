@@ -13,8 +13,15 @@ export default function Footer() {
       transition={{ duration: 0.6 }}
       className="bg-navy text-white"
     >
+      {/* Séparateur — rupture visuelle claire entre CTA et footer utilitaire */}
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="border-t border-white/10 relative">
+          <span className="absolute left-0 top-0 w-16 h-[1px] bg-gold" />
+        </div>
+      </div>
+
       {/* Main footer */}
-      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div className="max-w-7xl mx-auto px-6 pt-12 pb-12 grid grid-cols-1 md:grid-cols-4 gap-10">
         <div className="md:col-span-1">
           <p className="font-[var(--font-heading)] font-extrabold text-lg text-gold">PrimeActuaire</p>
           <p className="text-xs text-white/50 mt-2 leading-relaxed">
