@@ -58,9 +58,6 @@ export default function PlateformeClient() {
                   <a href="/#contact" className="px-7 py-3.5 rounded-full bg-coral text-white font-semibold text-[15px] hover:bg-coral-dark transition-colors duration-200 shadow-lg shadow-coral/20">
                     {p.heroCta1}
                   </a>
-                  <a href="#fonctionnalites" className="px-7 py-3.5 rounded-full border border-gold/20 text-gold/70 font-medium text-[15px] hover:text-gold hover:border-gold/40 transition-all duration-200">
-                    {p.heroCta2}
-                  </a>
                 </div>
               </motion.div>
 
