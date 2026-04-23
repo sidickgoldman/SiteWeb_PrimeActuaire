@@ -3,6 +3,14 @@
 import { motion } from "framer-motion";
 import { useI18n } from "@/i18n";
 
+// Fine barre sémantique : rouge = problème constaté, gold = neutre, teal = résultat positif
+const barColors = [
+  "bg-red-500",    // 23% — écart constaté, situation problématique
+  "bg-gold/80",    // Remises non chiffrées — neutre
+  "bg-gold/80",    // Données réelles — neutre
+  "bg-teal",       // −14 pts S/P — résultat positif
+];
+
 const isNumericAnchor = (v: string) => /^[\d+\-\u2212]/.test(v.trim());
 
 export default function StatBar() {
@@ -21,8 +29,8 @@ export default function StatBar() {
               transition={{ duration: 0.5, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
               className="relative pl-6 pr-6"
             >
-              {/* Fine barre gold unifiée */}
-              <span className="absolute left-0 top-1 bottom-1 w-[2px] bg-gold/80" />
+              {/* Fine barre sémantique */}
+              <span className={`absolute left-0 top-1 bottom-1 w-[2px] ${barColors[i]}`} />
 
               <div className="h-14 flex items-center">
                 <p
