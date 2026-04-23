@@ -62,30 +62,30 @@ export const fr = {
 
   // Probleme
   probleme: {
-    eyebrow: "Le constat",
+    eyebrow: "Une année dans la vie d'un portefeuille sous pression",
     titleLine1: "Tarifer ne suffit pas.",
     titleLine2:
-      "Le vrai enjeu est de voir où la rentabilité se dégrade, pourquoi, et avec quel impact sur les décisions.",
+      "Le vrai enjeu est de voir ce que la pression concurrentielle, les remises, la dérive médicale, la fraude ou les abus font réellement au portefeuille — avant que le résultat ne se dégrade trop.",
     tensions: [
       {
         icon: "⏱",
-        title: "Renouvellements traités sous pression",
-        desc: "Le courtier arrive avec le tarif du concurrent. Le DT doit répondre vite, sans lecture actualisée du portefeuille.",
+        title: "Tarifs négociés sous pression marché",
+        desc: "Le courtier arrive avec le tarif du concurrent. Le DT doit répondre vite, alors que l'impact réel d'une remise sur le portefeuille n'est pas encore objectivé.",
       },
       {
         icon: "📉",
-        title: "Dérives visibles trop tard",
-        desc: "Le S/P se dégrade pendant des mois avant d'apparaître clairement dans les suivis. Quand c'est visible, une partie de la marge est déjà perdue.",
+        title: "La dégradation n'est pas encore clairement lisible",
+        desc: "Le S/P commence à se tendre. Inflation médicale, surconsommation, fraude ou abus peuvent déjà peser, sans que les suivis permettent encore de distinguer les vraies causes.",
       },
       {
         icon: "🔍",
-        title: "Poches déficitaires mal identifiées",
-        desc: "Le portefeuille perd de l'argent, sans lecture claire du groupe, du poste de soins ou de la cause qui tire le résultat vers le bas.",
+        title: "Les pertes existent, mais pas encore la lecture fine",
+        desc: "Le portefeuille perd de l'argent, sans lecture assez précise du groupe, du poste de soins, du prestataire ou de la cause qui tire réellement le résultat vers le bas.",
       },
       {
         icon: "🤷",
-        title: "Décisions sans base opposable",
-        desc: "Une remise est accordée sans impact chiffré. Le DT arrive en comité sans données assez solides pour défendre sa position.",
+        title: "Les arbitrages arrivent sans base assez opposable",
+        desc: "Une remise est envisagée ou accordée sans impact chiffré complet. Le DT arrive en comité avec trop peu d'éléments pour séparer pression marché, dérive réelle et fuites évitables.",
       },
     ],
   },

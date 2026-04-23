@@ -30,7 +30,7 @@ export default function Probleme() {
           transition={{ duration: 0.5 }}
           className="text-[13px] font-semibold text-coral uppercase tracking-[4px] mb-4"
         >
-          Une année dans la vie d&apos;un portefeuille
+          {t.probleme.eyebrow}
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -113,7 +113,7 @@ export default function Probleme() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-16 text-center text-[15px] text-text-muted max-w-2xl mx-auto italic"
         >
-          En décembre, le S/P dépasse 110%. On aurait pu voir venir.
+          En décembre, le S/P dépasse 110 %. Le sujet n&apos;était pas seulement le tarif. C&apos;était aussi ce que le portefeuille cachait encore.
         </motion.p>
       </div>
     </section>
