@@ -12,7 +12,14 @@ const categoryStyles = [
   { color: "border-coral", accent: "text-coral", bg: "bg-coral/5" },
 ];
 
-const numberColors = ["text-gold", "text-white/30", "text-teal", "text-coral"];
+const barColors = [
+  "bg-teal",      // 15 min — résultat positif (vitesse)
+  "bg-red-500",   // 3 jours — douleur de référence (lenteur manuelle)
+  "bg-gold/80",   // 3 à 5 — insight neutre
+  "bg-teal",      // −14 pts S/P — résultat positif
+];
+
+const isNumericAnchor = (v: string) => /^[\d+\-−]/.test(v.trim());
 
 export default function PlateformeClient() {
   const { t } = useI18n();
@@ -72,24 +79,47 @@ export default function PlateformeClient() {
               </motion.div>
             </div>
           </div>
+
+          {/* Scroll indicator */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.5, duration: 1 }}
+            className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+          >
+            <span className="text-[11px] text-white/40 tracking-widest uppercase">{p.scrollLabel}</span>
+            <motion.div
+              animate={{ scaleY: [1, 0.5, 1] }}
+              transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+              className="w-px h-8 bg-gradient-to-b from-gold/30 to-transparent origin-top"
+            />
+          </motion.div>
         </section>
 
         {/* Key numbers */}
         <section className="bg-navy-mid border-y border-white/5">
-          <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {p.keyNumbers.map((s, i) => (
+          <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-2 lg:grid-cols-4 gap-y-12 lg:gap-y-0 lg:gap-x-4">
+            {p.keyNumbers.map((s, i) => {
+              const isNumeric = isNumericAnchor(s.value);
+              return (
               <motion.div
                 key={s.value}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="text-center"
+                className="relative pl-6 pr-6"
               >
-                <p className={`font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl ${numberColors[i]}`}>{s.value}</p>
-                <p className="mt-2 text-[13px] text-white/35">{s.label}</p>
+                <span className={`absolute left-0 top-1 bottom-1 w-[2px] ${barColors[i]}`} />
+                <div className="h-14 flex items-center">
+                  <p className={`font-[var(--font-heading)] font-extrabold whitespace-nowrap leading-none text-white ${
+                    isNumeric ? "text-4xl lg:text-[2.75rem] tracking-tight" : "text-[1.1rem] lg:text-[1.25rem]"
+                  }`}>{s.value}</p>
+                </div>
+                <p className="text-[12px] text-white/50 leading-snug mt-1">{s.label}</p>
               </motion.div>
-            ))}
+              );
+            })}
           </div>
         </section>
 

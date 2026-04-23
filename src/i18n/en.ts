@@ -470,7 +470,7 @@ export const en: Dictionary = {
   // ───── Page: Platform ─────
   plateformePage: {
     heroEyebrow: "Tarif Santé Pro",
-    heroTitle: "The platform that structures your pricing decisions.",
+    scrollLabel: "Scroll", that structures your pricing decisions.",
     heroDesc: "When pricing is under pressure, discounts leave without measuring their impact, and fraud, abuse or medical drift blur the portfolio picture, Tarif Santé Pro gives the technical and general director a clear, quantified and defensible read to decide faster, more accurately and with greater control.",
     heroCta1: "Request a targeted demo",
     heroCta2: "See what the platform enables you to decide",
@@ -492,8 +492,8 @@ export const en: Dictionary = {
     keyNumbers: [
       { value: "15 min", label: "for a complete analysis" },
       { value: "3 days", label: "with traditional manual methods" },
-      { value: "100%", label: "data under your control" },
-      { value: "Article 334-8", label: "CIMA-compliant provisions" },
+      { value: "3 to 5", label: "loss-making groups isolated per portfolio" },
+      { value: "−14 pts S/P", label: "after targeted diagnosis" },
     ],
     featuresEyebrow: "Features",
     featuresTitle: "Everything a technical director needs. Nothing superfluous.",

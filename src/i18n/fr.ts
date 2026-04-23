@@ -468,6 +468,7 @@ export const fr = {
   // ───── Page: Plateforme ─────
   plateformePage: {
     heroEyebrow: "Tarif Santé Pro",
+    scrollLabel: "Défiler",
     heroTitle: "La plateforme qui structure vos décisions tarifaires.",
     heroDesc: "Quand les tarifs sont sous pression, que les remises partent sans mesure d'impact et que fraude, abus ou dérive médicale brouillent la lecture du portefeuille, Tarif Santé Pro donne au DT et au DG une lecture claire, chiffrée et défendable pour décider plus vite, plus juste et avec plus de maîtrise.",
     heroCta1: "Demander une démonstration ciblée",
@@ -490,8 +491,8 @@ export const fr = {
     keyNumbers: [
       { value: "15 min", label: "pour une analyse complète" },
       { value: "3 jours", label: "en méthode manuelle traditionnelle" },
-      { value: "100%", label: "des données sous votre contrôle" },
-      { value: "Article 334-8", label: "Provisions conformes CIMA" },
+      { value: "3 à 5", label: "groupes déficitaires isolés par portefeuille" },
+      { value: "−14 pts S/P", label: "après diagnostic ciblé" },
     ],
     featuresEyebrow: "Fonctionnalités",
     featuresTitle: "Tout ce dont un DT a besoin. Rien de superflu.",
