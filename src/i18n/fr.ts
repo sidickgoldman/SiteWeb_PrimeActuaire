@@ -282,7 +282,7 @@ export const fr = {
       { value: "100%", label: "Données sous contrôle" },
     ],
     tagline:
-      "Gouvernance technique pour l'assurance santé collective en zone CIMA.",
+      "Sécurisez la rentabilité de vos portefeuilles santé collective.",
     pagesTitle: "Pages",
     entrepriseTitle: "Entreprise",
     contactTitle: "Contact",
