@@ -504,7 +504,7 @@ export const fr = {
           "Le marché pousse les tarifs vers le bas. La plateforme teste le tarif, simule les scénarios et mesure la zone de risque.",
           "Nous allons plus loin : nous aidons la direction à fixer le prix plancher, cadrer les remises et sécuriser les décisions.",
         ],
-        result: "Vous restez compétitif sans vendre à perte.",
+        result: "Vous défendez vos marges sur le portefeuille en place et allez chercher de nouveaux comptes sans vendre à perte.",
         items: [
           { title: "Scénarios de renouvellement", desc: "Simulez l'impact d'une hausse, d'une remise ou d'un changement de périmètre avant de vous engager." },
           { title: "Backtesting du tarif", desc: "Comparez le tarif technique à la sinistralité réelle. Mesurez l'écart. Ajustez les hypothèses." },
@@ -518,7 +518,7 @@ export const fr = {
           "Dérive, fraude, abus ou surconsommation se confondent souvent. La plateforme fait émerger les signaux.",
           "Nous aidons à en comprendre les causes réelles, groupe par groupe, poste par poste.",
         ],
-        result: "Vous corrigez au bon endroit, pas à l'aveugle.",
+        result: "Vous corrigez au bon endroit. Le portefeuille ne saigne plus.",
         items: [
           { title: "Suivi S/P en cours d'année", desc: "Pas besoin d'attendre la clôture. Visualisez les dérives dès qu'elles apparaissent." },
           { title: "Analyse par poste de soins", desc: "Pharmacie, hospitalisation, optique, dentaire — isolez la cause de la dérive." },
@@ -532,7 +532,7 @@ export const fr = {
           "La plateforme mobilise modèles prédictifs, machine learning et scénarios pour anticiper l'impact réel des décisions avant de les prendre.",
           "Nous transformons ces analyses en positions claires et défendables en comité.",
         ],
-        result: "Vous décidez avec plus de vitesse, de précision et de maîtrise du risque.",
+        result: "Vous décidez avec plus de vitesse, de précision et de maîtrise. Votre gouvernance technique devient lisible et défendable.",
         items: [
           { title: "ENR estimatif (provisions)", desc: "Provisions conformes à l'article 334-8 CIMA. Traçables, auditables, justifiées." },
           { title: "Stress tests Monte Carlo", desc: "Fourchette de confiance sur le tarif. Le tarif n'est plus une opinion — c'est une position chiffrée." },

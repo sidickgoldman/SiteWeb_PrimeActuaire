@@ -7,9 +7,9 @@ import { useI18n } from "@/i18n";
 import ScreenshotFrame from "@/components/ScreenshotFrame";
 
 const categoryStyles = [
-  { accent: "text-gold",  pill: "border-gold/25 bg-gold/[0.06] text-gold/80",   num: "text-gold/10",  dot: "bg-gold/60" },
-  { accent: "text-teal",  pill: "border-teal/25 bg-teal/[0.06] text-teal/80",   num: "text-teal/10",  dot: "bg-teal/60" },
-  { accent: "text-coral", pill: "border-coral/25 bg-coral/[0.06] text-coral/80", num: "text-coral/10", dot: "bg-coral/60" },
+  { accent: "text-gold",    num: "text-gold/[0.10]" },
+  { accent: "text-gold",    num: "text-gold/[0.10]" },
+  { accent: "text-gold",    num: "text-gold/[0.10]" },
 ];
 
 const barColors = [
