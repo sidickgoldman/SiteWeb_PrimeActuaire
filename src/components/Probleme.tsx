@@ -8,11 +8,11 @@ const moments = [
   {
     label: "Janvier",
     sub: "Renouvellement",
-    dotBg: "bg-gold/50",
-    pulseBg: "bg-gold",
-    labelText: "text-gold/80",
-    border: "border-gold/50",
-    subText: "text-gold/70",
+    dotBg: "bg-teal",
+    pulseBg: "bg-teal",
+    labelText: "text-teal",
+    border: "border-teal",
+    subText: "text-teal",
   },
   {
     label: "Avril",
@@ -26,20 +26,20 @@ const moments = [
   {
     label: "Juillet",
     sub: "La poche grossit",
-    dotBg: "bg-navy/55",
-    pulseBg: "bg-navy",
-    labelText: "text-navy/65",
-    border: "border-navy/50",
-    subText: "text-navy/60",
+    dotBg: "bg-coral",
+    pulseBg: "bg-coral",
+    labelText: "text-coral",
+    border: "border-coral",
+    subText: "text-coral",
   },
   {
     label: "Octobre",
     sub: "Comité de direction",
-    dotBg: "bg-navy",
-    pulseBg: "bg-navy",
-    labelText: "text-navy",
-    border: "border-navy",
-    subText: "text-navy",
+    dotBg: "bg-red-700",
+    pulseBg: "bg-red-700",
+    labelText: "text-red-700",
+    border: "border-red-700",
+    subText: "text-red-700",
   },
 ];
 
@@ -84,7 +84,7 @@ export default function Probleme() {
           {/* Ligne animée au scroll */}
           <motion.div
             style={{ width: lineWidth }}
-            className="hidden md:block absolute top-[22px] left-[6%] h-[2px] bg-gradient-to-r from-gold to-navy rounded-full origin-left"
+            className="hidden md:block absolute top-[22px] left-[6%] h-[2px] bg-gradient-to-r from-teal via-gold via-coral to-red-700 rounded-full origin-left"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-6 relative">
