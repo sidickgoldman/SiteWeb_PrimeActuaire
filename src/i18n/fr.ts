@@ -100,18 +100,18 @@ export const fr = {
     items: [
       {
         label: "Tarification",
-        title: "Corriger les tarifs qui fragilisent le portefeuille",
-        desc: "Backtesting, groupes sous-tarifés, impact des remises.",
+        title: "Corriger les tarifs sous pression marché",
+        desc: "Sous-tarification, impact des remises, groupes fragilisés.",
       },
       {
         label: "Pilotage technique",
-        title: "Détecter plus tôt ce qui dégrade le résultat",
-        desc: "S/P, dérives, poches déficitaires, signaux atypiques.",
+        title: "Détecter plus tôt ce qui dégrade vraiment le résultat",
+        desc: "S/P, dérives, fraude, abus, poches déficitaires.",
       },
       {
         label: "Technologie décisionnelle",
-        title: "Accélérer les arbitrages avec Tarif Santé Pro",
-        desc: "Scénarios, stress tests, ENR estimatif, hypothèses traçables.",
+        title: "Décider plus vite avec Tarif Santé Pro",
+        desc: "Scénarios, stress tests, hypothèses traçables.",
       },
     ],
   },
