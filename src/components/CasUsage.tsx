@@ -5,6 +5,16 @@ import { useI18n } from "@/i18n";
 
 const accents = ["border-coral", "border-gold", "border-teal", "border-coral", "border-gold"];
 
+// Unsplash images for the first 3 cards (w=800 for perf)
+const caseImages = [
+  // Card 1 – Renouvellement : hands reviewing contract documents
+  "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=70",
+  // Card 2 – Groupes : multi-screen analytics dashboard
+  "https://images.unsplash.com/photo-1543286386-2e659306cd6c?auto=format&fit=crop&w=800&q=70",
+  // Card 3 – Remise / Simulation : financial charts
+  "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=70",
+];
+
 export default function CasUsage({ teaser = false }: { teaser?: boolean }) {
   const { t } = useI18n();
   const cases = teaser ? t.casUsage.cases.slice(0, 3) : t.casUsage.cases;
@@ -45,7 +55,7 @@ export default function CasUsage({ teaser = false }: { teaser?: boolean }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className={`bg-white/[0.04] border-l-4 ${accents[i]} rounded-2xl p-7 hover:bg-white/[0.07] transition-colors duration-300 ${
+              className={`bg-white/[0.04] border-l-4 ${accents[i]} rounded-2xl overflow-hidden hover:bg-white/[0.07] transition-colors duration-300 ${
                 cases.length === 5 && i >= 3 ? "lg:col-span-1 lg:mx-auto lg:max-w-sm" : ""
               }`}
               style={
@@ -54,15 +64,28 @@ export default function CasUsage({ teaser = false }: { teaser?: boolean }) {
                   : undefined
               }
             >
-              <span className="inline-block px-3 py-1 text-[11px] font-semibold text-gold/60 bg-gold/[0.08] rounded-full mb-4">
-                {c.tag}
-              </span>
-              <h3 className="font-[var(--font-heading)] font-bold text-lg text-white leading-snug">
-                {c.title}
-              </h3>
-              <p className="mt-3 text-[14px] text-white/55 leading-relaxed">
-                {c.desc}
-              </p>
+              {caseImages[i] && (
+                <div className="relative w-full overflow-hidden" style={{ aspectRatio: "16/9" }}>
+                  <img
+                    src={caseImages[i]}
+                    alt=""
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-navy/40" />
+                </div>
+              )}
+              <div className="p-7">
+                <span className="inline-block px-3 py-1 text-[11px] font-semibold text-gold/60 bg-gold/[0.08] rounded-full mb-4">
+                  {c.tag}
+                </span>
+                <h3 className="font-[var(--font-heading)] font-bold text-lg text-white leading-snug">
+                  {c.title}
+                </h3>
+                <p className="mt-3 text-[14px] text-white/55 leading-relaxed">
+                  {c.desc}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>

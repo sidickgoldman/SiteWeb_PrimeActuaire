@@ -151,17 +151,17 @@ export const fr = {
       {
         tag: "Renouvellement",
         title: "Renouvellement sous tension",
-        desc: "Un portefeuille de 1 200 adhérents avec un S/P à 112%. Le courtier impose une remise de 5%. La plateforme simule l'impact : déficit garanti à 18 mois. Le DT arrive en comité avec les chiffres. La remise ne passe pas.",
+        desc: "Une entreprise de 1 200 adhérents présente un S/P de 112 %. Le courtier demande une remise de 5 %. Nous chiffrons immédiatement l'impact réel avant arbitrage. La direction décide sur une base objectivée.",
       },
       {
         tag: "Segmentation",
-        title: "Groupes qui détruisent la marge",
-        desc: "Sur 15 groupes du portefeuille, 3 concentrent 70% des pertes. Sans segmentation, la hausse s'applique à tous. Avec le diagnostic : hausse ciblée sur les 3 groupes, maintien ailleurs. Le courtier conserve le contrat.",
+        title: "Groupes qui tirent le résultat vers le bas",
+        desc: "Sur un portefeuille multi-groupes, quelques comptes concentrent l'essentiel de la dégradation. Nous les identifions en quelques secondes, chiffrons leur impact sur le portefeuille et orientons la décision corrective à mettre en place.",
       },
       {
         tag: "Simulation",
-        title: "Remise commerciale sans mesure d'impact",
-        desc: "Le commercial concède 8% sur un nouveau groupe. La plateforme montre immédiatement : cette remise transforme un groupe rentable en groupe déficitaire dès l'année 2. Le DG a les données pour arbitrer.",
+        title: "Remise commerciale à objectiver",
+        desc: "Une remise de 8 % est envisagée sur un nouveau groupe. La simulation montre son impact attendu sur le résultat. La direction arbitre avec une lecture technique claire.",
       },
       {
         tag: "Diagnostic",

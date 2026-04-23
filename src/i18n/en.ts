@@ -153,17 +153,17 @@ export const en: Dictionary = {
       {
         tag: "Renewal",
         title: "High-pressure renewal",
-        desc: "A 1,200-member portfolio with a 112% loss ratio. The broker demands a 5% discount. The platform simulates the impact: guaranteed deficit within 18 months. The technical director shows up with the numbers. The discount doesn't pass.",
+        desc: "A 1,200-member group presents a 112% loss ratio. The broker requests a 5% discount. We immediately quantify the real impact before arbitration. Management decides on an objective basis.",
       },
       {
         tag: "Segmentation",
-        title: "Groups destroying the margin",
-        desc: "Out of 15 groups in the portfolio, 3 account for 70% of losses. Without segmentation, the increase applies to all. With the diagnosis: targeted increase on the 3 groups, hold elsewhere. The broker keeps the contract.",
+        title: "Groups pulling results down",
+        desc: "In a multi-group portfolio, a few accounts concentrate most of the deterioration. We identify them in seconds, quantify their impact on the portfolio, and guide the corrective decision to implement.",
       },
       {
         tag: "Simulation",
-        title: "Commercial discount without impact assessment",
-        desc: "Sales concedes 8% on a new group. The platform shows immediately: this discount turns a profitable group into a loss-maker by year 2. The CEO has the data to arbitrate.",
+        title: "Commercial discount to objectify",
+        desc: "An 8% discount is under consideration for a new group. The simulation shows its expected impact on results. Management arbitrates with a clear technical view.",
       },
       {
         tag: "Diagnosis",
