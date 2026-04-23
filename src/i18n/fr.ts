@@ -17,7 +17,7 @@ export const fr = {
     titleHighlight: "rentabilité",
     titleEnd: " de vos portefeuilles santé collective.",
     subtitle:
-      "PrimeActuaire aide les directions techniques et générales à voir où la marge se détruit, à chiffrer leurs arbitrages et à défendre des décisions tarifaires opposables en santé collective.",
+      "PrimeActuaire aide les directions techniques et générales à reprendre la main quand le marché impose ses prix, que les remises se négocient sous pression et que fraude, abus ou dérive médicale brouillent la rentabilité réelle du portefeuille.",
     cta1: "Demander une démonstration ciblée",
     cta2: "Découvrir l'approche",
     trustLine:
