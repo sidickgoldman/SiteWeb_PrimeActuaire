@@ -501,7 +501,8 @@ export const fr = {
         label: "Tarification",
         headline: "Fixez le bon prix sans perdre le compte.",
         body: [
-          "Le marché pousse les tarifs vers le bas. La plateforme teste le tarif, simule les scénarios et mesure la zone de risque.",
+          "Le marché pousse les tarifs vers le bas.",
+          "La plateforme teste le tarif, simule les scénarios et mesure la zone de risque.",
           "Nous allons plus loin : nous aidons la direction à fixer le prix plancher, cadrer les remises et sécuriser les décisions.",
         ],
         result: "Vous défendez vos marges sur le portefeuille en place et allez chercher de nouveaux comptes sans vendre à perte.",
@@ -515,7 +516,8 @@ export const fr = {
         label: "Pilotage technique",
         headline: "Détectez et comprenez ce qui dégrade réellement le résultat.",
         body: [
-          "Dérive, fraude, abus ou surconsommation se confondent souvent. La plateforme fait émerger les signaux.",
+          "Dérive, fraude, abus ou surconsommation se confondent souvent.",
+          "La plateforme fait émerger les signaux.",
           "Nous aidons à en comprendre les causes réelles, groupe par groupe, poste par poste.",
         ],
         result: "Vous corrigez au bon endroit. Le portefeuille ne saigne plus.",
@@ -532,7 +534,7 @@ export const fr = {
           "La plateforme mobilise modèles prédictifs, machine learning et scénarios pour anticiper l'impact réel des décisions avant de les prendre.",
           "Nous transformons ces analyses en positions claires et défendables en comité.",
         ],
-        result: "Vous décidez avec plus de vitesse, de précision et de maîtrise. Votre gouvernance technique devient lisible et défendable.",
+        result: "Vous décidez avec plus de vitesse, de précision et de maîtrise.\nVotre gouvernance technique devient lisible et défendable.",
         items: [
           { title: "ENR estimatif (provisions)", desc: "Provisions conformes à l'article 334-8 CIMA. Traçables, auditables, justifiées." },
           { title: "Stress tests Monte Carlo", desc: "Fourchette de confiance sur le tarif. Le tarif n'est plus une opinion — c'est une position chiffrée." },

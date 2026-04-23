@@ -178,7 +178,7 @@ export default function PlateformeClient() {
                       {(cat as { result?: string }).result && (
                         <div className="mt-8 pt-6 border-t border-navy/[0.08] flex items-start gap-3">
                           <span className={`mt-1.5 w-6 h-px ${style.accent.replace("text-", "bg-")}`} />
-                          <p className="text-[14px] text-navy font-semibold leading-snug">
+                          <p className="text-[14px] text-navy font-semibold leading-snug whitespace-pre-line">
                             <span className={`${style.accent} font-bold tracking-wide uppercase text-[11px] mr-2`}>Résultat</span>
                             {(cat as { result?: string }).result}
                           </p>

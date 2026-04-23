@@ -503,7 +503,8 @@ export const en: Dictionary = {
         label: "Pricing",
         headline: "Set the right price without losing the account.",
         body: [
-          "The market pushes prices down. The platform tests the rate, simulates scenarios and maps the risk zone.",
+          "The market pushes prices down.",
+          "The platform tests the rate, simulates scenarios and maps the risk zone.",
           "We go further: we help leadership set the floor price, frame discounts and secure decisions.",
         ],
         result: "You defend margins on the existing portfolio and go after new accounts without selling at a loss.",
@@ -517,7 +518,8 @@ export const en: Dictionary = {
         label: "Technical monitoring",
         headline: "Detect and understand what actually erodes your result.",
         body: [
-          "Drift, fraud, abuse or overconsumption are often confused. The platform surfaces the signals.",
+          "Drift, fraud, abuse or overconsumption are often confused.",
+          "The platform surfaces the signals.",
           "We help you understand the real causes, group by group, cost line by cost line.",
         ],
         result: "You correct at the right place. The portfolio stops bleeding.",
@@ -534,7 +536,7 @@ export const en: Dictionary = {
           "The platform leverages predictive models, machine learning and scenarios to anticipate the real impact of decisions before making them.",
           "We turn these analyses into clear, defensible positions for any board meeting.",
         ],
-        result: "You decide with more speed, precision and control. Your technical governance becomes legible and defensible.",
+        result: "You decide with more speed, precision and control.\nYour technical governance becomes legible and defensible.",
         items: [
           { title: "IBNR estimates (provisions)", desc: "Provisions compliant with CIMA Article 334-8. Traceable, auditable, justified." },
           { title: "Monte Carlo stress tests", desc: "Confidence interval on the premium. The rate is no longer an opinion — it's a quantified position." },
