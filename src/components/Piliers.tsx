@@ -4,61 +4,76 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useI18n } from "@/i18n";
 
+// Chaque pilier : couleur d'accent + photo "humain sans visage" style conseil.
+// Images Unsplash : mains, mouvements, gestes pro — jamais de visage.
 const accents = [
-  { text: "text-gold",  stroke: "#C5963A", glow: "group-hover:shadow-gold/20",  bar: "bg-gold",  href: "/plateforme#tarification" },
-  { text: "text-teal",  stroke: "#2E8B6C", glow: "group-hover:shadow-teal/20",  bar: "bg-teal",  href: "/plateforme#pilotage" },
-  { text: "text-coral", stroke: "#D4654A", glow: "group-hover:shadow-coral/20", bar: "bg-coral", href: "/plateforme#tarif-sante-pro" },
+  {
+    text: "text-gold",
+    tint: "rgba(197,150,58,0.28)",
+    glow: "group-hover:shadow-gold/20",
+    bar: "bg-gold",
+    href: "/plateforme#tarification",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80",
+    imageAlt: "Analyse de données actuarielles sur écran",
+  },
+  {
+    text: "text-teal",
+    tint: "rgba(46,139,108,0.28)",
+    glow: "group-hover:shadow-teal/20",
+    bar: "bg-teal",
+    href: "/plateforme#pilotage",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80",
+    imageAlt: "Écran de pilotage avec indicateurs S/P",
+  },
+  {
+    text: "text-coral",
+    tint: "rgba(212,101,74,0.28)",
+    glow: "group-hover:shadow-coral/20",
+    bar: "bg-coral",
+    href: "/plateforme#tarif-sante-pro",
+    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1000&q=80",
+    imageAlt: "Vue aérienne d'une table de travail avec documents et ordinateurs",
+  },
 ];
 
-// Cercle outline épais + 3 petits accents arrondis sur le tracé.
-// Rotation très lente et continue pour donner vie au bloc sans distraire.
-function RotatingCircle({ color, word }: { color: string; word: string }) {
-  const r = 78;
-  const cx = 100;
-  const cy = 100;
-  // Positions angulaires des 3 accents (en degrés), placées harmonieusement
-  const accentAngles = [25, 145, 265];
-
+// Visuel humain (sans visage) — style photo éditoriale conseil.
+// Image cadrée en 4/5, overlay teinté couleur-pilier + vignette douce du bas vers le haut.
+function PilierVisual({
+  src,
+  alt,
+  tint,
+  word,
+  textColor,
+}: {
+  src: string;
+  alt: string;
+  tint: string;
+  word: string;
+  textColor: string;
+}) {
   return (
-    <div className="relative w-full aspect-square flex items-center justify-center">
-      <motion.svg
-        viewBox="0 0 200 200"
-        className="w-full h-full"
-        animate={{ rotate: 360 }}
-        transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-      >
-        {/* Cercle principal, outline épais et propre */}
-        <circle
-          cx={cx}
-          cy={cy}
-          r={r}
-          fill="none"
-          stroke={color}
-          strokeWidth="4"
-        />
-        {/* Petits accents arrondis sur le tracé */}
-        {accentAngles.map((deg, idx) => {
-          const rad = (deg * Math.PI) / 180;
-          const x = cx + r * Math.cos(rad);
-          const y = cy + r * Math.sin(rad);
-          return (
-            <circle
-              key={idx}
-              cx={x}
-              cy={y}
-              r={idx === 0 ? 4.5 : 3.5}
-              fill={color}
-            />
-          );
-        })}
-      </motion.svg>
-      {/* Mot central en italique serif, fixe (ne tourne pas avec le cercle).
-          Taille adaptative : plus petit si le label est long (> 1 mot / > 10 car). */}
+    <div className="relative w-full aspect-[4/5] overflow-hidden rounded-[14px] bg-navy/[0.04]">
+      {/* Photo */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.06]"
+      />
+      {/* Teinte couleur-pilier pour cohérence chromatique */}
+      <div
+        className="absolute inset-0 mix-blend-multiply"
+        style={{ backgroundColor: tint }}
+      />
+      {/* Vignette douce du bas pour lisibilité du mot */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+
+      {/* Micro-label en bas, italique serif — ancre verbale */}
       <span
-        className={`absolute font-[var(--font-heading)] italic text-navy/90 tracking-tight text-center leading-tight max-w-[62%] ${
-          word.length > 12 ? "text-[1rem] lg:text-[1.1rem]" : "text-[1.35rem] lg:text-[1.5rem]"
-        }`}
+        className={`absolute left-5 bottom-5 font-[var(--font-heading)] italic ${textColor} text-[15px] tracking-tight drop-shadow-[0_1px_6px_rgba(0,0,0,0.4)]`}
       >
+        <span className="text-white/90 mr-1.5">—</span>
         {word}
       </span>
     </div>
@@ -120,9 +135,15 @@ export default function Piliers({ teaser = false }: { teaser?: boolean }) {
                     </p>
                   </div>
 
-                  {/* Cercle animé — hero visuel de la card */}
-                  <div className="px-6 lg:px-8 py-4 mb-10">
-                    <RotatingCircle color={a.stroke} word={p.label} />
+                  {/* Visuel humain (sans visage) — hero de la card */}
+                  <div className="mb-8">
+                    <PilierVisual
+                      src={a.image}
+                      alt={a.imageAlt}
+                      tint={a.tint}
+                      word={p.label}
+                      textColor={a.text}
+                    />
                   </div>
 
                   {/* Titre */}

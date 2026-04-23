@@ -92,26 +92,26 @@ export const fr = {
 
   // Piliers
   piliers: {
-    eyebrow: "Nos leviers d'action",
-    title: "Trois piliers pour reprendre la main sur la rentabilité santé collective.",
-    eyebrowTeaser: "Nos leviers d'action",
-    titleTeaser: "Trois piliers pour reprendre la main sur la rentabilité santé collective.",
-    ctaTeaser: "Voir les leviers en détail",
+    eyebrow: "Nos expertises",
+    title: "Trois piliers pour redresser la performance du portefeuille.",
+    eyebrowTeaser: "Nos expertises",
+    titleTeaser: "Trois piliers pour redresser la performance du portefeuille.",
+    ctaTeaser: "Voir le détail de nos expertises",
     items: [
       {
         label: "Tarification",
-        title: "Construire des tarifs techniquement défendables",
-        desc: "Backtester un tarif sur l'historique réel. Identifier les groupes sous-tarifés. Chiffrer l'impact d'une remise avant de la concéder.",
+        title: "Corriger les tarifs qui fragilisent le portefeuille",
+        desc: "Backtesting, groupes sous-tarifés, impact des remises.",
       },
       {
         label: "Pilotage technique",
-        title: "Voir plus tôt où la rentabilité se dégrade",
-        desc: "Suivre le S/P par groupe et par poste. Détecter plus tôt les dérives, les poches déficitaires et les signaux atypiques avant la clôture.",
+        title: "Détecter plus tôt ce qui dégrade le résultat",
+        desc: "S/P, dérives, poches déficitaires, signaux atypiques.",
       },
       {
-        label: "Tarif Santé Pro",
-        title: "Industrialiser les arbitrages techniques",
-        desc: "Structurer les analyses de renouvellement, les scénarios, les stress tests et la traçabilité des hypothèses dans un cadre exploitable par la direction.",
+        label: "Technologie décisionnelle",
+        title: "Accélérer les arbitrages avec Tarif Santé Pro",
+        desc: "Scénarios, stress tests, ENR estimatif, hypothèses traçables.",
       },
     ],
   },

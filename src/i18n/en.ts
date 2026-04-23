@@ -94,26 +94,26 @@ export const en: Dictionary = {
 
   // Piliers
   piliers: {
-    eyebrow: "Our levers",
-    title: "Three pillars to take back control of group health profitability.",
-    eyebrowTeaser: "Our levers",
-    titleTeaser: "Three pillars to take back control of group health profitability.",
-    ctaTeaser: "See the levers in detail",
+    eyebrow: "Our expertise",
+    title: "Three pillars to restore portfolio performance.",
+    eyebrowTeaser: "Our expertise",
+    titleTeaser: "Three pillars to restore portfolio performance.",
+    ctaTeaser: "See our expertise in detail",
     items: [
       {
         label: "Pricing",
-        title: "Build technically defensible premiums",
-        desc: "Backtest a premium against real claims history. Identify under-priced groups. Quantify the impact of a discount before granting it.",
+        title: "Fix the premiums that are weakening your portfolio",
+        desc: "Backtesting, under-priced groups, discount impact.",
       },
       {
         label: "Technical monitoring",
-        title: "See earlier where profitability is eroding",
-        desc: "Track loss ratio by group and cost category. Detect drift, loss pockets, and atypical signals earlier — before year-end close.",
+        title: "Detect earlier what is eroding results",
+        desc: "Loss ratio, drift, loss pockets, atypical signals.",
       },
       {
-        label: "Tarif Santé Pro",
-        title: "Industrialize technical trade-offs",
-        desc: "Structure renewal analyses, scenarios, stress tests and hypothesis traceability in a framework management can actually use.",
+        label: "Decision technology",
+        title: "Speed up trade-offs with Tarif Santé Pro",
+        desc: "Scenarios, stress tests, estimated ENR, traceable assumptions.",
       },
     ],
   },
