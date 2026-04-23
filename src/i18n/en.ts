@@ -496,11 +496,12 @@ export const en: Dictionary = {
       { value: "70% of losses", label: "concentrated in a few groups" },
       { value: "−14 pts S/P", label: "after targeted correction" },
     ],
-    featuresEyebrow: "Features",
-    featuresTitle: "Everything a technical director needs. Nothing superfluous.",
+    featuresEyebrow: "Capabilities",
+    featuresTitle: "Three domains. One clear read.",
     categories: [
       {
         label: "Pricing",
+        headline: "Correct your pricing before the market makes the call for you.",
         items: [
           { title: "Renewal scenarios", desc: "Simulate the impact of an increase, a discount, or a scope change before committing." },
           { title: "Premium backtesting", desc: "Compare the technical premium to actual claims experience. Measure the gap. Adjust assumptions." },
@@ -509,6 +510,7 @@ export const en: Dictionary = {
       },
       {
         label: "Monitoring",
+        headline: "Spot portfolio drift before it becomes a loss.",
         items: [
           { title: "In-year loss ratio tracking", desc: "No need to wait for year-end. Visualize drift as soon as it appears." },
           { title: "Cost category analysis", desc: "Pharmacy, hospitalization, optical, dental — isolate the cause of the drift." },
@@ -517,6 +519,7 @@ export const en: Dictionary = {
       },
       {
         label: "Provisions & compliance",
+        headline: "Quantified, traceable, defensible positions for any board meeting.",
         items: [
           { title: "IBNR estimates (provisions)", desc: "Provisions compliant with CIMA Article 334-8. Traceable, auditable, justified." },
           { title: "Monte Carlo stress tests", desc: "Confidence interval on the premium. The rate is no longer an opinion — it's a quantified position." },

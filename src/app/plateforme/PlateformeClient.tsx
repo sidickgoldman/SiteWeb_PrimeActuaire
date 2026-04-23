@@ -7,9 +7,9 @@ import { useI18n } from "@/i18n";
 import ScreenshotFrame from "@/components/ScreenshotFrame";
 
 const categoryStyles = [
-  { color: "border-gold", accent: "text-gold", bg: "bg-gold/5" },
-  { color: "border-teal", accent: "text-teal", bg: "bg-teal/5" },
-  { color: "border-coral", accent: "text-coral", bg: "bg-coral/5" },
+  { accent: "text-gold",  pill: "border-gold/25 bg-gold/[0.06] text-gold/80",   num: "text-gold/10",  dot: "bg-gold/60" },
+  { accent: "text-teal",  pill: "border-teal/25 bg-teal/[0.06] text-teal/80",   num: "text-teal/10",  dot: "bg-teal/60" },
+  { accent: "text-coral", pill: "border-coral/25 bg-coral/[0.06] text-coral/80", num: "text-coral/10", dot: "bg-coral/60" },
 ];
 
 const barColors = [
@@ -120,7 +120,7 @@ export default function PlateformeClient() {
           </div>
         </section>
 
-        {/* Features grid */}
+        {/* Features — 3 editorial capability rows */}
         <section className="bg-bg-light py-24" id="fonctionnalites">
           <div className="max-w-7xl mx-auto px-6">
             <motion.div
@@ -128,51 +128,56 @@ export default function PlateformeClient() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-16"
+              className="mb-20"
             >
               <p className="text-[13px] font-semibold text-gold uppercase tracking-[4px] mb-4">
                 {p.featuresEyebrow}
               </p>
-              <h2 className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl text-navy">
+              <h2 className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-[2.5rem] text-navy max-w-xl leading-tight">
                 {p.featuresTitle}
               </h2>
             </motion.div>
 
-            <div className="space-y-16">
+            <div className="divide-y divide-navy/[0.07]">
               {p.categories.map((cat, ci) => {
                 const style = categoryStyles[ci];
                 const pilierIds = ["tarification", "pilotage", "tarif-sante-pro"];
                 return (
-                  <div key={ci} id={pilierIds[ci]} className="scroll-mt-28">
-                    <motion.h3
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5 }}
-                      className={`font-[var(--font-heading)] font-bold text-xl ${style.accent} mb-6`}
-                    >
-                      {cat.label}
-                    </motion.h3>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <motion.div
+                    key={ci}
+                    id={pilierIds[ci]}
+                    initial={{ opacity: 0, y: 24 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-60px" }}
+                    transition={{ duration: 0.6, delay: ci * 0.1, ease: [0.22, 1, 0.36, 1] }}
+                    className="scroll-mt-28 py-14 grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-10 items-start"
+                  >
+                    {/* Left — number + label + benefit headline */}
+                    <div>
+                      <span className={`block font-[var(--font-heading)] font-extrabold text-[7rem] leading-none select-none ${style.num}`}>
+                        0{ci + 1}
+                      </span>
+                      <p className={`text-[11px] font-bold uppercase tracking-[3.5px] ${style.accent} mt-1 mb-4`}>
+                        {cat.label}
+                      </p>
+                      <h3 className="font-[var(--font-heading)] font-bold text-[1.35rem] text-navy leading-snug max-w-xs">
+                        {(cat as { headline?: string }).headline}
+                      </h3>
+                    </div>
+
+                    {/* Right — feature pills */}
+                    <div className="flex flex-wrap gap-3 pt-2 lg:pt-10">
                       {cat.items.map((item, i) => (
-                        <motion.div
+                        <span
                           key={i}
-                          initial={{ opacity: 0, y: 30 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          viewport={{ once: true, margin: "-60px" }}
-                          transition={{ duration: 0.5, delay: i * 0.1 }}
-                          className={`rounded-2xl p-7 border-l-4 ${style.color} ${style.bg} hover:shadow-lg transition-shadow duration-300`}
+                          className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border text-[13px] font-medium ${style.pill}`}
                         >
-                          <h4 className="font-[var(--font-heading)] font-bold text-lg text-navy">
-                            {item.title}
-                          </h4>
-                          <p className="mt-3 text-[14px] text-text-muted leading-relaxed">
-                            {item.desc}
-                          </p>
-                        </motion.div>
+                          <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${style.dot}`} />
+                          {item.title}
+                        </span>
                       ))}
                     </div>
-                  </div>
+                  </motion.div>
                 );
               })}
             </div>

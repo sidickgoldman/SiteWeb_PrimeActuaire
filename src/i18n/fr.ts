@@ -494,11 +494,12 @@ export const fr = {
       { value: "70% des pertes", label: "concentrées sur quelques groupes" },
       { value: "−14 pts S/P", label: "après correction ciblée" },
     ],
-    featuresEyebrow: "Fonctionnalités",
-    featuresTitle: "Tout ce dont un DT a besoin. Rien de superflu.",
+    featuresEyebrow: "Capacités",
+    featuresTitle: "Trois domaines. Une seule lecture.",
     categories: [
       {
         label: "Tarification",
+        headline: "Corrigez vos tarifs avant que le marché ne décide à votre place.",
         items: [
           { title: "Scénarios de renouvellement", desc: "Simulez l'impact d'une hausse, d'une remise ou d'un changement de périmètre avant de vous engager." },
           { title: "Backtesting du tarif", desc: "Comparez le tarif technique à la sinistralité réelle. Mesurez l'écart. Ajustez les hypothèses." },
@@ -507,6 +508,7 @@ export const fr = {
       },
       {
         label: "Pilotage",
+        headline: "Détectez les dérives avant qu’elles vous coûtent.",
         items: [
           { title: "Suivi S/P en cours d'année", desc: "Pas besoin d'attendre la clôture. Visualisez les dérives dès qu'elles apparaissent." },
           { title: "Analyse par poste de soins", desc: "Pharmacie, hospitalisation, optique, dentaire — isolez la cause de la dérive." },
@@ -515,6 +517,7 @@ export const fr = {
       },
       {
         label: "Provisions & conformité",
+        headline: "Des positions chiffrées, traçables et défendables en comité.",
         items: [
           { title: "ENR estimatif (provisions)", desc: "Provisions conformes à l'article 334-8 CIMA. Traçables, auditables, justifiées." },
           { title: "Stress tests Monte Carlo", desc: "Fourchette de confiance sur le tarif. Le tarif n'est plus une opinion — c'est une position chiffrée." },
