@@ -12,7 +12,7 @@ export const fr = {
 
   // Hero
   hero: {
-    eyebrow: "Gouvernance technique · Santé collective",
+    eyebrow: "Gouvernance technique · Santé collective · Zone CIMA",
     titleStart: "Reprenez la main sur la ",
     titleHighlight: "rentabilité",
     titleEnd: " de vos portefeuilles santé collective.",

@@ -44,8 +44,13 @@ export default function Hero() {
             animate="show"
           >
             {/* Eyebrow */}
-            <motion.p variants={fadeUp} className="text-[13px] font-semibold text-gold uppercase tracking-[4px] mb-6">
-              {t.hero.eyebrow}
+            <motion.p variants={fadeUp} className="flex items-center gap-2.5 flex-wrap mb-6">
+              {"Gouvernance technique · Santé collective · Zone CIMA".split(" · ").map((seg, i, arr) => (
+                <span key={i} className="flex items-center gap-2.5">
+                  <span className="text-[11px] font-bold text-gold/90 uppercase tracking-[3.5px]">{seg}</span>
+                  {i < arr.length - 1 && <span className="text-gold/30 text-[10px]">·</span>}
+                </span>
+              ))}
             </motion.p>
 
             {/* Title */}
