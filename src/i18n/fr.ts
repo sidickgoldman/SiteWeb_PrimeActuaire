@@ -499,7 +499,12 @@ export const fr = {
     categories: [
       {
         label: "Tarification",
-        headline: "Corrigez vos tarifs avant que le marché ne décide à votre place.",
+        headline: "Fixez le bon prix sans perdre le compte.",
+        body: [
+          "Le marché pousse les tarifs vers le bas. Tarif Santé Pro teste le tarif, simule les scénarios et mesure la zone de risque.",
+          "Nous allons plus loin : nous aidons la direction à fixer le prix plancher, cadrer les remises et sécuriser les décisions.",
+        ],
+        result: "Vous restez compétitif sans vendre à perte.",
         items: [
           { title: "Scénarios de renouvellement", desc: "Simulez l'impact d'une hausse, d'une remise ou d'un changement de périmètre avant de vous engager." },
           { title: "Backtesting du tarif", desc: "Comparez le tarif technique à la sinistralité réelle. Mesurez l'écart. Ajustez les hypothèses." },
@@ -507,8 +512,13 @@ export const fr = {
         ],
       },
       {
-        label: "Pilotage",
-        headline: "Détectez les dérives avant qu’elles vous coûtent.",
+        label: "Pilotage technique",
+        headline: "Détectez et comprenez ce qui dégrade réellement le résultat.",
+        body: [
+          "Dérive, fraude, abus ou surconsommation se confondent souvent. La plateforme fait émerger les signaux.",
+          "Nous aidons à en comprendre les causes réelles, groupe par groupe, poste par poste.",
+        ],
+        result: "Vous corrigez au bon endroit, pas à l'aveugle.",
         items: [
           { title: "Suivi S/P en cours d'année", desc: "Pas besoin d'attendre la clôture. Visualisez les dérives dès qu'elles apparaissent." },
           { title: "Analyse par poste de soins", desc: "Pharmacie, hospitalisation, optique, dentaire — isolez la cause de la dérive." },
@@ -516,8 +526,13 @@ export const fr = {
         ],
       },
       {
-        label: "Provisions & conformité",
-        headline: "Des positions chiffrées, traçables et défendables en comité.",
+        label: "Technologie décisionnelle",
+        headline: "Décidez plus vite avec une base chiffrée et défendable.",
+        body: [
+          "Modèles prédictifs, machine learning et scénarios permettent d'anticiper l'impact réel des décisions avant de les prendre.",
+          "Nous transformons ces analyses en positions claires et défendables en comité.",
+        ],
+        result: "Vous décidez avec plus de vitesse, de précision et de maîtrise du risque.",
         items: [
           { title: "ENR estimatif (provisions)", desc: "Provisions conformes à l'article 334-8 CIMA. Traçables, auditables, justifiées." },
           { title: "Stress tests Monte Carlo", desc: "Fourchette de confiance sur le tarif. Le tarif n'est plus une opinion — c'est une position chiffrée." },

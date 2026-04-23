@@ -165,17 +165,25 @@ export default function PlateformeClient() {
                       </h3>
                     </div>
 
-                    {/* Right — feature pills */}
-                    <div className="flex flex-wrap gap-3 pt-2 lg:pt-10">
-                      {cat.items.map((item, i) => (
-                        <span
+                    {/* Right — editorial body + result */}
+                    <div className="lg:pt-10 max-w-2xl">
+                      {((cat as { body?: string[] }).body ?? []).map((para, i) => (
+                        <p
                           key={i}
-                          className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border text-[13px] font-medium ${style.pill}`}
+                          className="text-[15px] lg:text-[16px] text-text-muted leading-[1.7] mb-5 last:mb-0"
                         >
-                          <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${style.dot}`} />
-                          {item.title}
-                        </span>
+                          {para}
+                        </p>
                       ))}
+                      {(cat as { result?: string }).result && (
+                        <div className="mt-8 pt-6 border-t border-navy/[0.08] flex items-start gap-3">
+                          <span className={`mt-1.5 w-6 h-px ${style.accent.replace("text-", "bg-")}`} />
+                          <p className="text-[14px] text-navy font-semibold leading-snug">
+                            <span className={`${style.accent} font-bold tracking-wide uppercase text-[11px] mr-2`}>Résultat</span>
+                            {(cat as { result?: string }).result}
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </motion.div>
                 );

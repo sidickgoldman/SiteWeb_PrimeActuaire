@@ -501,7 +501,12 @@ export const en: Dictionary = {
     categories: [
       {
         label: "Pricing",
-        headline: "Correct your pricing before the market makes the call for you.",
+        headline: "Set the right price without losing the account.",
+        body: [
+          "The market pushes prices down. Tarif Santé Pro tests the rate, simulates scenarios and maps the risk zone.",
+          "We go further: we help leadership set the floor price, frame discounts and secure decisions.",
+        ],
+        result: "You stay competitive without selling at a loss.",
         items: [
           { title: "Renewal scenarios", desc: "Simulate the impact of an increase, a discount, or a scope change before committing." },
           { title: "Premium backtesting", desc: "Compare the technical premium to actual claims experience. Measure the gap. Adjust assumptions." },
@@ -509,8 +514,13 @@ export const en: Dictionary = {
         ],
       },
       {
-        label: "Monitoring",
-        headline: "Spot portfolio drift before it becomes a loss.",
+        label: "Technical monitoring",
+        headline: "Detect and understand what actually erodes your result.",
+        body: [
+          "Drift, fraud, abuse or overconsumption are often confused. The platform surfaces the signals.",
+          "We help you understand the real causes, group by group, cost line by cost line.",
+        ],
+        result: "You correct at the right place, not blindly.",
         items: [
           { title: "In-year loss ratio tracking", desc: "No need to wait for year-end. Visualize drift as soon as it appears." },
           { title: "Cost category analysis", desc: "Pharmacy, hospitalization, optical, dental — isolate the cause of the drift." },
@@ -518,8 +528,13 @@ export const en: Dictionary = {
         ],
       },
       {
-        label: "Provisions & compliance",
-        headline: "Quantified, traceable, defensible positions for any board meeting.",
+        label: "Decision technology",
+        headline: "Decide faster with a quantified, defensible base.",
+        body: [
+          "Predictive models, machine learning and scenarios let you anticipate the real impact of decisions before making them.",
+          "We turn these analyses into clear, defensible positions for any board meeting.",
+        ],
+        result: "You decide with more speed, precision and risk control.",
         items: [
           { title: "IBNR estimates (provisions)", desc: "Provisions compliant with CIMA Article 334-8. Traceable, auditable, justified." },
           { title: "Monte Carlo stress tests", desc: "Confidence interval on the premium. The rate is no longer an opinion — it's a quantified position." },
