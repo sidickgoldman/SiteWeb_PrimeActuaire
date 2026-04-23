@@ -3,8 +3,6 @@
 import { motion } from "framer-motion";
 import { useI18n } from "@/i18n";
 
-const accents = ["border-coral", "border-gold", "border-teal", "border-coral", "border-gold"];
-
 // Unsplash images for the first 3 cards (w=800 for perf)
 const caseImages = [
   // Card 1 – Renouvellement : hands reviewing contract documents
@@ -55,7 +53,7 @@ export default function CasUsage({ teaser = false }: { teaser?: boolean }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className={`bg-white/[0.04] border-l-4 ${accents[i]} rounded-2xl overflow-hidden hover:bg-white/[0.07] transition-colors duration-300 ${
+              className={`group bg-white/[0.03] border border-white/[0.06] rounded-2xl overflow-hidden hover:border-gold/25 hover:bg-white/[0.05] transition-all duration-300 ${
                 cases.length === 5 && i >= 3 ? "lg:col-span-1 lg:mx-auto lg:max-w-sm" : ""
               }`}
               style={
@@ -69,22 +67,24 @@ export default function CasUsage({ teaser = false }: { teaser?: boolean }) {
                   <img
                     src={caseImages[i]}
                     alt=""
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-navy/40" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-navy/20 to-transparent" />
                 </div>
               )}
               <div className="p-7">
-                <span className="inline-block px-3 py-1 text-[11px] font-semibold text-gold/60 bg-gold/[0.08] rounded-full mb-4">
+                <span className="inline-block px-3 py-1 text-[11px] font-semibold text-gold/70 bg-gold/[0.08] rounded-full mb-4 tracking-wide uppercase">
                   {c.tag}
                 </span>
                 <h3 className="font-[var(--font-heading)] font-bold text-lg text-white leading-snug">
                   {c.title}
                 </h3>
-                <p className="mt-3 text-[14px] text-white/55 leading-relaxed">
-                  {c.desc}
-                </p>
+                <div className="mt-3 space-y-2.5 text-[14px] text-white/60 leading-relaxed">
+                  {c.desc.split("\n").filter((p) => p.trim().length > 0).map((para, pi) => (
+                    <p key={pi}>{para}</p>
+                  ))}
+                </div>
               </div>
             </motion.div>
           ))}

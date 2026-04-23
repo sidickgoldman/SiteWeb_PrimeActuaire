@@ -153,17 +153,17 @@ export const en: Dictionary = {
       {
         tag: "Renewal",
         title: "High-pressure renewal",
-        desc: "A 1,200-member group presents a 112% loss ratio. The broker requests a 5% discount. We immediately quantify the real impact before arbitration. Management decides on an objective basis.",
+        desc: "A 1,200-member group presents a 112% loss ratio.\nThe broker requests a 5% discount.\nWe immediately quantify the real impact before arbitration.\nManagement decides on an objective basis.",
       },
       {
         tag: "Segmentation",
         title: "Groups pulling results down",
-        desc: "In a multi-group portfolio, a few accounts concentrate most of the deterioration. We identify them in seconds, quantify their impact on the portfolio, and guide the corrective decision to implement.",
+        desc: "In a multi-group portfolio, a few accounts concentrate most of the deterioration.\nWe identify them in seconds.\nWe quantify their impact on the portfolio.\nWe guide the corrective decision to implement.",
       },
       {
         tag: "Simulation",
         title: "Commercial discount to objectify",
-        desc: "An 8% discount is under consideration for a new group. The simulation shows its expected impact on results. Management arbitrates with a clear technical view.",
+        desc: "An 8% discount is under consideration for a new group.\nThe simulation shows its expected impact on results.\nManagement arbitrates with a clear technical view.",
       },
       {
         tag: "Diagnosis",

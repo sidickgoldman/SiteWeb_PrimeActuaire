@@ -151,17 +151,17 @@ export const fr = {
       {
         tag: "Renouvellement",
         title: "Renouvellement sous tension",
-        desc: "Une entreprise de 1 200 adhérents présente un S/P de 112 %. Le courtier demande une remise de 5 %. Nous chiffrons immédiatement l'impact réel avant arbitrage. La direction décide sur une base objectivée.",
+        desc: "Une entreprise de 1 200 adhérents présente un S/P de 112 %.\nLe courtier demande une remise de 5 %.\nNous chiffrons immédiatement l'impact réel avant arbitrage.\nLa direction décide sur une base objectivée.",
       },
       {
         tag: "Segmentation",
         title: "Groupes qui tirent le résultat vers le bas",
-        desc: "Sur un portefeuille multi-groupes, quelques comptes concentrent l'essentiel de la dégradation. Nous les identifions en quelques secondes, chiffrons leur impact sur le portefeuille et orientons la décision corrective à mettre en place.",
+        desc: "Sur un portefeuille multi-groupes, quelques comptes concentrent l'essentiel de la dégradation.\nNous les identifions en quelques secondes.\nNous chiffrons leur impact sur le portefeuille.\nNous orientons la décision corrective à mettre en place.",
       },
       {
         tag: "Simulation",
         title: "Remise commerciale à objectiver",
-        desc: "Une remise de 8 % est envisagée sur un nouveau groupe. La simulation montre son impact attendu sur le résultat. La direction arbitre avec une lecture technique claire.",
+        desc: "Une remise de 8 % est envisagée sur un nouveau groupe.\nLa simulation montre son impact attendu sur le résultat.\nLa direction arbitre avec une lecture technique claire.",
       },
       {
         tag: "Diagnostic",
