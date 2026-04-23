@@ -554,7 +554,7 @@ export const en: Dictionary = {
       { title: "Export & presentation", desc: "PDF, PowerPoint, Excel reports. Ready for the board." },
     ],
     screenshotsEyebrow: "Preview",
-    screenshotsTitle: "What the technical director sees in Tarif Santé Pro.",
+    screenshotsTitle: "A clear read to decide on your portfolio.",
     ctaTitle: "Ready to see Tarif Santé Pro in action?",
     ctaDesc: "20 minutes is enough for a portfolio diagnosis.",
     ctaButton: "Schedule a Demo",

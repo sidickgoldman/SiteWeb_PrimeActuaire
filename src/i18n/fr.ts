@@ -552,7 +552,7 @@ export const fr = {
       { title: "Export & restitution", desc: "Rapports PDF, PowerPoint, Excel. Prêts pour le comité." },
     ],
     screenshotsEyebrow: "Aperçu",
-    screenshotsTitle: "Ce que voit le DT dans Tarif Santé Pro.",
+    screenshotsTitle: "Une lecture claire pour décider sur votre portefeuille.",
     ctaTitle: "Prêt à voir Tarif Santé Pro en action ?",
     ctaDesc: "20 minutes suffisent pour un diagnostic sur votre portefeuille.",
     ctaButton: "Planifier une démo",
