@@ -5,10 +5,42 @@ import { useRef } from "react";
 import { useI18n } from "@/i18n";
 
 const moments = [
-  { label: "Janvier", sub: "Renouvellement",       bg: "bg-coral", text: "text-coral", border: "border-coral" },
-  { label: "Avril",   sub: "La dérive s'installe", bg: "bg-gold",  text: "text-gold",  border: "border-gold"  },
-  { label: "Juillet", sub: "La poche grossit",     bg: "bg-teal",  text: "text-teal",  border: "border-teal"  },
-  { label: "Octobre", sub: "Comité de direction",  bg: "bg-navy",  text: "text-navy",  border: "border-navy"  },
+  {
+    label: "Janvier",
+    sub: "Renouvellement",
+    dotBg: "bg-gold/50",
+    pulseBg: "bg-gold",
+    labelText: "text-gold/80",
+    border: "border-gold/50",
+    subText: "text-gold/70",
+  },
+  {
+    label: "Avril",
+    sub: "La dérive s'installe",
+    dotBg: "bg-gold",
+    pulseBg: "bg-gold",
+    labelText: "text-gold",
+    border: "border-gold",
+    subText: "text-gold",
+  },
+  {
+    label: "Juillet",
+    sub: "La poche grossit",
+    dotBg: "bg-navy/55",
+    pulseBg: "bg-navy",
+    labelText: "text-navy/65",
+    border: "border-navy/50",
+    subText: "text-navy/60",
+  },
+  {
+    label: "Octobre",
+    sub: "Comité de direction",
+    dotBg: "bg-navy",
+    pulseBg: "bg-navy",
+    labelText: "text-navy",
+    border: "border-navy",
+    subText: "text-navy",
+  },
 ];
 
 export default function Probleme() {
@@ -28,7 +60,7 @@ export default function Probleme() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-[13px] font-semibold text-coral uppercase tracking-[4px] mb-4"
+          className="text-[13px] font-semibold text-gold uppercase tracking-[4px] mb-4"
         >
           {t.probleme.eyebrow}
         </motion.p>
@@ -52,7 +84,7 @@ export default function Probleme() {
           {/* Ligne animée au scroll */}
           <motion.div
             style={{ width: lineWidth }}
-            className="hidden md:block absolute top-[22px] left-[6%] h-[2px] bg-gradient-to-r from-coral via-gold to-navy rounded-full origin-left"
+            className="hidden md:block absolute top-[22px] left-[6%] h-[2px] bg-gradient-to-r from-gold to-navy rounded-full origin-left"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-6 relative">
@@ -69,11 +101,11 @@ export default function Probleme() {
                 >
                   {/* Dot + pulse */}
                   <div className="relative h-11 flex items-center justify-center md:justify-start w-full mb-2">
-                    <span className={`relative w-[12px] h-[12px] rounded-full ${m.bg} ring-[6px] ring-bg-light shadow-md z-10`}>
+                    <span className={`relative w-[12px] h-[12px] rounded-full ${m.dotBg} ring-[6px] ring-bg-light shadow-md z-10`}>
                       <motion.span
                         animate={{ scale: [1, 2.2, 1], opacity: [0.5, 0, 0.5] }}
                         transition={{ duration: 2.8, repeat: Infinity, delay: i * 0.5, ease: "easeInOut" }}
-                        className={`absolute inset-0 rounded-full ${m.bg}`}
+                        className={`absolute inset-0 rounded-full ${m.pulseBg}`}
                         style={{ pointerEvents: "none" }}
                       />
                     </span>
@@ -82,14 +114,14 @@ export default function Probleme() {
                   {/* Card */}
                   <div className={`w-full bg-white rounded-xl p-6 border-t-2 ${m.border} shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1`}>
                     <div className="flex items-baseline justify-between mb-3">
-                      <span className={`text-[11px] font-bold uppercase tracking-[3px] ${m.text}`}>
+                      <span className={`text-[11px] font-bold uppercase tracking-[3px] ${m.labelText}`}>
                         {m.label}
                       </span>
                       <span className="text-[10px] text-text-muted/60 uppercase tracking-[2px]">
                         0{i + 1}/04
                       </span>
                     </div>
-                    <p className={`text-[13px] font-semibold ${m.text} mb-3 italic`}>
+                    <p className={`text-[13px] font-semibold ${m.subText} mb-3 italic`}>
                       « {m.sub} »
                     </p>
                     <h3 className="font-[var(--font-heading)] font-bold text-[17px] text-navy leading-snug mb-2">
