@@ -13,11 +13,9 @@ export default function Footer() {
       transition={{ duration: 0.6 }}
       className="bg-navy text-white"
     >
-      {/* Séparateur — rupture visuelle claire entre CTA et footer utilitaire */}
+      {/* Séparateur */}
       <div className="max-w-7xl mx-auto px-6">
-        <div className="border-t border-white/10 relative">
-          <span className="absolute left-0 top-0 w-16 h-[1px] bg-gold" />
-        </div>
+        <div className="border-t border-white/10" />
       </div>
 
       {/* Main footer */}
