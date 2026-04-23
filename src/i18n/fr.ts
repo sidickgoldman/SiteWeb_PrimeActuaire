@@ -106,7 +106,7 @@ export const fr = {
     items: [
       {
         label: "Tarification",
-        title: "Corriger les tarifs sous pression marché",
+        title: "Ne subissez plus les tarifs du marché.",
         desc: "Sous-tarification.\nImpact des remises.\nGroupes fragilisés.",
       },
       {

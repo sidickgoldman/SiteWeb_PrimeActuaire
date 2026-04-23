@@ -108,7 +108,7 @@ export const en: Dictionary = {
     items: [
       {
         label: "Pricing",
-        title: "Fix the premiums that are weakening your portfolio",
+        title: "Stop letting the market dictate your rates.",
         desc: "Backtesting.\nUnder-priced groups.\nDiscount impact.",
       },
       {
