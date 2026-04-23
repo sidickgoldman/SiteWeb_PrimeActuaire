@@ -14,7 +14,7 @@ export const en: Dictionary = {
 
   // Hero
   hero: {
-    eyebrow: "Technical Governance · Group Health Insurance",
+    eyebrow: "Technical Governance · Group Health Insurance · CIMA Zone",
     titleStart: "Take back control of the ",
     titleHighlight: "profitability",
     titleEnd: " of your group health portfolios.",
