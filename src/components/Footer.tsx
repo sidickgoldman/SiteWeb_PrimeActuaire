@@ -3,8 +3,6 @@
 import { motion } from "framer-motion";
 import { useI18n } from "@/i18n";
 
-const statColors = ["text-coral", "text-gold", "text-teal", "text-gold-light"];
-
 export default function Footer() {
   const { t } = useI18n();
   return (
@@ -15,18 +13,6 @@ export default function Footer() {
       transition={{ duration: 0.6 }}
       className="bg-navy text-white"
     >
-      {/* Stats ribbon */}
-      <div className="border-t border-white/5 bg-navy-mid">
-        <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {t.footer.stats.map((s, i) => (
-            <div key={i}>
-              <p className={`font-[var(--font-heading)] font-extrabold text-3xl ${statColors[i]}`}>{s.value}</p>
-              <p className="text-xs text-white/55 mt-1">{s.label}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* Main footer */}
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
         <div className="md:col-span-1">
