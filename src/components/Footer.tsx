@@ -24,8 +24,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 pt-12 pb-12 grid grid-cols-1 md:grid-cols-4 gap-10">
         <div className="md:col-span-1">
           <p className="font-[var(--font-heading)] font-extrabold text-lg text-gold">PrimeActuaire</p>
-          <p className="text-xs text-white/50 mt-2 leading-relaxed">
-            {t.footer.tagline}
+          <p className="text-sm text-white/60 mt-3 leading-relaxed">
+            La rentabilité de vos portefeuilles santé collective,
+          </p>
+          <p className="text-sm font-semibold text-gold mt-0.5">
+            sous contrôle.
           </p>
         </div>
 
