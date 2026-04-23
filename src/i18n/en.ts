@@ -471,9 +471,10 @@ export const en: Dictionary = {
   plateformePage: {
     heroEyebrow: "Tarif Santé Pro",
     heroTitle: "The platform that structures your pricing decisions.",
-    heroDesc: "Built by an actuary, for actuaries and decision-makers. Every view answers a question the technical or general director asks before a renewal, a board meeting, or a negotiation.",
-    heroCta1: "Request a Demo",
-    heroCta2: "View Features",
+    heroDesc: "When pricing is under pressure, discounts leave without measuring their impact, and fraud, abuse or medical drift blur the portfolio picture, Tarif Santé Pro gives the technical and general director a clear, quantified and defensible read to decide faster, more accurately and with greater control.",
+    heroCta1: "Request a targeted demo",
+    heroCta2: "See what the platform enables you to decide",
+    heroBadge: "Your decisions, quantified on real data",
     orbitalEyebrow: "Overview",
     orbitalTitle: "One central hub. Eight interconnected modules.",
     orbitalSubtitle: "Tarif Santé Pro centralizes all the technical director's decision tools in a single, traceable, committee-ready framework.",

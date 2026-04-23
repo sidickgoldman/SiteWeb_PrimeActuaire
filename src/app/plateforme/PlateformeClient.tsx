@@ -43,7 +43,11 @@ export default function PlateformeClient() {
                 <p className="mt-6 text-lg text-white/45 leading-relaxed max-w-xl font-light">
                   {p.heroDesc}
                 </p>
-                <div className="mt-10 flex flex-wrap items-center gap-4">
+                <div className="mt-6 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-gold/20 bg-gold/[0.06]">
+                  <span className="w-1.5 h-1.5 rounded-full bg-gold/70 animate-pulse" />
+                  <span className="text-[12px] font-medium text-gold/80 tracking-wide">{p.heroBadge}</span>
+                </div>
+                <div className="mt-6 flex flex-wrap items-center gap-4">
                   <a href="/#contact" className="px-7 py-3.5 rounded-full bg-coral text-white font-semibold text-[15px] hover:bg-coral-dark transition-colors duration-200 shadow-lg shadow-coral/20">
                     {p.heroCta1}
                   </a>

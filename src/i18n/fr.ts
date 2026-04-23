@@ -469,9 +469,10 @@ export const fr = {
   plateformePage: {
     heroEyebrow: "Tarif Santé Pro",
     heroTitle: "La plateforme qui structure vos décisions tarifaires.",
-    heroDesc: "Conçue par un actuaire, pour des actuaires et des décideurs. Chaque vue répond à une question que le DT ou DG se pose avant un renouvellement, un comité ou une négociation.",
-    heroCta1: "Demander une démo",
-    heroCta2: "Voir les fonctionnalités",
+    heroDesc: "Quand les tarifs sont sous pression, que les remises partent sans mesure d'impact et que fraude, abus ou dérive médicale brouillent la lecture du portefeuille, Tarif Santé Pro donne au DT et au DG une lecture claire, chiffrée et défendable pour décider plus vite, plus juste et avec plus de maîtrise.",
+    heroCta1: "Demander une démonstration ciblée",
+    heroCta2: "Voir ce que la plateforme permet de décider",
+    heroBadge: "Vos décisions, chiffrées sur données réelles",
     orbitalEyebrow: "Vue d'ensemble",
     orbitalTitle: "Un hub central. Huit modules interconnectés.",
     orbitalSubtitle: "Tarif Santé Pro centralise tous les outils décisionnels du DT dans un cadre unique, traçable et prêt pour le comité.",
