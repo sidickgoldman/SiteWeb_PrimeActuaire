@@ -65,27 +65,27 @@ export const fr = {
     eyebrow: "Une année dans la vie d'un portefeuille sous pression",
     titleLine1: "Tarifer ne suffit pas.",
     titleLine2:
-      "Le vrai enjeu est de voir ce que la pression concurrentielle, les remises, la dérive médicale, la fraude ou les abus font réellement au portefeuille — avant que le résultat ne se dégrade trop.",
+      "Le vrai enjeu est de voir assez tôt l'effet du marché, des remises, de la dérive médicale, de la fraude ou des abus sur le portefeuille.",
     tensions: [
       {
         icon: "⏱",
-        title: "Tarifs négociés sous pression marché",
-        desc: "Le courtier arrive avec le tarif du concurrent. Le DT doit répondre vite, alors que l'impact réel d'une remise sur le portefeuille n'est pas encore objectivé.",
+        title: "Tarifs négociés sous pression",
+        desc: "Le concurrent donne le tempo. La remise se discute avant que son impact soit chiffré.",
       },
       {
         icon: "📉",
-        title: "La dégradation n'est pas encore clairement lisible",
-        desc: "Le S/P commence à se tendre. Inflation médicale, surconsommation, fraude ou abus peuvent déjà peser, sans que les suivis permettent encore de distinguer les vraies causes.",
+        title: "La dégradation reste floue",
+        desc: "Le S/P se tend, sans lecture claire entre inflation, abus, fraude ou surconsommation.",
       },
       {
         icon: "🔍",
-        title: "Les pertes existent, mais pas encore la lecture fine",
-        desc: "Le portefeuille perd de l'argent, sans lecture assez précise du groupe, du poste de soins, du prestataire ou de la cause qui tire réellement le résultat vers le bas.",
+        title: "Les pertes sont là, pas encore la lecture fine",
+        desc: "Le portefeuille perd, sans lecture précise du groupe, du poste ou de la cause.",
       },
       {
         icon: "🤷",
-        title: "Les arbitrages arrivent sans base assez opposable",
-        desc: "Une remise est envisagée ou accordée sans impact chiffré complet. Le DT arrive en comité avec trop peu d'éléments pour séparer pression marché, dérive réelle et fuites évitables.",
+        title: "Les arbitrages manquent de base opposable",
+        desc: "Le comité doit trancher alors que la lecture technique reste incomplète.",
       },
     ],
   },
