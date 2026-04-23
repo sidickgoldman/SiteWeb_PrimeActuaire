@@ -4,56 +4,39 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useI18n } from "@/i18n";
 
-// Chaque pilier : couleur d'accent + photo "humain sans visage" style conseil.
+// Chaque pilier : même accent gold unifié (sobriété premium B2B).
 // Images Unsplash : mains, mouvements, gestes pro — jamais de visage.
 const accents = [
   {
-    text: "text-gold",
-    tint: "rgba(197,150,58,0.28)",
-    glow: "group-hover:shadow-gold/20",
-    bar: "bg-gold",
     href: "/plateforme#tarification",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80",
     imageAlt: "Analyse de données actuarielles sur écran",
   },
   {
-    text: "text-teal",
-    tint: "rgba(46,139,108,0.28)",
-    glow: "group-hover:shadow-teal/20",
-    bar: "bg-teal",
     href: "/plateforme#pilotage",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80",
     imageAlt: "Écran de pilotage avec indicateurs S/P",
   },
   {
-    text: "text-coral",
-    tint: "rgba(212,101,74,0.28)",
-    glow: "group-hover:shadow-coral/20",
-    bar: "bg-coral",
     href: "/plateforme#tarif-sante-pro",
     image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1000&q=80",
     imageAlt: "Vue aérienne d'une table de travail avec documents et ordinateurs",
   },
 ];
 
-// Visuel humain (sans visage) — style photo éditoriale conseil.
-// Image cadrée en 4/5, overlay teinté couleur-pilier + vignette douce du bas vers le haut.
+// Visuel humain (sans visage) — style photo éditoriale conseil, traitement homogène.
+// Voile navy léger pour cohérence chromatique sur les 3 cartes.
 function PilierVisual({
   src,
   alt,
-  tint,
   word,
-  textColor,
 }: {
   src: string;
   alt: string;
-  tint: string;
   word: string;
-  textColor: string;
 }) {
   return (
     <div className="relative w-full aspect-[4/5] overflow-hidden rounded-[14px] bg-navy/[0.04]">
-      {/* Photo */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={src}
@@ -61,19 +44,14 @@ function PilierVisual({
         loading="lazy"
         className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.06]"
       />
-      {/* Teinte couleur-pilier pour cohérence chromatique */}
-      <div
-        className="absolute inset-0 mix-blend-multiply"
-        style={{ backgroundColor: tint }}
-      />
-      {/* Vignette douce du bas pour lisibilité du mot */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+      {/* Voile navy unifié pour les 3 cartes */}
+      <div className="absolute inset-0 bg-navy/25 mix-blend-multiply" />
+      {/* Vignette douce du bas pour lisibilité */}
+      <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-navy/10 to-transparent" />
 
-      {/* Micro-label en bas, italique serif — ancre verbale */}
-      <span
-        className={`absolute left-5 bottom-5 font-[var(--font-heading)] italic ${textColor} text-[15px] tracking-tight drop-shadow-[0_1px_6px_rgba(0,0,0,0.4)]`}
-      >
-        <span className="text-white/90 mr-1.5">—</span>
+      {/* Micro-label en bas, italique serif — ancre verbale en gold */}
+      <span className="absolute left-5 bottom-5 font-[var(--font-heading)] italic text-gold text-[15px] tracking-tight drop-shadow-[0_1px_6px_rgba(0,0,0,0.4)]">
+        <span className="text-white/80 mr-1.5">—</span>
         {word}
       </span>
     </div>
@@ -120,17 +98,17 @@ export default function Piliers({ teaser = false }: { teaser?: boolean }) {
               >
                 <Link
                   href={a.href}
-                  className={`group relative flex flex-col h-full bg-white rounded-[20px] px-8 lg:px-10 pt-10 pb-10 shadow-[0_1px_2px_rgba(11,22,40,0.04),0_8px_24px_-12px_rgba(11,22,40,0.08)] hover:shadow-[0_4px_12px_rgba(11,22,40,0.06),0_24px_48px_-16px_rgba(11,22,40,0.18)] ${a.glow} transition-all duration-500 hover:-translate-y-2 overflow-hidden`}
+                  className="group relative flex flex-col h-full bg-white rounded-[20px] px-8 lg:px-10 pt-10 pb-10 shadow-[0_1px_2px_rgba(11,22,40,0.04),0_8px_24px_-12px_rgba(11,22,40,0.08)] hover:shadow-[0_4px_12px_rgba(11,22,40,0.06),0_24px_48px_-16px_rgba(11,22,40,0.18)] hover:shadow-gold/10 transition-all duration-500 hover:-translate-y-2 overflow-hidden"
                 >
-                  {/* Barre d'accent qui s'étire au hover */}
-                  <span className={`absolute top-0 left-0 h-[3px] w-16 ${a.bar} transition-all duration-500 group-hover:w-full`} />
+                  {/* Barre d'accent gold qui s'étire au hover */}
+                  <span className="absolute top-0 left-0 h-[3px] w-16 bg-gold transition-all duration-500 group-hover:w-full" />
 
                   {/* Top : numéro + label */}
                   <div className="flex items-center justify-between mb-8">
                     <span className="font-[var(--font-heading)] font-semibold text-[12px] text-navy/25 tracking-[2px]">
                       0{i + 1} / 03
                     </span>
-                    <p className={`text-[11px] font-bold uppercase tracking-[3px] ${a.text}`}>
+                    <p className="text-[11px] font-bold uppercase tracking-[3px] text-gold">
                       {p.label}
                     </p>
                   </div>
@@ -140,9 +118,7 @@ export default function Piliers({ teaser = false }: { teaser?: boolean }) {
                     <PilierVisual
                       src={a.image}
                       alt={a.imageAlt}
-                      tint={a.tint}
                       word={p.label}
-                      textColor={a.text}
                     />
                   </div>
 
@@ -151,13 +127,15 @@ export default function Piliers({ teaser = false }: { teaser?: boolean }) {
                     {p.title}
                   </h3>
 
-                  {/* Description */}
-                  <p className="text-[14.5px] text-text-muted leading-relaxed text-center mb-10 flex-1">
-                    {p.desc}
-                  </p>
+                  {/* Description — un paragraphe par idée */}
+                  <div className="text-[14.5px] text-text-muted leading-relaxed text-center mb-10 flex-1 space-y-2">
+                    {p.desc.split("\n").filter((para) => para.trim().length > 0).map((para, pi) => (
+                      <p key={pi}>{para}</p>
+                    ))}
+                  </div>
 
                   {/* CTA — flèche qui slide au hover */}
-                  <div className={`flex items-center justify-center gap-2 text-[12px] font-bold ${a.text} uppercase tracking-[3px]`}>
+                  <div className="flex items-center justify-center gap-2 text-[12px] font-bold text-gold uppercase tracking-[3px]">
                     <span>Découvrir</span>
                     <span aria-hidden="true" className="inline-block transition-transform duration-300 group-hover:translate-x-2">→</span>
                   </div>

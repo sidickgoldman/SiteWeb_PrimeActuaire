@@ -101,17 +101,17 @@ export const fr = {
       {
         label: "Tarification",
         title: "Corriger les tarifs sous pression marché",
-        desc: "Sous-tarification, impact des remises, groupes fragilisés.",
+        desc: "Sous-tarification.\nImpact des remises.\nGroupes fragilisés.",
       },
       {
         label: "Pilotage technique",
         title: "Détecter plus tôt ce qui dégrade vraiment le résultat",
-        desc: "S/P, dérives, fraude, abus, poches déficitaires.",
+        desc: "S/P et dérives.\nFraude et abus.\nPoches déficitaires.",
       },
       {
         label: "Technologie décisionnelle",
         title: "Décider plus vite avec Tarif Santé Pro",
-        desc: "Scénarios, stress tests, hypothèses traçables.",
+        desc: "Scénarios chiffrés.\nStress tests.\nHypothèses traçables.",
       },
     ],
   },

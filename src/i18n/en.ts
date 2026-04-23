@@ -103,17 +103,17 @@ export const en: Dictionary = {
       {
         label: "Pricing",
         title: "Fix the premiums that are weakening your portfolio",
-        desc: "Backtesting, under-priced groups, discount impact.",
+        desc: "Backtesting.\nUnder-priced groups.\nDiscount impact.",
       },
       {
         label: "Technical monitoring",
         title: "Detect earlier what is eroding results",
-        desc: "Loss ratio, drift, loss pockets, atypical signals.",
+        desc: "Loss ratio and drift.\nFraud and abuse.\nLoss pockets.",
       },
       {
         label: "Decision technology",
         title: "Speed up trade-offs with Tarif Santé Pro",
-        desc: "Scenarios, stress tests, estimated ENR, traceable assumptions.",
+        desc: "Quantified scenarios.\nStress tests.\nTraceable assumptions.",
       },
     ],
   },
