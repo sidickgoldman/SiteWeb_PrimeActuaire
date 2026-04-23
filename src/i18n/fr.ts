@@ -250,9 +250,9 @@ export const fr = {
 
   // CTAFinal
   ctaFinal: {
-    title: "Échangeons sur votre portefeuille.",
+    title: "Parlons de votre portefeuille santé collective.",
     subtitle:
-      "20 minutes suffisent pour identifier les leviers. Remplissez le formulaire ou contactez-nous directement.",
+      "En 20 minutes, nous vous aidons à clarifier la situation, objectiver les priorités et identifier les premiers leviers d'action.",
     form: {
       nom: "Nom",
       nomPlaceholder: "Votre nom",
