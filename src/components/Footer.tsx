@@ -25,18 +25,18 @@ export default function Footer() {
         <div className="md:col-span-1">
           <p className="font-[var(--font-heading)] font-extrabold text-lg text-gold">PrimeActuaire</p>
           <p className="text-sm text-white/55 mt-3 leading-relaxed">
-            Sécurisez la rentabilité de vos portefeuilles santé collective.
+            {t.footer.tagline}
           </p>
         </div>
 
         {/* Col 2 — Explorer */}
         <div>
-          <p className="text-[11px] font-semibold text-gold/40 uppercase tracking-widest mb-4">Explorer</p>
+          <p className="text-[11px] font-semibold text-gold/40 uppercase tracking-widest mb-4">{t.footer.explorerTitle}</p>
           <ul className="space-y-2 text-sm text-white/50">
-            <li><a href="/plateforme" className="hover:text-gold transition-colors">Plateforme</a></li>
-            <li><a href="/#piliers" className="hover:text-gold transition-colors">Expertises</a></li>
-            <li><a href="/#cas-usage" className="hover:text-gold transition-colors">Cas d&apos;usage</a></li>
-            <li><a href="/insights" className="hover:text-gold transition-colors">Insights</a></li>
+            <li><a href="/plateforme" className="hover:text-gold transition-colors">{t.footer.links.plateforme}</a></li>
+            <li><a href="/#piliers" className="hover:text-gold transition-colors">{t.footer.links.expertises}</a></li>
+            <li><a href="/#cas-usage" className="hover:text-gold transition-colors">{t.footer.links.casUsage}</a></li>
+            <li><a href="/insights" className="hover:text-gold transition-colors">{t.footer.links.insights}</a></li>
           </ul>
         </div>
 
@@ -44,9 +44,9 @@ export default function Footer() {
         <div>
           <p className="text-[11px] font-semibold text-gold/40 uppercase tracking-widest mb-4">PrimeActuaire</p>
           <ul className="space-y-2 text-sm text-white/50">
-            <li><a href="/#methode" className="hover:text-gold transition-colors">Méthode</a></li>
-            <li><a href="/a-propos" className="hover:text-gold transition-colors">À propos</a></li>
-            <li><a href="/#contact" className="hover:text-gold transition-colors">Contact</a></li>
+            <li><a href="/#methode" className="hover:text-gold transition-colors">{t.footer.links.methode}</a></li>
+            <li><a href="/a-propos" className="hover:text-gold transition-colors">{t.footer.links.aPropos}</a></li>
+            <li><a href="/#contact" className="hover:text-gold transition-colors">{t.footer.links.contact}</a></li>
             <li><a href="/mentions-legales" className="hover:text-gold transition-colors">{t.footer.links.mentionsLegales}</a></li>
             <li><a href="/confidentialite" className="hover:text-gold transition-colors">{t.footer.links.confidentialite}</a></li>
           </ul>
@@ -54,8 +54,8 @@ export default function Footer() {
 
         {/* Col 4 — Contact actif */}
         <div>
-          <p className="text-[11px] font-semibold text-gold/40 uppercase tracking-widest mb-4">Contact</p>
-          <p className="text-sm text-white/70 mb-4 leading-snug">Parlons de votre portefeuille.</p>
+          <p className="text-[11px] font-semibold text-gold/40 uppercase tracking-widest mb-4">{t.footer.contactTitle}</p>
+          <p className="text-sm text-white/70 mb-4 leading-snug">{t.footer.contactTagline}</p>
           <ul className="space-y-3 text-sm text-white/50">
             <li>
               <a href="mailto:contact@primeactuaire.com" className="hover:text-gold transition-colors">

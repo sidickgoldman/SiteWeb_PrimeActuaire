@@ -66,6 +66,12 @@ export const fr = {
     titleLine1: "Tarifer ne suffit pas.",
     titleLine2:
       "Le vrai enjeu est de voir assez tôt l'effet du marché, des remises, de la dérive médicale, de la fraude ou des abus sur le portefeuille.",
+    moments: [
+      { label: "Janvier", sub: "Renouvellement" },
+      { label: "Avril", sub: "La dérive s'installe" },
+      { label: "Juillet", sub: "La poche grossit" },
+      { label: "Octobre", sub: "Comité de direction" },
+    ],
     tensions: [
       {
         icon: "⏱",
@@ -283,6 +289,8 @@ export const fr = {
     ],
     tagline:
       "Sécurisez la rentabilité de vos portefeuilles santé collective.",
+    explorerTitle: "Explorer",
+    contactTagline: "Parlons de votre portefeuille.",
     pagesTitle: "Pages",
     entrepriseTitle: "Entreprise",
     contactTitle: "Contact",
@@ -295,6 +303,8 @@ export const fr = {
       casUsage: "Cas d'usage",
       mentionsLegales: "Mentions légales",
       confidentialite: "Confidentialité",
+      expertises: "Expertises",
+      contact: "Contact",
     },
     copyright: "PrimeActuaire. Tous droits réservés.",
   },

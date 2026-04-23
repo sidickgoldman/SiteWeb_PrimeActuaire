@@ -4,43 +4,11 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { useI18n } from "@/i18n";
 
-const moments = [
-  {
-    label: "Janvier",
-    sub: "Renouvellement",
-    dotBg: "bg-teal",
-    pulseBg: "bg-teal",
-    labelText: "text-teal",
-    border: "border-teal",
-    subText: "text-teal",
-  },
-  {
-    label: "Avril",
-    sub: "La dérive s'installe",
-    dotBg: "bg-gold",
-    pulseBg: "bg-gold",
-    labelText: "text-gold",
-    border: "border-gold",
-    subText: "text-gold",
-  },
-  {
-    label: "Juillet",
-    sub: "La poche grossit",
-    dotBg: "bg-coral",
-    pulseBg: "bg-coral",
-    labelText: "text-coral",
-    border: "border-coral",
-    subText: "text-coral",
-  },
-  {
-    label: "Octobre",
-    sub: "Comité de direction",
-    dotBg: "bg-red-700",
-    pulseBg: "bg-red-700",
-    labelText: "text-red-700",
-    border: "border-red-700",
-    subText: "text-red-700",
-  },
+const momentColors = [
+  { dotBg: "bg-teal",    pulseBg: "bg-teal",    labelText: "text-teal",    border: "border-teal",    subText: "text-teal" },
+  { dotBg: "bg-gold",    pulseBg: "bg-gold",    labelText: "text-gold",    border: "border-gold",    subText: "text-gold" },
+  { dotBg: "bg-coral",   pulseBg: "bg-coral",   labelText: "text-coral",   border: "border-coral",   subText: "text-coral" },
+  { dotBg: "bg-red-700", pulseBg: "bg-red-700", labelText: "text-red-700", border: "border-red-700", subText: "text-red-700" },
 ];
 
 export default function Probleme() {
@@ -89,7 +57,8 @@ export default function Probleme() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-6 relative">
             {t.probleme.tensions.map((tension, i) => {
-              const m = moments[i];
+              const m = momentColors[i];
+              const moment = t.probleme.moments[i];
               return (
                 <motion.div
                   key={i}
@@ -115,14 +84,14 @@ export default function Probleme() {
                   <div className={`w-full bg-white rounded-xl p-6 border-t-2 ${m.border} shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1`}>
                     <div className="flex items-baseline justify-between mb-3">
                       <span className={`text-[11px] font-bold uppercase tracking-[3px] ${m.labelText}`}>
-                        {m.label}
+                        {moment.label}
                       </span>
                       <span className="text-[10px] text-text-muted/60 uppercase tracking-[2px]">
                         0{i + 1}/04
                       </span>
                     </div>
                     <p className={`text-[13px] font-semibold ${m.subText} mb-3 italic`}>
-                      « {m.sub} »
+                      « {moment.sub} »
                     </p>
                     <h3 className="font-[var(--font-heading)] font-bold text-[17px] text-navy leading-snug mb-2">
                       {tension.title}

@@ -68,6 +68,12 @@ export const en: Dictionary = {
     titleLine1: "Pricing alone isn't enough.",
     titleLine2:
       "The real challenge is seeing where profitability erodes, why, and what that means for decisions.",
+    moments: [
+      { label: "January", sub: "Renewal" },
+      { label: "April", sub: "Drift begins" },
+      { label: "July", sub: "The gap grows" },
+      { label: "October", sub: "Board review" },
+    ],
     tensions: [
       {
         icon: "⏱",
@@ -285,6 +291,8 @@ export const en: Dictionary = {
     ],
     tagline:
       "Technical governance for group health insurance in the CIMA zone.",
+    explorerTitle: "Explore",
+    contactTagline: "Let’s talk about your portfolio.",
     pagesTitle: "Pages",
     entrepriseTitle: "Company",
     contactTitle: "Contact",
@@ -297,6 +305,8 @@ export const en: Dictionary = {
       casUsage: "Use Cases",
       mentionsLegales: "Legal Notice",
       confidentialite: "Privacy Policy",
+      expertises: "Expertise",
+      contact: "Contact",
     },
     copyright: "PrimeActuaire. All rights reserved.",
   },
