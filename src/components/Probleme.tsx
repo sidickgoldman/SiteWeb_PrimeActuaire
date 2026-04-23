@@ -96,7 +96,7 @@ export default function Probleme() {
                     <h3 className="font-[var(--font-heading)] font-bold text-[17px] text-navy leading-snug mb-2">
                       {tension.title}
                     </h3>
-                    <p className="text-[14px] text-text-muted leading-relaxed">
+                    <p className="text-[14px] text-text-muted leading-relaxed whitespace-pre-line">
                       {tension.desc}
                     </p>
                   </div>

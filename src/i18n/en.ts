@@ -497,7 +497,7 @@ export const en: Dictionary = {
       { value: "−14 pts S/P", label: "after targeted correction" },
     ],
     featuresEyebrow: "Capabilities",
-    featuresTitle: "Three domains. One clear read.",
+    featuresTitle: "Three pillars to restore portfolio performance.",
     categories: [
       {
         label: "Pricing",

@@ -76,7 +76,7 @@ export const fr = {
       {
         icon: "⏱",
         title: "Tarifs négociés sous pression",
-        desc: "Le concurrent donne le tempo. La remise se discute avant que son impact soit chiffré.",
+        desc: "Le concurrent donne le tempo.\nLa remise se discute avant que son impact soit chiffré.",
       },
       {
         icon: "📉",
@@ -495,7 +495,7 @@ export const fr = {
       { value: "−14 pts S/P", label: "après correction ciblée" },
     ],
     featuresEyebrow: "Capacités",
-    featuresTitle: "Trois domaines. Une seule lecture.",
+    featuresTitle: "Trois piliers pour redresser la performance du portefeuille.",
     categories: [
       {
         label: "Tarification",
