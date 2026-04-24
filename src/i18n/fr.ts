@@ -553,9 +553,9 @@ export const fr = {
     ],
     screenshotsEyebrow: "Aperçu",
     screenshotsTitle: "Une lecture claire pour décider sur votre portefeuille.",
-    ctaTitle: "Prêt à voir Tarif Santé Pro en action ?",
-    ctaDesc: "20 minutes suffisent pour un diagnostic sur votre portefeuille.",
-    ctaButton: "Planifier une démo",
+    ctaTitle: "Voyez ce qui dégrade réellement votre portefeuille.",
+    ctaDesc: "En 20 minutes, identifiez les pertes, comprenez les causes et repartez avec une première lecture exploitable.",
+    ctaButton: "Planifier une démonstration ciblée",
   },
 
   // ───── Page: À propos ─────

@@ -555,9 +555,9 @@ export const en: Dictionary = {
     ],
     screenshotsEyebrow: "Preview",
     screenshotsTitle: "A clear read to decide on your portfolio.",
-    ctaTitle: "Ready to see Tarif Santé Pro in action?",
-    ctaDesc: "20 minutes is enough for a portfolio diagnosis.",
-    ctaButton: "Schedule a Demo",
+    ctaTitle: "See what is really degrading your portfolio.",
+    ctaDesc: "In 20 minutes, identify the losses, understand the causes and leave with a first usable read.",
+    ctaButton: "Schedule a targeted demo",
   },
 
   // ───── Page: About ─────
