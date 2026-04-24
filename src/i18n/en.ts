@@ -545,7 +545,7 @@ export const en: Dictionary = {
       },
     ],
     workflowEyebrow: "User Journey",
-    workflowTitle: "From raw data to a defensible decision. In 5 steps.",
+    workflowTitle: "From raw data to a defensible decision.\nIn 5 steps.",
     workflowSteps: [
       { title: "You start with imperfect data.", desc: "Even incomplete, your data becomes usable." },
       { title: "You make the base reliable.", desc: "Anomalies are corrected, biases identified." },

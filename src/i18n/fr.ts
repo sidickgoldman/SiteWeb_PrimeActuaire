@@ -543,7 +543,7 @@ export const fr = {
       },
     ],
     workflowEyebrow: "Parcours utilisateur",
-    workflowTitle: "De la donnée brute à une décision défendable. En 5 étapes.",
+    workflowTitle: "De la donnée brute à une décision défendable.\nEn 5 étapes.",
     workflowSteps: [
       { title: "Vous partez de données imparfaites.", desc: "Même incomplètes, vos données deviennent exploitables." },
       { title: "Vous fiabilisez la base.", desc: "Les anomalies sont corrigées, les biais identifiés." },

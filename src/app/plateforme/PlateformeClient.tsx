@@ -109,9 +109,22 @@ export default function PlateformeClient() {
               >
                 <span className={`absolute left-0 top-1 bottom-1 w-[2px] ${barColors[i]}`} />
                 <div className="h-14 flex items-center">
-                  <p className={`font-[var(--font-heading)] font-extrabold whitespace-nowrap leading-none text-white ${
-                    isNumeric ? "text-4xl lg:text-[2.75rem] tracking-tight" : "text-[1.1rem] lg:text-[1.25rem]"
-                  }`}>{s.value}</p>
+                  {(() => {
+                    const numMatch = isNumeric ? s.value.match(/^([-\d%+\u2212]+)\s(.+)$/) : null;
+                    if (numMatch) {
+                      return (
+                        <p className="font-[var(--font-heading)] font-extrabold leading-none text-white">
+                          <span className="text-4xl lg:text-[2.75rem] tracking-tight">{numMatch[1]}</span>
+                          <span className="text-[1.1rem] lg:text-[1.25rem] ml-1.5">{numMatch[2]}</span>
+                        </p>
+                      );
+                    }
+                    return (
+                      <p className={`font-[var(--font-heading)] font-extrabold whitespace-nowrap leading-none text-white ${
+                        isNumeric ? "text-4xl lg:text-[2.75rem] tracking-tight" : "text-[1.1rem] lg:text-[1.25rem]"
+                      }`}>{s.value}</p>
+                    );
+                  })()}
                 </div>
                 <p className="text-[12px] text-white/50 leading-snug mt-1">{s.label}</p>
               </motion.div>
@@ -272,7 +285,7 @@ export default function PlateformeClient() {
               <p className="text-[13px] font-semibold text-gold uppercase tracking-[4px] mb-4">
                 {p.workflowEyebrow}
               </p>
-              <h2 className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl text-white">
+              <h2 className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl text-white whitespace-pre-line">
                 {p.workflowTitle}
               </h2>
             </motion.div>
