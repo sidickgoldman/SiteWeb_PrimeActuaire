@@ -297,7 +297,7 @@ export default function PlateformeClient() {
                     </div>
                     <div className="pb-4">
                       <h3 className="font-[var(--font-heading)] font-bold text-lg text-white">{w.title}</h3>
-                      <p className="mt-1 text-[14px] text-white/40 leading-relaxed">{w.desc}</p>
+                      <p className="mt-1 text-[14px] text-white/40 leading-relaxed whitespace-pre-line">{w.desc}</p>
                     </div>
                   </motion.div>
                 );
