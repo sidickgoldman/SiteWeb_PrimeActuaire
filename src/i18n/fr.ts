@@ -470,7 +470,7 @@ export const fr = {
     heroEyebrow: "Tarif Santé Pro",
     scrollLabel: "Défiler",
     heroTitle: "La plateforme qui structure vos décisions tarifaires.",
-    heroDesc: "Quand les tarifs sont sous pression et que la lecture du portefeuille se brouille, Tarif Santé Pro donne au DT et au DG une base claire et défendable pour décider avec plus de maîtrise.",
+    heroDesc: "Quand les tarifs sont sous pression et que la lecture du portefeuille se brouille, Tarif Santé Pro donne aux décisionnaires une base claire et défendable pour décider avec plus de maîtrise.",
     heroCta1: "Demander une démonstration ciblée",
     heroCta2: "Voir ce que la plateforme permet de décider",
     heroBadge: "Vos décisions, chiffrées sur données réelles",

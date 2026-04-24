@@ -472,7 +472,7 @@ export const en: Dictionary = {
     heroEyebrow: "Tarif Santé Pro",
     scrollLabel: "Scroll",
     heroTitle: "The platform that structures your pricing decisions.",
-    heroDesc: "When pricing is under pressure and the portfolio picture blurs, Tarif Santé Pro gives the technical and general director a clear, defensible base to decide with greater control.",
+    heroDesc: "When pricing is under pressure and the portfolio picture blurs, Tarif Santé Pro gives decision-makers a clear, defensible base to decide with greater control.",
     heroCta1: "Request a targeted demo",
     heroCta2: "See what the platform enables you to decide",
     heroBadge: "Your decisions, quantified on real data",
