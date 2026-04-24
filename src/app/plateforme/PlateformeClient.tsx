@@ -94,29 +94,29 @@ export default function PlateformeClient() {
         </section>
 
         {/* Key numbers */}
-        <section className="bg-navy border-y border-white/[0.07]">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-white/[0.07]">
-              {p.keyNumbers.map((s, i) => {
-                const isNumeric = isNumericAnchor(s.value);
-                return (
-                <motion.div
-                  key={s.value}
-                  initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="px-8 py-12 flex flex-col justify-center"
-                >
-                  <span className={`block w-4 h-[2px] ${barColors[i]} mb-5`} />
-                  <p className={`font-[var(--font-heading)] font-extrabold leading-none text-white ${
-                    isNumeric ? "text-[2rem] lg:text-[2.5rem] tracking-tight" : "text-[1.1rem] lg:text-[1.2rem] leading-snug"
+        <section className="bg-[#0c1b33] border-y border-white/[0.06]">
+          <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-2 lg:grid-cols-4 gap-y-12 lg:gap-y-0 lg:gap-x-4">
+            {p.keyNumbers.map((s, i) => {
+              const isNumeric = isNumericAnchor(s.value);
+              return (
+              <motion.div
+                key={s.value}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
+                className="relative pl-6 pr-6"
+              >
+                <span className={`absolute left-0 top-1 bottom-1 w-[2px] ${barColors[i]}`} />
+                <div className="h-14 flex items-center">
+                  <p className={`font-[var(--font-heading)] font-extrabold whitespace-nowrap leading-none text-white ${
+                    isNumeric ? "text-4xl lg:text-[2.75rem] tracking-tight" : "text-[1.1rem] lg:text-[1.25rem]"
                   }`}>{s.value}</p>
-                  <p className="text-[12px] text-white/45 leading-snug mt-3 max-w-[140px]">{s.label}</p>
-                </motion.div>
-                );
-              })}
-            </div>
+                </div>
+                <p className="text-[12px] text-white/50 leading-snug mt-1">{s.label}</p>
+              </motion.div>
+              );
+            })}
           </div>
         </section>
 
