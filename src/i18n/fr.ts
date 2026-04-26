@@ -405,11 +405,26 @@ export const fr = {
 
   // ───── Page: Expertises ─────
   expertisesPage: {
-    eyebrow: "Nos expertises",
-    title: "Trois axes pour structurer vos décisions techniques.",
-    desc: "PrimeActuaire intervient sur trois terrains où la rentabilité d'un portefeuille santé collective se joue : la tarification, le pilotage technique et la technologie décisionnelle.",
-    deepTitle: "Ce que chaque expertise adresse concrètement.",
-    deepSubtitle: "Chaque pilier répond à des situations précises rencontrées par les directions techniques et générales.",
+    eyebrow: "Expertise conseil",
+    title: "Là où la rentabilité d’un portefeuille santé se joue vraiment.",
+    desc: "PrimeActuaire accompagne les directions techniques et générales sur trois terrains critiques : tarification, pilotage en cours d’année et structuration des arbitrages. Une expertise actuarielle ancrée sur le marché CIMA.",
+    approachTitle: "Notre posture.",
+    approach: [
+      {
+        title: "Actuaire terrain CIMA.",
+        desc: "Nous intervenons sur des portefeuilles réels, avec les données et les contraintes du marché local. Pas de modèles théoriques hors-sol.",
+      },
+      {
+        title: "Accompagnement, pas seulement un livrable.",
+        desc: "Nous aidons à lire les résultats, à formuler les positions et à les défendre en comité. Le décisionnaire repart avec une analyse, pas juste un rapport.",
+      },
+      {
+        title: "Résultats chiffrés et opposables.",
+        desc: "Chaque analyse est traçable, documentée et prête pour un audit, un renouvellement ou un comité de direction.",
+      },
+    ],
+    deepTitle: "Ce que chaque domaine adresse concrètement.",
+    deepSubtitle: "Trois axes où nous intervenons directement avec les équipes techniques et décisionnelles.",
     details: [
       {
         label: "Tarification",

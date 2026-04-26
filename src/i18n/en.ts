@@ -407,11 +407,26 @@ export const en: Dictionary = {
 
   // ───── Page: Expertise ─────
   expertisesPage: {
-    eyebrow: "Our expertise",
-    title: "Three focus areas to structure your technical decisions.",
-    desc: "PrimeActuaire operates on three fronts where the profitability of a group health portfolio is decided: pricing, technical monitoring, and decision technology.",
-    deepTitle: "What each expertise tackles concretely.",
-    deepSubtitle: "Each pillar addresses specific situations faced by technical and general management.",
+    eyebrow: "Advisory expertise",
+    title: "Where group health portfolio profitability is really decided.",
+    desc: "PrimeActuaire supports technical and general management on three critical fronts: pricing, in-year monitoring, and decision structuring. Actuarial expertise grounded in the CIMA market.",
+    approachTitle: "Our posture.",
+    approach: [
+      {
+        title: "CIMA field actuary.",
+        desc: "We work on real portfolios, with local market data and constraints. No theoretical frameworks disconnected from the terrain.",
+      },
+      {
+        title: "Advisory, not just a deliverable.",
+        desc: "We help read the results, formulate positions and defend them in committee. The decision-maker leaves with an analysis, not just a report.",
+      },
+      {
+        title: "Quantified, defensible outcomes.",
+        desc: "Every analysis is traceable, documented and ready for an audit, a renewal, or a board committee.",
+      },
+    ],
+    deepTitle: "What each domain tackles concretely.",
+    deepSubtitle: "Three areas where we intervene directly with technical and decision-making teams.",
     details: [
       {
         label: "Pricing",
