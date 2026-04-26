@@ -91,7 +91,7 @@ export default function ArticleClient({ article }: { article: Article }) {
               >
                 <div className="w-14 h-14 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center shrink-0">
                   <span className="font-[var(--font-heading)] font-extrabold text-gold text-xl">
-                    S
+                    Z
                   </span>
                 </div>
                 <div>
