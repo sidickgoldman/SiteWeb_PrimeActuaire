@@ -190,35 +190,44 @@ export const fr = {
   // Methode
   methode: {
     eyebrow: "Notre méthode",
-    titleLine1: "Un processus structuré.",
-    titleLine2:
-      "Conçu pour rassurer les directions techniques et générales.",
-    desc: "Chaque mission suit une progression claire. De l'analyse initiale à la restitution, chaque étape produit un livrable exploitable — pas un document de plus.",
+    titleLine1: "Un processus structuré",
+    titleLine2: "pour transformer un portefeuille sous tension en décisions défendables.",
+    desc: [
+      "Nous ne livrons pas seulement une analyse.",
+      "Nous aidons la direction à comprendre où la rentabilité se dégrade, à mesurer le risque et à décider avec une base chiffrée.",
+      "La plateforme produit l'analyse. PrimeActuaire aide à prendre la décision.",
+    ],
+    valueLabel: "Valeur produite",
     steps: [
       {
-        title: "Diagnostic technique",
-        desc: "Analyse de la structure du portefeuille, de la sinistralité, et des hypothèses tarifaires en place.",
+        title: "Comprendre le portefeuille",
+        desc: "Identifier la structure du portefeuille, les garanties, les groupes, l'historique de sinistres et les premières zones de tension.",
+        value: "Une lecture claire de la situation de départ.",
       },
       {
-        title: "Analyse portefeuille",
-        desc: "Segmentation par groupe, par poste de soins, par profil de risque. Identification des poches déficitaires.",
+        title: "Identifier les pertes réelles",
+        desc: "Isoler les groupes, postes de soins, dérives, fraudes, abus ou signaux atypiques qui pèsent réellement sur le résultat.",
+        value: "Vous savez où la rentabilité se dégrade, et pourquoi.",
       },
       {
-        title: "Modélisation & scénarios",
-        desc: "Stress tests, projections, calibration des provisions ENR. Chaque hypothèse est traçable et testable.",
+        title: "Mesurer le risque et fixer les seuils",
+        desc: "Évaluer l'impact des remises, tester les hypothèses, définir le prix plancher et la marge de manœuvre acceptable.",
+        value: "Vous savez jusqu'où aller sans vendre à perte.",
       },
       {
-        title: "Recommandations décisionnelles",
-        desc: "Des recommandations chiffrées, pas des opinions. Adaptées au contexte du comité, du renouvellement, de l'AO.",
+        title: "Cadrer la décision",
+        desc: "Transformer les analyses en positions claires pour le DG, le DT, le comité, le renouvellement ou la négociation.",
+        value: "Une décision défendable, pas une simple opinion technique.",
       },
       {
-        title: "Restitution claire",
-        desc: "Rapport auditable, dashboards interactifs, support pour l'arbitrage en comité direction.",
+        title: "Restituer et accompagner",
+        desc: "Produire une synthèse exploitable, documentée et utilisable en comité, avec appui à la mise en œuvre.",
+        value: "La direction repart avec une position claire et actionnable.",
       },
     ],
     compliance: {
-      label: "Conformité CIMA",
-      text: "Provisions conformes à l'article 334-8. ENR estimatif traçable. Données sous votre contrôle, serveur dédié.",
+      label: "Approche intégrée",
+      text: "Une combinaison de modélisation actuarielle et d'accompagnement décisionnel.\nLes analyses sont produites, interprétées et traduites en décisions concrètes.",
     },
   },
 

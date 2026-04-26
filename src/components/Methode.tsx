@@ -27,18 +27,24 @@ export default function Methode() {
                 {t.methode.titleLine2}
               </span>
             </h2>
-            <p className="mt-6 text-[16px] text-text-muted leading-relaxed">
-              {t.methode.desc}
-            </p>
+            <div className="mt-6 space-y-3">
+              {(t.methode.desc as string[]).map((line, i) => (
+                <p key={i} className="text-[16px] text-text-muted leading-relaxed">
+                  {line}
+                </p>
+              ))}
+            </div>
 
-            {/* Conformité CIMA */}
+            {/* Approche intégrée */}
             <div className="mt-10 p-5 rounded-xl bg-navy/5 border border-navy/10">
               <p className="text-[12px] font-semibold text-navy uppercase tracking-[2px] mb-2">
                 {t.methode.compliance.label}
               </p>
-              <p className="text-[14px] text-text-muted leading-relaxed">
-                {t.methode.compliance.text}
-              </p>
+              {t.methode.compliance.text.split("\n").map((line: string, i: number) => (
+                <p key={i} className="text-[14px] text-text-muted leading-relaxed">
+                  {line}
+                </p>
+              ))}
             </div>
           </motion.div>
 
@@ -68,6 +74,16 @@ export default function Methode() {
                   <p className="mt-1 text-[14px] text-text-muted leading-relaxed">
                     {e.desc}
                   </p>
+                  {e.value && (
+                    <div className="mt-2 flex items-start gap-2">
+                      <span className="text-[11px] font-semibold text-teal uppercase tracking-wide shrink-0 mt-0.5">
+                        {t.methode.valueLabel}
+                      </span>
+                      <span className="text-[13px] text-navy font-medium leading-snug">
+                        {e.value}
+                      </span>
+                    </div>
+                  )}
                 </div>
               </motion.div>
             ))}

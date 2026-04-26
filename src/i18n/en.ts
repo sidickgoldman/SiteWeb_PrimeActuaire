@@ -192,35 +192,44 @@ export const en: Dictionary = {
   // Methode
   methode: {
     eyebrow: "Our Method",
-    titleLine1: "A structured process.",
-    titleLine2:
-      "Designed to reassure technical and general management.",
-    desc: "Each engagement follows a clear progression. From initial analysis to final presentation, every step produces an actionable deliverable — not just another document.",
+    titleLine1: "A structured process",
+    titleLine2: "to turn a portfolio under pressure into defensible decisions.",
+    desc: [
+      "We don't just deliver an analysis.",
+      "We help management understand where profitability is eroding, measure the risk, and decide on a quantified basis.",
+      "The platform produces the analysis. PrimeActuaire helps make the decision.",
+    ],
+    valueLabel: "Value delivered",
     steps: [
       {
-        title: "Technical diagnosis",
-        desc: "Analysis of portfolio structure, claims experience, and current pricing assumptions.",
+        title: "Understand the portfolio",
+        desc: "Identify the portfolio structure, benefits, groups, claims history and first areas of tension.",
+        value: "A clear picture of the starting position.",
       },
       {
-        title: "Portfolio analysis",
-        desc: "Segmentation by group, cost category, and risk profile. Identification of loss pockets.",
+        title: "Identify real losses",
+        desc: "Isolate groups, cost categories, drifts, fraud, abuse or atypical signals that genuinely weigh on results.",
+        value: "You know where profitability is eroding, and why.",
       },
       {
-        title: "Modeling & scenarios",
-        desc: "Stress tests, projections, IBNR provision calibration. Every assumption is traceable and testable.",
+        title: "Measure risk and set thresholds",
+        desc: "Assess the impact of discounts, stress-test assumptions, define the floor price and acceptable margin of maneuver.",
+        value: "You know how far you can go without selling at a loss.",
       },
       {
-        title: "Decision recommendations",
-        desc: "Quantified recommendations, not opinions. Tailored to the board, renewal, or tender context.",
+        title: "Frame the decision",
+        desc: "Turn analyses into clear positions for the CEO, CTO, board, renewal or negotiation context.",
+        value: "A defensible decision, not just a technical opinion.",
       },
       {
-        title: "Clear presentation",
-        desc: "Auditable report, interactive dashboards, support for board-level decision-making.",
+        title: "Present and support",
+        desc: "Produce a usable, documented synthesis for the board, with implementation support.",
+        value: "Management leaves with a clear, actionable position.",
       },
     ],
     compliance: {
-      label: "CIMA Compliance",
-      text: "Provisions compliant with CIMA Article 334-8. Traceable IBNR estimates. Data under your control, dedicated server.",
+      label: "Integrated approach",
+      text: "A combination of actuarial modeling and decision-making support.\nAnalyses are produced, interpreted and translated into concrete decisions.",
     },
   },
 
