@@ -414,7 +414,11 @@ export const fr = {
       {
         label: "Tarification",
         title: "Fixer un prix qui tient face au marché.",
-        intro: "Le sujet n’est pas de calculer un tarif. C’est de savoir jusqu’où aller sans dégrader la rentabilité.",
+        intro: [
+          "La tarification existe. La maîtrise technique manque.",
+          "Les données sont là. Les calculs aussi. Mais les décisions restent fragiles, faute de cadre clair.",
+          "Nous structurons la lecture et la décision.",
+        ],
         helpLabel: "Nous aidons à",
         bullets: [
           "définir un prix plancher réaliste",
@@ -428,7 +432,11 @@ export const fr = {
       {
         label: "Pilotage technique",
         title: "Comprendre ce qui dégrade réellement le portefeuille.",
-        intro: "Dérive, fraude, abus, surconsommation : tout se mélange. Sans lecture fine, les corrections arrivent trop tard et touchent les mauvais segments.",
+        intro: [
+          "Le portefeuille vit. Mais il est mal compris.",
+          "Dérive, fraude, abus ou pression marché se confondent. Les causes réelles restent difficiles à isoler.",
+          "Nous apportons une lecture claire et exploitable.",
+        ],
         helpLabel: "Nous aidons à",
         bullets: [
           "isoler les vraies causes",
@@ -442,7 +450,11 @@ export const fr = {
       {
         label: "Gouvernance technique",
         title: "Tenir une position défendable face au marché, au courtier, au comité.",
-        intro: "Le problème n’est pas d’avoir des données. C’est de pouvoir prendre position et la défendre quand la pression monte.",
+        intro: [
+          "Les décisions se prennent. Mais elles sont peu défendables.",
+          "Remises accordées, hausses refusées, arbitrages flous. En comité, la position manque souvent de solidité.",
+          "Nous aidons à formuler et défendre des décisions claires.",
+        ],
         helpLabel: "Nous aidons à",
         bullets: [
           "cadrer les scénarios",

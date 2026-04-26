@@ -9,7 +9,7 @@ import { useI18n } from "@/i18n";
 type Pillar = {
   label: string;
   title: string;
-  intro: string;
+  intro: string[];
   helpLabel: string;
   bullets: string[];
   outcomeLabel: string;
@@ -92,9 +92,13 @@ export default function ExpertisesClient() {
 
                   {/* Col droite : intro + bullets + résultat */}
                   <div className="lg:col-span-2">
-                    <p className="text-[16px] text-text-muted leading-relaxed mb-8">
-                      {pi.intro}
-                    </p>
+                    <div className="mb-8 space-y-3">
+                      {pi.intro.map((line, k) => (
+                        <p key={k} className="text-[16px] text-text-muted leading-relaxed">
+                          {line}
+                        </p>
+                      ))}
+                    </div>
 
                     <p className="text-[12px] font-semibold uppercase tracking-[2.5px] text-navy/60 mb-4">
                       {pi.helpLabel}

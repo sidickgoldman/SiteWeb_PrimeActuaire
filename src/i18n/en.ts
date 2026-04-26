@@ -416,7 +416,11 @@ export const en: Dictionary = {
       {
         label: "Pricing",
         title: "Set a price that holds up against the market.",
-        intro: "The point is not to compute a rate. It is knowing how far you can go without breaking profitability.",
+        intro: [
+          "Pricing exists. Technical mastery is missing.",
+          "The data is there. The calculations too. But decisions remain fragile, lacking a clear framework.",
+          "We structure the read and the decision.",
+        ],
         helpLabel: "We help you",
         bullets: [
           "set a realistic floor price",
@@ -430,7 +434,11 @@ export const en: Dictionary = {
       {
         label: "Technical monitoring",
         title: "Understand what really degrades the portfolio.",
-        intro: "Drift, fraud, abuse, overconsumption — everything blends together. Without a sharp read, corrections come late and hit the wrong segments.",
+        intro: [
+          "The portfolio lives. But it is poorly understood.",
+          "Drift, fraud, abuse and market pressure all blend together. The real causes remain hard to isolate.",
+          "We bring a clear, actionable read.",
+        ],
         helpLabel: "We help you",
         bullets: [
           "isolate the real causes",
@@ -444,7 +452,11 @@ export const en: Dictionary = {
       {
         label: "Technical governance",
         title: "Hold a defensible position against the market, the broker, the board.",
-        intro: "The problem isn’t having data. It’s being able to take a position and defend it when pressure rises.",
+        intro: [
+          "Decisions are made. But they are rarely defensible.",
+          "Discounts granted, increases refused, blurred trade-offs. In committee, the position often lacks substance.",
+          "We help formulate and defend clear decisions.",
+        ],
         helpLabel: "We help you",
         bullets: [
           "frame the scenarios",
