@@ -11,8 +11,8 @@ const caseImages = [
   "https://images.unsplash.com/photo-1543286386-2e659306cd6c?auto=format&fit=crop&w=800&q=70",
   // Card 3 – Remise / Simulation : financial charts
   "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=70",
-  // Card 4 – Diagnostic : Black female doctor reviewing data
-  "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=70",
+  // Card 4 – Diagnostic : medical professional reviewing data
+  "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=70",
   // Card 5 – Stress test : risk / data analytics
   "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=70",
   // Card 6 – Stratégie : chess board
