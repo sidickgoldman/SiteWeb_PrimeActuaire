@@ -38,15 +38,17 @@ export default function CasUsage({ teaser = false }: { teaser?: boolean }) {
         >
           {eyebrow}
         </motion.p>
-        <motion.h2
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl text-navy text-center mb-4"
-        >
-          {title}
-        </motion.h2>
+        {title && (
+          <motion.h2
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl text-navy text-center mb-4"
+          >
+            {title}
+          </motion.h2>
+        )}
         <p className="text-center text-text-muted text-[16px] mb-16 max-w-xl mx-auto">
           {subtitle}
         </p>

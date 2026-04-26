@@ -146,10 +146,10 @@ export const en: Dictionary = {
 
   // CasUsage
   casUsage: {
-    eyebrow: "Use Cases",
-    title: "Situations you'll recognize.",
+    eyebrow: "What these situations reveal",
+    title: "",
     subtitle:
-      "Each case comes from real engagements in the CIMA zone. Data is anonymized.",
+      "Pricing pressure, unread drifts, margins to justify, loss-making pockets: these cases show where profitability is really at stake.",
     eyebrowTeaser: "Use Cases",
     titleTeaser: "A few concrete situations.",
     subtitleTeaser: "An overview of real engagements in the CIMA zone. Data is anonymized.",

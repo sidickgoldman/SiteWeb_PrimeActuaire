@@ -144,10 +144,10 @@ export const fr = {
 
   // CasUsage
   casUsage: {
-    eyebrow: "Cas d'usage",
-    title: "Des situations que vous connaissez.",
+    eyebrow: "Ce que ces situations révèlent",
+    title: "",
     subtitle:
-      "Chaque cas est issu de missions réelles en zone CIMA. Les données sont anonymisées.",
+      "Pression tarifaire, dérives mal lues, remises à objectiver, poches déficitaires : ces cas montrent où la rentabilité se joue réellement.",
     eyebrowTeaser: "Cas d'usage",
     titleTeaser: "Quelques situations concrètes.",
     subtitleTeaser: "Un aperçu de missions réelles en zone CIMA. Données anonymisées.",
@@ -496,7 +496,7 @@ export const fr = {
   casUsagePage: {
     eyebrow: "Cas d'usage",
     title: "Des missions réelles. Des arbitrages chiffrés.",
-    desc: "Chaque cas est issu d'une mission réelle en zone CIMA. Les données sont anonymisées mais les situations, les arbitrages et les décisions sont authentiques.",
+    desc: "Chaque cas est issu d'une mission réelle en zone CIMA. Les données sont anonymisées, mais les situations, les arbitrages et les décisions sont authentiques.",
     deepTitle: "Ce que nos missions produisent concrètement.",
     deepSubtitle: "Des résultats mesurables, chiffrés, défendables en comité.",
     outcomes: [
