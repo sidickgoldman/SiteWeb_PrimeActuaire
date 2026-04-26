@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import CTAFinal from "@/components/CTAFinal";
 import { useI18n } from "@/i18n";
 
 type Pillar = {
@@ -179,7 +178,17 @@ export default function ExpertisesClient() {
           </div>
         </section>
 
-        <CTAFinal />
+        {/* CTA bouton */}
+        <section className="bg-bg-light py-16">
+          <div className="max-w-7xl mx-auto px-6 text-center">
+            <a
+              href="/#contact"
+              className="inline-block px-7 py-3.5 rounded-full bg-coral text-white font-semibold text-[15px] hover:bg-coral-dark transition-colors duration-200 shadow-lg shadow-coral/20"
+            >
+              {t.casUsage.cta}
+            </a>
+          </div>
+        </section>
       </main>
       <Footer />
     </>
