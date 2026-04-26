@@ -658,8 +658,8 @@ export const fr = {
   // ───── Page: Article detail ─────
   articlePage: {
     backLink: "← Tous les articles",
-    authorName: "Zana — Fondateur, PrimeActuaire",
-    authorBio: "Actuaire spécialisé en santé collective, zone CIMA. Accompagnement DT/DG et plateforme Tarif Santé Pro.",
+    authorName: "Fondateur, PrimeActuaire",
+    authorBio: "Actuaire spécialisé en santé collective, zone CIMA.",
     ctaLine: "Ce sujet résonne avec vos enjeux ?",
     ctaButton: "Planifier un échange",
   },

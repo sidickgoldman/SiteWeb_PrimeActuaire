@@ -660,8 +660,8 @@ export const en: Dictionary = {
   // ───── Page: Article detail ─────
   articlePage: {
     backLink: "← All articles",
-    authorName: "Zana — Founder, PrimeActuaire",
-    authorBio: "Actuary specialized in group health, CIMA zone. TD/CEO advisory and Tarif Santé Pro platform.",
+    authorName: "Founder, PrimeActuaire",
+    authorBio: "Actuary specialized in group health, CIMA zone.",
     ctaLine: "Does this topic resonate with your challenges?",
     ctaButton: "Schedule a call",
   },

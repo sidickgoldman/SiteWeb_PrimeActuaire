@@ -17,7 +17,7 @@ export const articles: Article[] = [
       "Un compte gagné, un commercial satisfait, un objectif couché dans le rapport. "
       + "Personne ne parle de ce qui arrive ensuite. La santé ne se rattrape pas. Elle dérive.",
     date: "2026-04-26",
-    readingTime: "5 min",
+    readingTime: "2 min",
     content: [
       "Un compte gagné. Un commercial satisfait. Un objectif trimestriel coché. "
       + "Personne ne parle des trois années suivantes.",
@@ -47,7 +47,7 @@ export const articles: Article[] = [
       + "Si 30 scénarios sur 100 mènent au déficit, la prime est fragile. "
       + "La moyenne rassure. La distribution révèle.",
     date: "2026-04-20",
-    readingTime: "4 min",
+    readingTime: "1 min",
     content: [
       "Chaque tarif santé collective valide une décision. "
       + "Une décision qui engage l'assureur sur 12 mois, souvent davantage. "
@@ -76,7 +76,7 @@ export const articles: Article[] = [
       + "Ce raisonnement tenait quand la santé pesait peu. "
       + "Il ne tient plus quand elle représente 20 à 30 % du portefeuille.",
     date: "2026-04-13",
-    readingTime: "4 min",
+    readingTime: "1 min",
     content: [
       "Il y a dix ans, la stratégie fonctionnait. On cassait le prix sur la santé pour entrer chez un client. "
       + "On se rattrapait sur les autres lignes. Le mécanisme semblait acceptable, "
