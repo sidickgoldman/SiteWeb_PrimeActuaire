@@ -86,7 +86,7 @@ export default function ExpertisesClient() {
                 >
                   {/* Col gauche : label + titre */}
                   <div className="lg:col-span-1">
-                    <span className="text-[12px] font-semibold uppercase tracking-[3px] text-gold">
+                    <span className="text-[12px] font-semibold uppercase tracking-[3px] text-teal">
                       0{i + 1} — {pi.label}
                     </span>
                     <h3 className="mt-3 font-[var(--font-heading)] font-bold text-2xl text-navy leading-snug">
@@ -110,15 +110,15 @@ export default function ExpertisesClient() {
                     <ul className="space-y-3 mb-8">
                       {pi.bullets.map((b, j) => (
                         <li key={j} className="flex items-start gap-3 text-[15px] text-navy/80">
-                          <span className="mt-[7px] w-1.5 h-1.5 rounded-full shrink-0 bg-gold" />
+                          <span className="mt-[7px] w-1.5 h-1.5 rounded-full shrink-0 bg-teal" />
                           <span>{b}</span>
                         </li>
                       ))}
                     </ul>
 
                     {/* Résultat callout */}
-                    <div className="border-l-2 border-gold pl-5 py-1 mb-6">
-                      <p className="text-[11px] font-semibold uppercase tracking-[2.5px] text-gold mb-1">
+                    <div className="border-l-2 border-teal pl-5 py-1 mb-6">
+                      <p className="text-[11px] font-semibold uppercase tracking-[2.5px] text-teal mb-1">
                         {pi.outcomeLabel}
                       </p>
                       <p className="text-[16px] text-navy font-medium leading-snug">
@@ -163,7 +163,7 @@ export default function ExpertisesClient() {
                   transition={{ duration: 0.5, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
                   className="bg-white border border-navy/[0.07] p-8"
                 >
-                  <span className="text-[11px] font-bold text-gold uppercase tracking-[3.5px] mb-5 block">
+                  <span className="text-[11px] font-bold text-teal uppercase tracking-[3.5px] mb-5 block">
                     0{i + 1}
                   </span>
                   <h3 className="font-[var(--font-heading)] font-bold text-[1.15rem] text-navy leading-snug mb-4">

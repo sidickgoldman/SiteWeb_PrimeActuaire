@@ -58,16 +58,16 @@ export default function InsightsClient() {
                   }}
                 >
                   <Link href={`/insights/${a.slug}`} className="block group">
-                    <article className="bg-white rounded-2xl p-8 h-full hover:shadow-xl hover:shadow-gold/5 border border-transparent hover:border-gold/15 transition-all duration-300">
+                    <article className="bg-white rounded-2xl p-8 h-full hover:shadow-xl hover:shadow-teal/5 border border-transparent hover:border-teal/15 transition-all duration-300">
                       <div className="flex items-center gap-3 mb-5">
-                        <span className="inline-block px-3 py-1 text-[11px] font-semibold text-gold bg-gold/10 rounded-full">
+                        <span className="inline-block px-3 py-1 text-[11px] font-semibold text-teal bg-teal/10 rounded-full">
                           {a.tag}
                         </span>
                         <span className="text-[12px] text-text-muted">
                           {a.readingTime}
                         </span>
                       </div>
-                      <h2 className="font-[var(--font-heading)] font-bold text-lg text-navy leading-snug group-hover:text-gold transition-colors duration-200">
+                      <h2 className="font-[var(--font-heading)] font-bold text-lg text-navy leading-snug group-hover:text-teal transition-colors duration-200">
                         {a.title}
                       </h2>
                       <p className="mt-3 text-[14px] text-text-muted leading-relaxed">
@@ -81,7 +81,7 @@ export default function InsightsClient() {
                             year: "numeric",
                           })}
                         </span>
-                        <span className="text-[13px] font-semibold text-gold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span className="text-[13px] font-semibold text-teal opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                           {p.readMore}
                         </span>
                       </div>

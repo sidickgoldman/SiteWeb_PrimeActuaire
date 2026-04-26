@@ -169,7 +169,7 @@ export default function AProposClient() {
               {p.expertiseTags.map((tag) => (
                 <span
                   key={tag}
-                  className="px-4 py-2 text-[13px] font-medium text-navy bg-navy/5 rounded-full hover:bg-gold/10 hover:text-gold transition-colors duration-200"
+                  className="px-4 py-2 text-[13px] font-medium text-navy bg-navy/5 rounded-full hover:bg-teal/10 hover:text-teal transition-colors duration-200"
                 >
                   {tag}
                 </span>

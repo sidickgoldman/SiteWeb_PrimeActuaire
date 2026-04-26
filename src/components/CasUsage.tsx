@@ -34,7 +34,7 @@ export default function CasUsage({ teaser = false }: { teaser?: boolean }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-[13px] font-semibold text-gold uppercase tracking-[4px] text-center mb-4"
+          className="text-[13px] font-semibold text-teal uppercase tracking-[4px] text-center mb-4"
         >
           {eyebrow}
         </motion.p>
@@ -75,7 +75,7 @@ export default function CasUsage({ teaser = false }: { teaser?: boolean }) {
                 </div>
               )}
               <div className="p-7">
-                <span className="inline-block px-3 py-1 text-[11px] font-semibold text-gold bg-gold/[0.08] rounded-full mb-4 tracking-wide uppercase">
+                <span className="inline-block px-3 py-1 text-[11px] font-semibold text-teal bg-teal/[0.08] rounded-full mb-4 tracking-wide uppercase">
                   {c.tag}
                 </span>
                 <h3 className="font-[var(--font-heading)] font-bold text-lg text-navy leading-snug">

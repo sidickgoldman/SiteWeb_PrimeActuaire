@@ -7,9 +7,9 @@ import { useI18n } from "@/i18n";
 import ScreenshotFrame from "@/components/ScreenshotFrame";
 
 const categoryStyles = [
-  { accent: "text-gold",    num: "text-gold/[0.10]" },
-  { accent: "text-gold",    num: "text-gold/[0.10]" },
-  { accent: "text-gold",    num: "text-gold/[0.10]" },
+  { accent: "text-teal",    num: "text-teal/[0.10]" },
+  { accent: "text-teal",    num: "text-teal/[0.10]" },
+  { accent: "text-teal",    num: "text-teal/[0.10]" },
 ];
 
 const barColors = [
@@ -143,7 +143,7 @@ export default function PlateformeClient() {
               transition={{ duration: 0.5 }}
               className="mb-20"
             >
-              <p className="text-[13px] font-semibold text-gold uppercase tracking-[4px] mb-4">
+              <p className="text-[13px] font-semibold text-teal uppercase tracking-[4px] mb-4">
                 {p.featuresEyebrow}
               </p>
               <h2 className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-[2.5rem] text-navy max-w-xl leading-tight">
@@ -215,7 +215,7 @@ export default function PlateformeClient() {
               transition={{ duration: 0.5 }}
               className="text-center mb-16"
             >
-              <p className="text-[13px] font-semibold text-gold uppercase tracking-[4px] mb-4">
+              <p className="text-[13px] font-semibold text-teal uppercase tracking-[4px] mb-4">
                 {p.screenshotsEyebrow}
               </p>
               <h2 className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl text-navy">

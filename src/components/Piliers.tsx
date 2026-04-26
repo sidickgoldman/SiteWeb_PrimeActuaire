@@ -71,7 +71,7 @@ export default function Piliers({ teaser = false }: { teaser?: boolean }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-[13px] font-semibold text-gold uppercase tracking-[4px] text-center mb-5"
+          className="text-[13px] font-semibold text-teal uppercase tracking-[4px] text-center mb-5"
         >
           {eyebrow}
         </motion.p>
@@ -100,15 +100,15 @@ export default function Piliers({ teaser = false }: { teaser?: boolean }) {
                   href={a.href}
                   className="group relative flex flex-col h-full bg-white rounded-[20px] px-8 lg:px-10 pt-10 pb-10 shadow-[0_1px_2px_rgba(11,22,40,0.04),0_8px_24px_-12px_rgba(11,22,40,0.08)] hover:shadow-[0_4px_12px_rgba(11,22,40,0.06),0_24px_48px_-16px_rgba(11,22,40,0.18)] hover:shadow-gold/10 transition-all duration-500 hover:-translate-y-2 overflow-hidden"
                 >
-                  {/* Barre d'accent gold qui s'étire au hover */}
-                  <span className="absolute top-0 left-0 h-[3px] w-16 bg-gold transition-all duration-500 group-hover:w-full" />
+                  {/* Barre d'accent teal qui s'étire au hover */}
+                  <span className="absolute top-0 left-0 h-[3px] w-16 bg-teal transition-all duration-500 group-hover:w-full" />
 
                   {/* Top : numéro + label */}
                   <div className="flex items-center justify-between mb-8">
                     <span className="font-[var(--font-heading)] font-semibold text-[12px] text-navy/25 tracking-[2px]">
                       0{i + 1} / 03
                     </span>
-                    <p className="text-[11px] font-bold uppercase tracking-[3px] text-gold">
+                    <p className="text-[11px] font-bold uppercase tracking-[3px] text-teal">
                       {p.label}
                     </p>
                   </div>
@@ -135,7 +135,7 @@ export default function Piliers({ teaser = false }: { teaser?: boolean }) {
                   </div>
 
                   {/* CTA — flèche qui slide au hover */}
-                  <div className="flex items-center justify-center gap-2 text-[12px] font-bold text-gold uppercase tracking-[3px]">
+                  <div className="flex items-center justify-center gap-2 text-[12px] font-bold text-teal uppercase tracking-[3px]">
                     <span>Découvrir</span>
                     <span aria-hidden="true" className="inline-block transition-transform duration-300 group-hover:translate-x-2">→</span>
                   </div>
@@ -149,7 +149,7 @@ export default function Piliers({ teaser = false }: { teaser?: boolean }) {
           <div className="mt-16 text-center">
             <Link
               href="/expertises"
-              className="inline-flex items-center gap-2 text-navy font-semibold text-[15px] hover:text-gold transition-colors border-b-2 border-gold/40 hover:border-gold pb-1"
+              className="inline-flex items-center gap-2 text-navy font-semibold text-[15px] hover:text-teal transition-colors border-b-2 border-teal/40 hover:border-teal pb-1"
             >
               {t.piliers.ctaTeaser}
               <span aria-hidden="true">→</span>

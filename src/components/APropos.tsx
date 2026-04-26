@@ -18,7 +18,7 @@ export default function APropos() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p className="text-[13px] font-semibold text-gold uppercase tracking-[4px] mb-4">
+            <p className="text-[13px] font-semibold text-teal uppercase tracking-[4px] mb-4">
               {t.aPropos.eyebrow}
             </p>
             <h2 className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-[2.75rem] text-navy leading-tight">
@@ -57,7 +57,7 @@ export default function APropos() {
             transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           >
             <div className="bg-navy rounded-2xl p-10 text-white">
-              <p className="text-[13px] font-semibold text-gold/60 uppercase tracking-[3px] mb-6">
+              <p className="text-[13px] font-semibold text-teal/60 uppercase tracking-[3px] mb-6">
                 {t.aPropos.philosophyLabel}
               </p>
               <blockquote className="font-[var(--font-heading)] font-bold text-xl lg:text-2xl leading-snug">
@@ -75,7 +75,7 @@ export default function APropos() {
                   {t.aPropos.expertiseTags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1.5 text-[12px] font-medium text-gold/70 bg-gold/10 rounded-full"
+                      className="px-3 py-1.5 text-[12px] font-medium text-teal/70 bg-teal/10 rounded-full"
                     >
                       {tag}
                     </span>

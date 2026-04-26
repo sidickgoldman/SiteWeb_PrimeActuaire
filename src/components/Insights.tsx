@@ -59,7 +59,7 @@ export default function Insights() {
               transition={{ duration: 0.5, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] }}
             >
               <Link href={`/insights/${a.slug}`} className="block group bg-bg-light rounded-2xl p-8 hover:shadow-xl hover:shadow-gold/5 border border-transparent hover:border-gold/15 transition-all duration-300">
-                <span className="inline-block px-3 py-1 text-[11px] font-semibold text-gold bg-gold/10 rounded-full mb-5">
+                <span className="inline-block px-3 py-1 text-[11px] font-semibold text-teal bg-teal/10 rounded-full mb-5">
                   {a.tag}
                 </span>
                 <h3 className="font-[var(--font-heading)] font-bold text-lg text-navy leading-snug group-hover:text-gold transition-colors duration-200">
@@ -68,7 +68,7 @@ export default function Insights() {
                 <p className="mt-3 text-[14px] text-text-muted leading-relaxed">
                   {a.excerpt}
                 </p>
-                <span className="inline-block mt-5 text-[13px] font-semibold text-gold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span className="inline-block mt-5 text-[13px] font-semibold text-teal opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {t.insights.readMore}
                 </span>
               </Link>

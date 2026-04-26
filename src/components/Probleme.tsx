@@ -28,7 +28,7 @@ export default function Probleme() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-[13px] font-semibold text-gold uppercase tracking-[4px] mb-4"
+          className="text-[13px] font-semibold text-teal uppercase tracking-[4px] mb-4"
         >
           {t.probleme.eyebrow}
         </motion.p>
