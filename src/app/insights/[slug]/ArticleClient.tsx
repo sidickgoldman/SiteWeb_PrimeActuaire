@@ -51,7 +51,7 @@ export default function ArticleClient({ article }: { article: Article }) {
                   </span>
                 </div>
 
-                <h1 className="font-[var(--font-heading)] font-extrabold text-[clamp(1.8rem,4vw,3rem)] text-white leading-[1.15] tracking-tight">
+                <h1 className="font-[var(--font-heading)] font-extrabold text-[clamp(1.8rem,4vw,3rem)] text-white leading-[1.15] tracking-tight whitespace-pre-line">
                   {article.title}
                 </h1>
                 <p className="mt-6 text-lg text-white/45 leading-relaxed font-light">

@@ -62,7 +62,7 @@ export default function Insights() {
                 <span className="inline-block px-3 py-1 text-[11px] font-semibold text-teal bg-teal/10 rounded-full mb-5">
                   {a.tag}
                 </span>
-                <h3 className="font-[var(--font-heading)] font-bold text-lg text-navy leading-snug group-hover:text-gold transition-colors duration-200">
+                <h3 className="font-[var(--font-heading)] font-bold text-lg text-navy leading-snug group-hover:text-gold transition-colors duration-200 whitespace-pre-line">
                   {a.title}
                 </h3>
                 <p className="mt-3 text-[14px] text-text-muted leading-relaxed">

@@ -67,7 +67,7 @@ export default function InsightsClient() {
                           {a.readingTime}
                         </span>
                       </div>
-                      <h2 className="font-[var(--font-heading)] font-bold text-lg text-navy leading-snug group-hover:text-teal transition-colors duration-200">
+                      <h2 className="font-[var(--font-heading)] font-bold text-lg text-navy leading-snug group-hover:text-teal transition-colors duration-200 whitespace-pre-line">
                         {a.title}
                       </h2>
                       <p className="mt-3 text-[14px] text-text-muted leading-relaxed">
