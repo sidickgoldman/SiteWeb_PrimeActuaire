@@ -43,48 +43,6 @@ export default function CasUsageClient() {
         {/* 5 cas complets */}
         <CasUsage />
 
-        {/* Profondeur — résultats chiffrés */}
-        <section className="bg-bg-light py-24">
-          <div className="max-w-6xl mx-auto px-6">
-            <motion.h2
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl text-navy text-center mb-4"
-            >
-              {p.deepTitle}
-            </motion.h2>
-            <p className="text-center text-text-muted text-[16px] mb-16 max-w-2xl mx-auto">
-              {p.deepSubtitle}
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {p.outcomes.map((o, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-60px" }}
-                  transition={{ duration: 0.5, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-                  className={`bg-white rounded-2xl p-7 border-l-4 ${
-                    ["border-coral", "border-gold", "border-teal", "border-coral"][i]
-                  }`}
-                >
-                  <p className={`font-[var(--font-heading)] font-extrabold text-3xl leading-none ${
-                    ["text-coral", "text-gold", "text-teal", "text-coral"][i]
-                  }`}>
-                    {o.value}
-                  </p>
-                  <p className="mt-3 text-[14px] text-text-muted leading-snug">
-                    {o.label}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         <CTAFinal />
       </main>
       <Footer />
