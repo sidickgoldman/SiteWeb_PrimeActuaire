@@ -42,22 +42,22 @@ export const en: Dictionary = {
   // HowItWorks
   howItWorks: {
     eyebrow: "How It Works",
-    title: "Three steps from raw data to defensible decisions.",
+    title: "What concretely changes in the way you decide.",
     steps: [
       {
         num: "01",
-        title: "We structure your portfolio",
-        desc: "From your actual claims data, even if incomplete. A usable base, calibrated on your portfolio.",
+        title: "You finally see your portfolio clearly",
+        desc: "Scattered data, partial reads, blind spots.\nWe structure a reliable base to truly understand what is happening.",
       },
       {
         num: "02",
-        title: "We quantify the profitability leaks",
-        desc: "Under-pricing, drift and unquantified discounts: profitability leaks become visible and measurable.",
+        title: "You identify what is destroying profitability",
+        desc: "Under-pricing, drifts, unquantified discounts, fraud or abuse.\nYou know where to act, and on what.",
       },
       {
         num: "03",
-        title: "You decide on a defensible basis",
-        desc: "In committee, at renewal or facing the broker, with figures grounded in your real data.",
+        title: "You decide with defensible figures",
+        desc: "Floor price, decision impact, risk level.\nYou defend your positions in committee, at renewal or facing the broker.",
       },
     ],
   },

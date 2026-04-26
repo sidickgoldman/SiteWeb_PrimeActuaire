@@ -40,22 +40,22 @@ export const fr = {
   // HowItWorks
   howItWorks: {
     eyebrow: "Comment ça marche",
-    title: "Trois étapes pour passer de la donnée à la décision.",
+    title: "Ce qui change concrètement dans votre manière de décider.",
     steps: [
       {
         num: "01",
-        title: "Nous structurons votre portefeuille",
-        desc: "À partir de vos bordereaux réels, même incomplets. Une base exploitable, calibrée sur votre portefeuille.",
+        title: "Vous voyez enfin clairement votre portefeuille",
+        desc: "Données dispersées, lectures partielles, angles morts.\nNous structurons une base fiable pour comprendre réellement ce qui se passe.",
       },
       {
         num: "02",
-        title: "Nous chiffrons les fuites de rentabilité",
-        desc: "Sous-tarification, dérives et remises non chiffrées : les fuites de rentabilité deviennent visibles et mesurables.",
+        title: "Vous identifiez ce qui détruit la rentabilité",
+        desc: "Sous-tarification, dérives, remises non chiffrées, fraude ou abus.\nVous savez où agir, et sur quoi.",
       },
       {
         num: "03",
-        title: "Vous arbitrez sur base opposable",
-        desc: "En comité, en renouvellement ou face au courtier, avec des chiffres fondés sur vos données réelles.",
+        title: "Vous décidez avec des chiffres défendables",
+        desc: "Prix plancher, impact des décisions, niveau de risque.\nVous défendez vos positions en comité, en renouvellement ou face au courtier.",
       },
     ],
   },

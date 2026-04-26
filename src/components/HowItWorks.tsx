@@ -45,9 +45,11 @@ export default function HowItWorks() {
                   {step.title}
                 </h3>
               </div>
-              <p className="mt-3 text-[15px] text-white/55 leading-relaxed flex-1">
-                {step.desc}
-              </p>
+              <div className="mt-3 text-[15px] text-white/55 leading-relaxed flex-1 space-y-2">
+                {step.desc.split("\n").map((line: string, li: number) => (
+                  <p key={li}>{line}</p>
+                ))}
+              </div>
             </motion.div>
           ))}
         </div>
