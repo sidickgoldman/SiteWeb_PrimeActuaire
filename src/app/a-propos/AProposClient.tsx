@@ -5,6 +5,33 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useI18n } from "@/i18n";
 
+const valeurIcons = [
+  // Rigueur actuarielle — shield check
+  <div key={0} className="w-11 h-11 rounded-xl bg-teal/10 flex items-center justify-center">
+    <svg className="w-5 h-5 text-teal" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+    </svg>
+  </div>,
+  // Focus exclusif — viewfinder
+  <div key={1} className="w-11 h-11 rounded-xl bg-teal/10 flex items-center justify-center">
+    <svg className="w-5 h-5 text-teal" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 3.75H6A2.25 2.25 0 0 0 3.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0 1 20.25 6v1.5m0 9V18A2.25 2.25 0 0 1 18 20.25h-1.5m-9 0H6A2.25 2.25 0 0 1 3.75 18v-1.5M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+    </svg>
+  </div>,
+  // Vitesse de décision — bolt
+  <div key={2} className="w-11 h-11 rounded-xl bg-teal/10 flex items-center justify-center">
+    <svg className="w-5 h-5 text-teal" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+    </svg>
+  </div>,
+  // Souveraineté des données — lock
+  <div key={3} className="w-11 h-11 rounded-xl bg-teal/10 flex items-center justify-center">
+    <svg className="w-5 h-5 text-teal" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+    </svg>
+  </div>,
+];
+
 export default function AProposClient() {
   const { t } = useI18n();
   const p = t.aProposPage;
@@ -91,11 +118,11 @@ export default function AProposClient() {
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="bg-white rounded-2xl p-7 hover:shadow-xl transition-shadow duration-300"
                 >
-                  <span className="text-3xl">{v.icon}</span>
+                  {valeurIcons[i]}
                   <h3 className="mt-4 font-[var(--font-heading)] font-bold text-lg text-navy">
                     {v.title}
                   </h3>
-                  <p className="mt-3 text-[14px] text-text-muted leading-relaxed">
+                  <p className="mt-3 text-[14px] text-text-muted leading-relaxed whitespace-pre-line">
                     {v.desc}
                   </p>
                 </motion.div>
