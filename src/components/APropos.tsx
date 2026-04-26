@@ -67,21 +67,7 @@ export default function APropos() {
                 {t.aPropos.philosophyText}
               </p>
 
-              <div className="mt-8 pt-6 border-t border-white/10">
-                <p className="text-[13px] text-white/50 uppercase tracking-widest mb-3">
-                  {t.aPropos.expertiseLabel}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {t.aPropos.expertiseTags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-3 py-1.5 text-[12px] font-medium text-teal/70 bg-teal/10 rounded-full"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
+
             </div>
           </motion.div>
         </div>

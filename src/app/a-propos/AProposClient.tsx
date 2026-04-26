@@ -180,31 +180,6 @@ export default function AProposClient() {
           </div>
         </section>
 
-        {/* Expertise tags */}
-        <section className="bg-bg-light py-20">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="max-w-4xl mx-auto px-6 text-center"
-          >
-            <p className="text-[13px] font-semibold text-navy/40 uppercase tracking-[4px] mb-6">
-              {p.expertiseEyebrow}
-            </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              {p.expertiseTags.map((tag) => (
-                <span
-                  key={tag}
-                  className="px-4 py-2 text-[13px] font-medium text-navy bg-navy/5 rounded-full hover:bg-teal/10 hover:text-teal transition-colors duration-200"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </motion.div>
-        </section>
-
         {/* CTA */}
         <section className="bg-navy py-20">
           <motion.div
