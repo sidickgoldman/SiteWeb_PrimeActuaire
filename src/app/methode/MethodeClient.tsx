@@ -5,7 +5,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HowItWorks from "@/components/HowItWorks";
 import Methode from "@/components/Methode";
-import CTAFinal from "@/components/CTAFinal";
 import { useI18n } from "@/i18n";
 
 export default function MethodeClient() {
@@ -41,7 +40,17 @@ export default function MethodeClient() {
 
         <HowItWorks />
         <Methode />
-        <CTAFinal />
+        {/* CTA bouton */}
+        <section className="bg-bg-light py-16">
+          <div className="max-w-7xl mx-auto px-6 text-center">
+            <a
+              href="/#contact"
+              className="inline-block px-7 py-3.5 rounded-full bg-coral text-white font-semibold text-[15px] hover:bg-coral-dark transition-colors duration-200 shadow-lg shadow-coral/20"
+            >
+              {t.casUsage.cta}
+            </a>
+          </div>
+        </section>
       </main>
       <Footer />
     </>
