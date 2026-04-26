@@ -24,6 +24,7 @@ export default function ExpertisesClient() {
   const p = t.expertisesPage;
   const pillars = p.pillars as Pillar[];
   const whyItems = p.whyItems as WhyItem[];
+  const desc = p.desc as string[];
 
   return (
     <>
@@ -41,15 +42,19 @@ export default function ExpertisesClient() {
               transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
               className="max-w-3xl"
             >
-              <p className="text-[13px] font-semibold text-gold uppercase tracking-[4px] mb-6">
+              <p className="mt-6 text-[13px] font-semibold text-gold uppercase tracking-[4px] mb-6">
                 {p.eyebrow}
               </p>
               <h1 className="font-[var(--font-heading)] font-extrabold text-[clamp(2.2rem,5vw,3.8rem)] text-white leading-[1.1] tracking-tight">
                 {p.title}
               </h1>
-              <p className="mt-6 text-lg text-white/45 leading-relaxed max-w-2xl font-light">
-                {p.desc}
-              </p>
+              <div className="mt-6 space-y-3 max-w-2xl">
+                {desc.map((line, i) => (
+                  <p key={i} className="text-lg text-white/45 leading-relaxed font-light">
+                    {line}
+                  </p>
+                ))}
+              </div>
             </motion.div>
           </div>
         </section>

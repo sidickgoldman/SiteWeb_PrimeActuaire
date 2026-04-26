@@ -407,7 +407,10 @@ export const fr = {
   expertisesPage: {
     eyebrow: "Expertise conseil",
     title: "Là où les décisions font ou détruisent la rentabilité.",
-    desc: "Dans un marché qui tire les tarifs vers le bas, la moindre décision mal cadrée coûte plusieurs points de S/P. Nous accompagnons les directions techniques et générales pour structurer leurs décisions tarifaires, lire les dérives réelles et défendre leurs positions face au marché.",
+    desc: [
+      "Dans un marché qui tire les tarifs vers le bas, la moindre décision mal cadrée coûte plusieurs points de S/P.",
+      "Nous accompagnons les directions techniques et générales pour structurer leurs décisions tarifaires, lire les dérives réelles et défendre leurs positions face au marché.",
+    ],
     pillarsTitle: "Trois terrains. Une seule promesse : décider avec maîtrise.",
     pillarsSubtitle: "Nous ne vendons pas une méthode actuarielle. Nous structurons les décisions qui pèsent sur la rentabilité.",
     pillars: [

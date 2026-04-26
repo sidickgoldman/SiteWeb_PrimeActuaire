@@ -409,7 +409,10 @@ export const en: Dictionary = {
   expertisesPage: {
     eyebrow: "Advisory expertise",
     title: "Where decisions make or break profitability.",
-    desc: "In a market that pushes prices down, every poorly framed decision costs several points of loss ratio. We support technical and general management in structuring pricing decisions, reading actual portfolio drift and defending their positions against market pressure.",
+    desc: [
+      "In a market that pushes prices down, every poorly framed decision costs several points of loss ratio.",
+      "We support technical and general management in structuring pricing decisions, reading actual portfolio drift and defending their positions against market pressure.",
+    ],
     pillarsTitle: "Three fronts. One promise: decide with control.",
     pillarsSubtitle: "We don’t sell an actuarial method. We structure the decisions that drive profitability.",
     pillars: [
