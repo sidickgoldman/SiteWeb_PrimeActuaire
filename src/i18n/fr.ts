@@ -658,7 +658,7 @@ export const fr = {
   // ───── Page: Article detail ─────
   articlePage: {
     backLink: "← Tous les articles",
-    authorName: "Fondateur, PrimeActuaire",
+    authorName: "Zana, Fondateur PrimeActuaire",
     authorBio: "Actuaire spécialisé en santé collective, zone CIMA.",
     ctaLine: "Ce sujet résonne avec vos enjeux ?",
     ctaButton: "Planifier un échange",

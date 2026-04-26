@@ -660,7 +660,7 @@ export const en: Dictionary = {
   // ───── Page: Article detail ─────
   articlePage: {
     backLink: "← All articles",
-    authorName: "Founder, PrimeActuaire",
+    authorName: "Zana, Founder PrimeActuaire",
     authorBio: "Actuary specialized in group health, CIMA zone.",
     ctaLine: "Does this topic resonate with your challenges?",
     ctaButton: "Schedule a call",
