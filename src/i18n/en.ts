@@ -650,7 +650,7 @@ export const en: Dictionary = {
   insightsPage: {
     heroEyebrow: "Insights",
     heroTitle: "Perspectives on group health insurance.",
-    heroDesc: "Analyses, field insights, and reflections on pricing, technical governance, and portfolio management in the CIMA zone.",
+    heroDesc: "Reflections, analyses and field insights.",
     readMore: "Read →",
     ctaTitle: "Does a topic resonate?",
     ctaDesc: "Let's discuss your portfolio. 20 minutes is enough for an initial assessment.",

@@ -648,7 +648,7 @@ export const fr = {
   insightsPage: {
     heroEyebrow: "Insights",
     heroTitle: "Perspectives sur la santé collective.",
-    heroDesc: "Analyses, retours terrain et réflexions sur la tarification, la gouvernance technique et le pilotage de portefeuille en zone CIMA.",
+    heroDesc: "Réflexions, analyses et retours terrain.",
     readMore: "Lire →",
     ctaTitle: "Un sujet vous parle ?",
     ctaDesc: "Échangeons sur votre portefeuille. 20 minutes suffisent pour un premier diagnostic.",
