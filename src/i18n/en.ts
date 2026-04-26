@@ -621,7 +621,7 @@ export const en: Dictionary = {
     quoteRole: "Actuary · Group health advisory CIMA",
     missionEyebrow: "Mission",
     missionTitle: "Give technical directors the means to decide with data.",
-    missionDesc: "Not with intuition. Not under sales pressure. With traceable analyses, defensible figures, and tools built for the CIMA landscape.",
+    missionDesc: "No intuitions. No commercial pressure. Traceable analyses, before the decision is made.",
     valeurs: [
       { icon: "📐", title: "Actuarial rigor", desc: "Every figure we produce is traceable, testable, and defensible in committee. Assumptions are documented." },
       { icon: "🎯", title: "Exclusive focus", desc: "Group health in the CIMA zone. No auto insurance, no P&C, no diversification. One discipline, mastered in depth." },

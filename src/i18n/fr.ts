@@ -619,7 +619,7 @@ export const fr = {
     quoteRole: "Actuaire · Conseil santé collective CIMA",
     missionEyebrow: "Mission",
     missionTitle: "Donner aux directions techniques les moyens de décider avec des données.",
-    missionDesc: "Pas avec des intuitions. Pas sous la pression du commercial. Avec des analyses traçables, des chiffres défendables, et des outils conçus pour le terrain CIMA.",
+    missionDesc: "Pas d'intuitions. Pas de pression commerciale. Des analyses traçables, avant que la décision soit prise.",
     valeurs: [
       { icon: "📐", title: "Rigueur actuarielle", desc: "Chaque chiffre que nous produisons est traçable, testable, et défendable en comité. Les hypothèses sont documentées." },
       { icon: "🎯", title: "Focus exclusif", desc: "Santé collective en zone CIMA. Pas d'assurance auto, pas d'IARD, pas de diversification. Un seul métier, maîtrisé en profondeur." },
