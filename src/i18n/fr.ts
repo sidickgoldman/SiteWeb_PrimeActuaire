@@ -179,6 +179,11 @@ export const fr = {
         title: "Lecture du risque avant décision",
         desc: "Avant un appel d'offres, le DT doit défendre un tarif technique. Les stress tests Monte Carlo donnent une fourchette de confiance. Le tarif n'est plus une opinion — c'est une position chiffrée.",
       },
+      {
+        tag: "Stratégie",
+        title: "La santé utilisée pour gagner… mais qui coûte après",
+        desc: "Un contrat est gagné avec un tarif agressif.\nLa rentabilité est censée venir ailleurs.\nNous mesurons l'impact réel sur le portefeuille.\nLa direction ajuste sa stratégie avant que la dérive ne s'installe.",
+      },
     ],
   },
 

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useI18n } from "@/i18n";
 
-// Unsplash images for the first 3 cards (w=800 for perf)
+// Unsplash images for all 6 cards (w=800 for perf)
 const caseImages = [
   // Card 1 – Renouvellement : hands reviewing contract documents
   "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=70",
@@ -11,6 +11,12 @@ const caseImages = [
   "https://images.unsplash.com/photo-1543286386-2e659306cd6c?auto=format&fit=crop&w=800&q=70",
   // Card 3 – Remise / Simulation : financial charts
   "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=70",
+  // Card 4 – Diagnostic : medical professional reviewing data
+  "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=70",
+  // Card 5 – Stress test : risk / data analytics
+  "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=70",
+  // Card 6 – Stratégie : chess board
+  "https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?auto=format&fit=crop&w=800&q=70",
 ];
 
 export default function CasUsage({ teaser = false }: { teaser?: boolean }) {
@@ -53,14 +59,7 @@ export default function CasUsage({ teaser = false }: { teaser?: boolean }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className={`group bg-white/[0.03] border border-white/[0.06] rounded-2xl overflow-hidden hover:border-gold/25 hover:bg-white/[0.05] transition-all duration-300 ${
-                cases.length === 5 && i >= 3 ? "lg:col-span-1 lg:mx-auto lg:max-w-sm" : ""
-              }`}
-              style={
-                cases.length === 5 && i === 3
-                  ? { gridColumn: "2 / 3" }
-                  : undefined
-              }
+              className="group bg-white/[0.03] border border-white/[0.06] rounded-2xl overflow-hidden hover:border-gold/25 hover:bg-white/[0.05] transition-all duration-300"
             >
               {caseImages[i] && (
                 <div className="relative w-full overflow-hidden" style={{ aspectRatio: "16/9" }}>

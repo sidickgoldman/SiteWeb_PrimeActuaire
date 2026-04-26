@@ -181,6 +181,11 @@ export const en: Dictionary = {
         title: "Risk assessment before decisions",
         desc: "Before a tender, the technical director must defend a technical premium. Monte Carlo stress tests provide a confidence interval. The premium is no longer an opinion — it's a quantified position.",
       },
+      {
+        tag: "Strategy",
+        title: "Health coverage used to win — but costly afterwards",
+        desc: "A contract is won with an aggressive rate.\nProfitability is expected to come from elsewhere.\nWe measure the real impact on the portfolio.\nManagement adjusts strategy before drift sets in.",
+      },
     ],
   },
 
