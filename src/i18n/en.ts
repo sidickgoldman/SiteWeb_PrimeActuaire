@@ -615,10 +615,10 @@ export const en: Dictionary = {
   aProposPage: {
     heroEyebrow: "About",
     heroTitle: "An actuary building the tools he wished he had.",
-    heroDesc: "PrimeActuaire was born from a field observation: technical directors in the CIMA zone lack the right tools to defend their pricing decisions.",
-    quote: "A technical premium must be a defensible position — not an opinion adjusted at the margins.",
+    heroDesc: "PrimeActuaire is first and foremost actuarial expertise in group health, CIMA zone. The tool exists because no spreadsheet is enough to structure a real pricing advisory.",
+    quote: "A technical premium must be a defensible position. Not an opinion adjusted at the margins.",
     quoteAuthor: "Zana",
-    quoteRole: "Founder · Actuary",
+    quoteRole: "Actuary · Group health advisory CIMA",
     missionEyebrow: "Mission",
     missionTitle: "Give technical directors the means to decide with data.",
     missionDesc: "Not with intuition. Not under sales pressure. With traceable analyses, defensible figures, and tools built for the CIMA landscape.",

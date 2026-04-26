@@ -47,7 +47,7 @@ export default function AProposClient() {
                   </blockquote>
                   <div className="mt-6 flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-gold/10 border border-gold/20 flex items-center justify-center">
-                      <span className="font-[var(--font-heading)] font-extrabold text-gold text-lg">S</span>
+                      <span className="font-[var(--font-heading)] font-extrabold text-gold text-lg">Z</span>
                     </div>
                     <div>
                       <p className="text-white font-semibold text-[14px]">{p.quoteAuthor}</p>

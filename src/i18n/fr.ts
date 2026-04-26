@@ -613,10 +613,10 @@ export const fr = {
   aProposPage: {
     heroEyebrow: "À propos",
     heroTitle: "Un actuaire qui construit les outils qu'il aurait voulu avoir.",
-    heroDesc: "PrimeActuaire est né d'un constat terrain : les directions techniques en zone CIMA manquent d'outils adaptés pour défendre leurs décisions tarifaires.",
-    quote: "Un tarif technique doit être une position défendable — pas une opinion ajustée à la marge.",
+    heroDesc: "PrimeActuaire, c'est d'abord une expertise actuarielle en santé collective CIMA. L'outil existe parce qu'aucun tableur ne suffit à structurer un vrai conseil tarifaire.",
+    quote: "Un tarif technique doit être une position défendable. Pas une opinion ajustée à la marge.",
     quoteAuthor: "Zana",
-    quoteRole: "Fondateur · Actuaire",
+    quoteRole: "Actuaire · Conseil santé collective CIMA",
     missionEyebrow: "Mission",
     missionTitle: "Donner aux directions techniques les moyens de décider avec des données.",
     missionDesc: "Pas avec des intuitions. Pas sous la pression du commercial. Avec des analyses traçables, des chiffres défendables, et des outils conçus pour le terrain CIMA.",
