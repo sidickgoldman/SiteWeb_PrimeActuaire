@@ -172,12 +172,12 @@ export const fr = {
       {
         tag: "Diagnostic",
         title: "Analyse par poste de soins",
-        desc: "Le poste pharmacie explose sur un groupe.\nSuprescription ? Surfacturation ? Abus prestataire ?\nL'analyse poste par poste isole la cause.\nNous orientons l'action ciblée au lieu d'une hausse globale.",
+        desc: "Un poste de soins dérive sur un groupe.\nLa cause n'est pas immédiatement identifiable.\nSuprescription, surfacturation, abus prestataire ou dérive technique : les signaux se confondent.\nL'analyse poste par poste isole l'origine réelle.\nLa direction met en place une action ciblée, sans pénaliser l'ensemble du portefeuille.",
       },
       {
         tag: "Stress test",
         title: "Lecture du risque avant décision",
-        desc: "Avant un appel d'offres, le DT doit défendre un tarif technique.\nLes stress tests Monte Carlo donnent une fourchette de confiance.\nLe tarif n'est plus une opinion — c'est une position chiffrée.",
+        desc: "Avant un appel d'offres ou un renouvellement, le tarif proposé peut sembler compétitif.\nMais son niveau de risque reste souvent mal mesuré.\nLes stress tests simulent plusieurs scénarios de sinistralité et définissent une zone de prix acceptable.\nLa direction sait jusqu'où aller sans vendre à perte et où fixer la limite.",
       },
       {
         tag: "Stratégie",

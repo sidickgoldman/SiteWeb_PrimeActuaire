@@ -27,7 +27,7 @@ export default function CasUsage({ teaser = false }: { teaser?: boolean }) {
   const subtitle = teaser ? t.casUsage.subtitleTeaser : t.casUsage.subtitle;
 
   return (
-    <section className="bg-navy py-24" id="cas-usage">
+    <section className="bg-bg-light py-24" id="cas-usage">
       <div className="max-w-7xl mx-auto px-6">
         <motion.p
           initial={{ opacity: 0, y: 15 }}
@@ -43,11 +43,11 @@ export default function CasUsage({ teaser = false }: { teaser?: boolean }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl text-white text-center mb-4"
+          className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl text-navy text-center mb-4"
         >
           {title}
         </motion.h2>
-        <p className="text-center text-white/55 text-[16px] mb-16 max-w-xl mx-auto">
+        <p className="text-center text-text-muted text-[16px] mb-16 max-w-xl mx-auto">
           {subtitle}
         </p>
 
@@ -59,7 +59,7 @@ export default function CasUsage({ teaser = false }: { teaser?: boolean }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className="group bg-white/[0.03] border border-white/[0.06] rounded-2xl overflow-hidden hover:border-gold/25 hover:bg-white/[0.05] transition-all duration-300"
+              className="group bg-white border border-navy/[0.07] rounded-2xl overflow-hidden hover:border-gold/30 hover:shadow-md transition-all duration-300"
             >
               {caseImages[i] && (
                 <div className="relative w-full overflow-hidden" style={{ aspectRatio: "16/9" }}>
@@ -69,17 +69,17 @@ export default function CasUsage({ teaser = false }: { teaser?: boolean }) {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-navy/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-navy/10 to-transparent" />
                 </div>
               )}
               <div className="p-7">
-                <span className="inline-block px-3 py-1 text-[11px] font-semibold text-gold/70 bg-gold/[0.08] rounded-full mb-4 tracking-wide uppercase">
+                <span className="inline-block px-3 py-1 text-[11px] font-semibold text-gold bg-gold/[0.08] rounded-full mb-4 tracking-wide uppercase">
                   {c.tag}
                 </span>
-                <h3 className="font-[var(--font-heading)] font-bold text-lg text-white leading-snug">
+                <h3 className="font-[var(--font-heading)] font-bold text-lg text-navy leading-snug">
                   {c.title}
                 </h3>
-                <div className="mt-3 space-y-2.5 text-[14px] text-white/60 leading-relaxed">
+                <div className="mt-3 space-y-2.5 text-[14px] text-text-muted leading-relaxed">
                   {c.desc.split("\n").filter((p) => p.trim().length > 0).map((para, pi) => (
                     <p key={pi}>{para}</p>
                   ))}
@@ -93,7 +93,7 @@ export default function CasUsage({ teaser = false }: { teaser?: boolean }) {
           {teaser ? (
             <a
               href="/cas-usage"
-              className="inline-flex items-center gap-2 text-white font-semibold text-[15px] hover:text-gold transition-colors border-b-2 border-gold/40 hover:border-gold pb-1"
+              className="inline-flex items-center gap-2 text-navy font-semibold text-[15px] hover:text-gold transition-colors border-b-2 border-gold/40 hover:border-gold pb-1"
             >
               {t.casUsage.ctaTeaser}
               <span aria-hidden="true">→</span>
