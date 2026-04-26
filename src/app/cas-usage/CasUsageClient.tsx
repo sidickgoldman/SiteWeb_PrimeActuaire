@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CasUsage from "@/components/CasUsage";
-import CTAFinal from "@/components/CTAFinal";
 import { useI18n } from "@/i18n";
 
 export default function CasUsageClient() {
@@ -42,8 +41,6 @@ export default function CasUsageClient() {
 
         {/* 5 cas complets */}
         <CasUsage />
-
-        <CTAFinal />
       </main>
       <Footer />
     </>
