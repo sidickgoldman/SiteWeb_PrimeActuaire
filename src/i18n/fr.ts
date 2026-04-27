@@ -629,9 +629,9 @@ export const fr = {
     parcoursEyebrow: "Parcours",
     parcoursTitle: "Pourquoi PrimeActuaire existe.",
     parcours: [
-      { periode: "Fondation", title: "Le constat du terrain", desc: "Des années de missions en santé collective. Un même scénario : le DT décide sous pression, avec Excel et des hypothèses non documentées. Le tarif est une opinion, pas une position défendable." },
-      { periode: "Conviction", title: "Le marché CIMA mérite ses propres outils", desc: "L’inflation médicale locale, les contrats groupe, la réglementation CIMA. Rien de cela ne ressemble au marché européen. Les outils importés ne fonctionnent pas ici." },
-      { periode: "Aujourd’hui", title: "Un tarif défendable. Pas une opinion.", desc: "PrimeActuaire donne au DT ce dont il a besoin en comité : des chiffres traçables, des hypothèses documentées, un diagnostic en 15 minutes. Le conseil et l’outil. Ensemble." },
+      { periode: "Fondation", title: "La santé tarifée par le marché, pas par l’actuaire.", desc: "Le courtier arrive avec le tarif du concurrent. C’est lui qui fixe le prix. L’actuaire valide. Le portefeuille encaisse." },
+      { periode: "Conviction", title: "Vous pilotez un portefeuille que vous n’avez pas tarifé.", desc: "La santé est entrée comme garantie d’appel. Sous-tarifée pour décrocher le groupe. Vous gérez les conséquences. Sans les données pour les comprendre." },
+      { periode: "Aujourd’hui", title: "Le S/P dérive. Personne ne sait pourquoi.", desc: "Dérive médicale ? Surconsommation ? Fraude prestataire ? Sans diagnostic précis, la seule réponse reste la hausse. Elle ne corrige rien. Elle fait perdre le prochain appel d’offres." },
     ],
     expertiseEyebrow: "Domaines d'expertise",
     expertiseTags: [

@@ -631,9 +631,9 @@ export const en: Dictionary = {
     parcoursEyebrow: "Journey",
     parcoursTitle: "Why PrimeActuaire exists.",
     parcours: [
-      { periode: "Foundation", title: "The field observation", desc: "Years of group health engagements. The same pattern: the technical director decides under pressure, with Excel and undocumented assumptions. The rate is an opinion, not a defensible position." },
-      { periode: "Conviction", title: "The CIMA market deserves its own tools", desc: "Local medical inflation, group contracts, CIMA regulations. None of this resembles the European market. Imported tools don't work here." },
-      { periode: "Today", title: "A defensible rate. Not an opinion.", desc: "PrimeActuaire gives the technical director what they need in committee: traceable figures, documented assumptions, a diagnosis in 15 minutes. Advisory and tool. Together." },
+      { periode: "Foundation", title: "Health pricing set by the market, not the actuary.", desc: "The broker arrives with the competitor's rate. They set the price. The actuary signs off. The portfolio absorbs the consequences." },
+      { periode: "Conviction", title: "You're managing a portfolio you didn't price.", desc: "Health entered as a loss leader. Underpriced to win the group account. You manage the fallout. Without the data to understand it." },
+      { periode: "Today", title: "The loss ratio drifts. Nobody knows why.", desc: "Medical inflation? Overconsumption? Provider fraud? Without a precise diagnosis, the only available response is a rate increase. It fixes nothing. It loses the next tender." },
     ],
     expertiseEyebrow: "Areas of Expertise",
     expertiseTags: [
