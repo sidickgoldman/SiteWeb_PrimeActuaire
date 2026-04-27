@@ -149,7 +149,7 @@ export const en: Dictionary = {
     eyebrow: "What these situations reveal",
     title: "",
     subtitle:
-      "Pricing pressure, unread drifts, margins to justify, loss-making pockets: these cases show where profitability is really at stake.",
+      "Pricing pressure, unread drifts, margins to justify, loss-making pockets:\nthese cases show where profitability is really at stake.",
     eyebrowTeaser: "Use Cases",
     titleTeaser: "A few concrete situations.",
     subtitleTeaser: "An overview of real engagements in the CIMA zone. Data is anonymized.",
@@ -428,7 +428,7 @@ export const en: Dictionary = {
       "We support technical and general management in structuring pricing decisions, reading actual portfolio drift and defending their positions against market pressure.",
     ],
     pillarsTitle: "Three fronts. One promise: decide with control.",
-    pillarsSubtitle: "We don’t sell an actuarial method. We structure the decisions that drive profitability.",
+    pillarsSubtitle: "We don’t sell an actuarial method.\nWe structure the decisions that drive profitability.",
     pillars: [
       {
         label: "Pricing",
@@ -453,7 +453,7 @@ export const en: Dictionary = {
         title: "Understand what really degrades the portfolio.",
         intro: [
           "The portfolio lives. But it is poorly understood.",
-          "Drift, fraud, abuse and market pressure all blend together. The real causes remain hard to isolate.",
+          "Drift, fraud, abuse and market pressure all blend together.\nThe real causes remain hard to isolate.",
           "We bring a clear, actionable read.",
         ],
         helpLabel: "We help you",
@@ -471,7 +471,7 @@ export const en: Dictionary = {
         title: "Hold a defensible position against the market, the broker, the board.",
         intro: [
           "Decisions are made. But they are rarely defensible.",
-          "Discounts granted, increases refused, blurred trade-offs. In committee, the position often lacks substance.",
+          "Discounts granted, increases refused, blurred trade-offs.\nIn committee, the position often lacks substance.",
           "We help formulate and defend clear decisions.",
         ],
         helpLabel: "We help you",
@@ -490,11 +490,11 @@ export const en: Dictionary = {
     whyItems: [
       {
         title: "An in-house actuary computes. We structure the decision.",
-        desc: "Technical calculation is one step. We take ownership of the move from numbers to a defensible position, all the way to the committee.",
+        desc: "Technical calculation is one step.\nWe take ownership of the move from numbers to a defensible position, all the way to the committee.",
       },
       {
         title: "Excel delivers a number. We deliver a position.",
-        desc: "Our analyses are quantified, traceable, defensible. They hold up against brokers, the board and audits.",
+        desc: "Our analyses are quantified, traceable, defensible.\nThey hold up against brokers, senior management and in committee.",
       },
       {
         title: "A one-shot analysis observes. We accompany the decision.",
@@ -506,8 +506,8 @@ export const en: Dictionary = {
   // ───── Page: Use Cases ─────
   casUsagePage: {
     eyebrow: "Use cases",
-    title: "Real engagements. Quantified trade-offs.",
-    desc: "Each case comes from a real engagement in the CIMA zone. Data is anonymized, but the situations, trade-offs and decisions are authentic.",
+    title: "Real engagements.\nQuantified trade-offs.",
+    desc: "Each case comes from a real engagement in the CIMA zone.\nData is anonymized, but the situations, trade-offs and decisions are authentic.",
     deepTitle: "What our engagements produce concretely.",
     deepSubtitle: "Measurable, quantified, committee-ready outcomes.",
     outcomes: [
@@ -619,7 +619,7 @@ export const en: Dictionary = {
     quote: "A technical premium must be a defensible position. Not an opinion adjusted at the margins.",
     quoteAuthor: "Zana",
     quoteRole: "Actuary · Group health advisory CIMA",
-    promesse: "You know where your health portfolio is losing money.\nWhy it is losing it.\nAnd what decisions to make\nto restore its profitability.",
+    promesse: "To give the teams who drive profitability\nthe quantified inputs they need\nto decide, defend\nand secure every renewal.",
     missionEyebrow: "Mission",
     missionTitle: "Securing the technical profitability of insurers’ group health portfolios.",
     missionDesc: "No intuitions. No commercial pressure. Traceable analyses, before the decision is made.",

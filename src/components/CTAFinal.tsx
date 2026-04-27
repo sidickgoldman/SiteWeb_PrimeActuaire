@@ -38,7 +38,7 @@ export default function CTAFinal() {
   };
 
   return (
-    <section className="bg-navy pt-16 pb-24" id="contact">
+    <section className="bg-navy py-24" id="contact">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

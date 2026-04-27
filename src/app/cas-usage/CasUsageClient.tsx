@@ -29,10 +29,10 @@ export default function CasUsageClient() {
               <p className="text-[13px] font-semibold text-gold uppercase tracking-[4px] mb-6">
                 {p.eyebrow}
               </p>
-              <h1 className="font-[var(--font-heading)] font-extrabold text-[clamp(2.2rem,5vw,3.8rem)] text-white leading-[1.1] tracking-tight">
+              <h1 className="font-[var(--font-heading)] font-extrabold text-[clamp(2.2rem,5vw,3.8rem)] text-white leading-[1.1] tracking-tight whitespace-pre-line">
                 {p.title}
               </h1>
-              <p className="mt-6 text-lg text-white/45 leading-relaxed max-w-2xl font-light">
+              <p className="mt-6 text-lg text-white/45 leading-relaxed max-w-2xl font-light whitespace-pre-line">
                 {p.desc}
               </p>
             </motion.div>

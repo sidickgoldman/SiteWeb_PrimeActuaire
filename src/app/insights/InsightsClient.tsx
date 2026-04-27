@@ -94,7 +94,7 @@ export default function InsightsClient() {
         </section>
 
         {/* CTA */}
-        <section className="bg-navy py-20">
+        <section className="bg-bg-light py-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -102,10 +102,10 @@ export default function InsightsClient() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto px-6 text-center"
           >
-            <h2 className="font-[var(--font-heading)] font-extrabold text-3xl text-white">
+            <h2 className="font-[var(--font-heading)] font-extrabold text-3xl text-navy">
               {p.ctaTitle}
             </h2>
-            <p className="mt-4 text-white/40 text-[16px]">
+            <p className="mt-4 text-text-muted text-[16px]">
               {p.ctaDesc}
             </p>
             <div className="mt-8">

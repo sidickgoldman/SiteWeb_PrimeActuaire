@@ -70,7 +70,7 @@ export default function ExpertisesClient() {
             >
               {p.pillarsTitle}
             </motion.h2>
-            <p className="text-center text-text-muted text-[16px] mb-20 max-w-2xl mx-auto">
+            <p className="text-center text-text-muted text-[16px] mb-20 max-w-2xl mx-auto whitespace-pre-line">
               {p.pillarsSubtitle}
             </p>
 
@@ -98,7 +98,7 @@ export default function ExpertisesClient() {
                   <div className="lg:col-span-2">
                     <div className="mb-8 space-y-3">
                       {pi.intro.map((line, k) => (
-                        <p key={k} className="text-[16px] text-text-muted leading-relaxed">
+                        <p key={k} className="text-[16px] text-text-muted leading-relaxed whitespace-pre-line">
                           {line}
                         </p>
                       ))}
@@ -169,7 +169,7 @@ export default function ExpertisesClient() {
                   <h3 className="font-[var(--font-heading)] font-bold text-[1.15rem] text-navy leading-snug mb-4">
                     {w.title}
                   </h3>
-                  <p className="text-[15px] text-text-muted leading-relaxed">
+                  <p className="text-[15px] text-text-muted leading-relaxed whitespace-pre-line">
                     {w.desc}
                   </p>
                 </motion.div>

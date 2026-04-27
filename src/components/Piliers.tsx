@@ -64,7 +64,7 @@ export default function Piliers({ teaser = false }: { teaser?: boolean }) {
   const eyebrow = teaser ? t.piliers.eyebrowTeaser : t.piliers.eyebrow;
 
   return (
-    <section className="bg-bg-light pt-16 pb-24" id="piliers">
+    <section className="bg-bg-light py-12" id="piliers">
       <div className="max-w-7xl mx-auto px-6">
         <motion.p
           initial={{ opacity: 0, y: 15 }}

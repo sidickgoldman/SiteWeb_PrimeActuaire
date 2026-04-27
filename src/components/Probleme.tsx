@@ -21,7 +21,7 @@ export default function Probleme() {
   const lineWidth = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section className="bg-bg-light py-24 overflow-hidden" id="probleme">
+    <section className="bg-bg-light py-12 overflow-hidden" id="probleme">
       <div className="max-w-7xl mx-auto px-6">
         <motion.p
           initial={{ opacity: 0, y: 15 }}
@@ -55,7 +55,7 @@ export default function Probleme() {
             className="hidden md:block absolute top-[22px] left-[6%] h-[2px] bg-gradient-to-r from-teal via-gold via-coral to-red-700 rounded-full origin-left"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-6 relative">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-6 relative items-stretch">
             {t.probleme.tensions.map((tension, i) => {
               const m = momentColors[i];
               const moment = t.probleme.moments[i];
@@ -81,7 +81,7 @@ export default function Probleme() {
                   </div>
 
                   {/* Card */}
-                  <div className={`w-full bg-white rounded-xl p-6 border-t-2 ${m.border} shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1`}>
+                  <div className={`w-full h-full bg-white rounded-xl p-6 border-t-2 ${m.border} shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1`}>
                     <div className="flex items-baseline justify-between mb-3">
                       <span className={`text-[11px] font-bold uppercase tracking-[3px] ${m.labelText}`}>
                         {moment.label}

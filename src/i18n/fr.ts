@@ -81,7 +81,7 @@ export const fr = {
       {
         icon: "📉",
         title: "La dégradation reste floue",
-        desc: "Le S/P se tend, sans lecture claire entre inflation, abus, fraude ou surconsommation.",
+        desc: "Le S/P se tend, sans lecture claire entre inflation médicale, abus, fraude ou surconsommation.",
       },
       {
         icon: "🔍",
@@ -147,7 +147,7 @@ export const fr = {
     eyebrow: "Ce que ces situations révèlent",
     title: "",
     subtitle:
-      "Pression tarifaire, dérives mal lues, remises à objectiver, poches déficitaires : ces cas montrent où la rentabilité se joue réellement.",
+      "Pression tarifaire, dérives mal lues, remises à objectiver, poches déficitaires :\nces cas montrent où la rentabilité se joue réellement.",
     eyebrowTeaser: "Cas d'usage",
     titleTeaser: "Quelques situations concrètes.",
     subtitleTeaser: "Un aperçu de missions réelles en zone CIMA. Données anonymisées.",
@@ -426,7 +426,7 @@ export const fr = {
       "Nous accompagnons les directions techniques et générales pour structurer leurs décisions tarifaires, lire les dérives réelles et défendre leurs positions face au marché.",
     ],
     pillarsTitle: "Trois terrains. Une seule promesse : décider avec maîtrise.",
-    pillarsSubtitle: "Nous ne vendons pas une méthode actuarielle. Nous structurons les décisions qui pèsent sur la rentabilité.",
+    pillarsSubtitle: "Nous ne vendons pas une méthode actuarielle.\nNous structurons les décisions qui pèsent sur la rentabilité.",
     pillars: [
       {
         label: "Tarification",
@@ -451,7 +451,7 @@ export const fr = {
         title: "Comprendre ce qui dégrade réellement le portefeuille.",
         intro: [
           "Le portefeuille vit. Mais il est mal compris.",
-          "Dérive, fraude, abus ou pression marché se confondent. Les causes réelles restent difficiles à isoler.",
+          "Dérive, fraude, abus ou pression marché se confondent.\nLes causes réelles restent difficiles à isoler.",
           "Nous apportons une lecture claire et exploitable.",
         ],
         helpLabel: "Nous aidons à",
@@ -469,7 +469,7 @@ export const fr = {
         title: "Tenir une position défendable face au marché, au courtier, au comité.",
         intro: [
           "Les décisions se prennent. Mais elles sont peu défendables.",
-          "Remises accordées, hausses refusées, arbitrages flous. En comité, la position manque souvent de solidité.",
+          "Remises accordées, hausses refusées, arbitrages flous.\nEn comité, la position manque souvent de solidité.",
           "Nous aidons à formuler et défendre des décisions claires.",
         ],
         helpLabel: "Nous aidons à",
@@ -488,11 +488,11 @@ export const fr = {
     whyItems: [
       {
         title: "Un actuaire interne calcule. Nous structurons la décision.",
-        desc: "Le calcul technique est une étape. Nous prenons en charge le passage du chiffre à la position défendable, jusqu’au comité.",
+        desc: "Le calcul technique est une étape.\nNous prenons en charge le passage du chiffre à la position défendable, jusqu’au comité.",
       },
       {
         title: "Excel produit un chiffre. Nous produisons une position.",
-        desc: "Nos analyses sont chiffrées, traçables, opposables. Elles tiennent face au courtier, au CA et à un audit.",
+        desc: "Nos analyses sont chiffrées, traçables, opposables.\nElles tiennent face au courtier, à la direction générale et en comité.",
       },
       {
         title: "Une analyse ponctuelle constate. Nous accompagnons la décision.",
@@ -504,8 +504,8 @@ export const fr = {
   // ───── Page: Cas d'usage ─────
   casUsagePage: {
     eyebrow: "Cas d'usage",
-    title: "Des missions réelles. Des arbitrages chiffrés.",
-    desc: "Chaque cas est issu d'une mission réelle en zone CIMA. Les données sont anonymisées, mais les situations, les arbitrages et les décisions sont authentiques.",
+    title: "Des missions réelles.\nDes arbitrages chiffrés.",
+    desc: "Chaque cas est issu d'une mission réelle en zone CIMA.\nLes données sont anonymisées, mais les situations, les arbitrages et les décisions sont authentiques.",
     deepTitle: "Ce que nos missions produisent concrètement.",
     deepSubtitle: "Des résultats mesurables, chiffrés, défendables en comité.",
     outcomes: [
@@ -617,7 +617,7 @@ export const fr = {
     quote: "La santé collective pèse trop lourd pour rester une garantie d’appel.\nElle se pilote, ou elle dégrade.",
     quoteAuthor: "Zana",
     quoteRole: "Actuaire · Conseil santé collective CIMA",
-    promesse: "Vous savez où votre portefeuille santé perd de l’argent.\nPourquoi il en perd.\nEt quelles décisions prendre\npour redresser sa rentabilité.",
+    promesse: "Donner aux équipes qui pilotent la rentabilité\nles éléments chiffrés nécessaires\npour décider, défendre\net sécuriser chaque renouvellement.",
     missionEyebrow: "Mission",
     missionTitle: "Sécuriser la rentabilité technique du portefeuille santé collectif des assureurs.",
     missionDesc: "Pas d'intuitions. Pas de pression commerciale. Des analyses traçables, avant que la décision soit prise.",

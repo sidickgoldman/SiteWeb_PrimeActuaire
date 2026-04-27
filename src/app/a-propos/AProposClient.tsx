@@ -157,27 +157,27 @@ export default function AProposClient() {
           </div>
         </section>
 
-        {/* Promesse — Clay / WPP style */}
-        <section className="bg-navy py-36">
-          <div className="max-w-5xl mx-auto px-6 text-center">
+        {/* Promesse */}
+        <section className="bg-bg-light py-24">
+          <div className="max-w-2xl mx-auto px-6 text-center">
             <motion.p
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4 }}
-              className="text-[12px] font-bold text-gold uppercase tracking-[5px] mb-10"
+              className="text-[12px] font-bold text-teal uppercase tracking-[5px] mb-10"
             >
               {p.promesseEyebrow}
             </motion.p>
-            <motion.p
+            <motion.h2
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
-              className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-4xl leading-[1.2] tracking-tight text-white whitespace-pre-line"
+              className="font-[var(--font-heading)] font-extrabold text-3xl lg:text-5xl leading-[1.2] text-navy whitespace-pre-line"
             >
               {p.promesse}
-            </motion.p>
+            </motion.h2>
           </div>
         </section>
 

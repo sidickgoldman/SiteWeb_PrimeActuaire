@@ -48,7 +48,7 @@ export default function Hero() {
               {t.hero.eyebrow.split(" · ").map((seg, i, arr) => (
                 <span key={i} className="flex items-center gap-2.5">
                   <span className="text-[11px] font-bold text-gold/90 uppercase tracking-[3.5px]">{seg}</span>
-                  {i < arr.length - 1 && <span className="text-gold/30 text-[10px]">·</span>}
+                  {i < arr.length - 1 && <span className="text-gold/60 text-[14px]">·</span>}
                 </span>
               ))}
             </motion.p>

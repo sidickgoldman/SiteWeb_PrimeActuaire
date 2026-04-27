@@ -27,7 +27,7 @@ export default function CasUsage({ teaser = false }: { teaser?: boolean }) {
   const subtitle = teaser ? t.casUsage.subtitleTeaser : t.casUsage.subtitle;
 
   return (
-    <section className="bg-bg-light py-24" id="cas-usage">
+    <section className="bg-bg-light py-12" id="cas-usage">
       <div className="max-w-7xl mx-auto px-6">
         <motion.p
           initial={{ opacity: 0, y: 15 }}
@@ -49,7 +49,7 @@ export default function CasUsage({ teaser = false }: { teaser?: boolean }) {
             {title}
           </motion.h2>
         )}
-        <p className="text-center text-text-muted text-[16px] mb-16 max-w-xl mx-auto">
+        <p className="text-center text-text-muted text-[16px] mb-16 max-w-xl mx-auto whitespace-pre-line">
           {subtitle}
         </p>
 
