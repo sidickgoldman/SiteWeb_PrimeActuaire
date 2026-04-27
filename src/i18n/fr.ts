@@ -629,9 +629,9 @@ export const fr = {
     parcoursEyebrow: "Parcours",
     parcoursTitle: "Pourquoi PrimeActuaire existe.",
     parcours: [
-      { periode: "Fondation", title: "D'actuaire à bâtisseur", desc: "Après des années de missions en tarification santé collective, un constat récurrent : les DT prennent des décisions majeures avec des outils inadaptés. Excel, intuition, pression commerciale. PrimeActuaire naît de ce constat." },
-      { periode: "Conviction", title: "Le marché CIMA mérite ses propres outils", desc: "Les solutions venues d'Europe ne conviennent pas. L'inflation médicale locale, les spécificités des contrats groupe, la réglementation CIMA — tout exige un outil calibré sur les réalités du terrain." },
-      { periode: "Aujourd'hui", title: "Outil + Expertise = Gouvernance", desc: "PrimeActuaire combine une plateforme technologique (Tarif Santé Pro) et un accompagnement expert. L'outil sans le conseil est un tableau de bord. Le conseil sans l'outil est une opinion. Les deux ensemble, c'est une gouvernance technique." },
+      { periode: "Fondation", title: "Le constat du terrain", desc: "Des années de missions en santé collective. Un même scénario : le DT décide sous pression, avec Excel et des hypothèses non documentées. Le tarif est une opinion, pas une position défendable." },
+      { periode: "Conviction", title: "Le marché CIMA mérite ses propres outils", desc: "L’inflation médicale locale, les contrats groupe, la réglementation CIMA. Rien de cela ne ressemble au marché européen. Les outils importés ne fonctionnent pas ici." },
+      { periode: "Aujourd’hui", title: "Un tarif défendable. Pas une opinion.", desc: "PrimeActuaire donne au DT ce dont il a besoin en comité : des chiffres traçables, des hypothèses documentées, un diagnostic en 15 minutes. Le conseil et l’outil. Ensemble." },
     ],
     expertiseEyebrow: "Domaines d'expertise",
     expertiseTags: [

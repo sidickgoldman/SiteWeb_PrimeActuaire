@@ -631,9 +631,9 @@ export const en: Dictionary = {
     parcoursEyebrow: "Journey",
     parcoursTitle: "Why PrimeActuaire exists.",
     parcours: [
-      { periode: "Foundation", title: "From actuary to builder", desc: "After years of group health pricing engagements, a recurring observation: technical directors make major decisions with inadequate tools. Excel, intuition, sales pressure. PrimeActuaire was born from this observation." },
-      { periode: "Conviction", title: "The CIMA market deserves its own tools", desc: "European solutions don't fit. Local medical inflation, group contract specifics, CIMA regulations — everything demands a tool calibrated to field realities." },
-      { periode: "Today", title: "Tool + Expertise = Governance", desc: "PrimeActuaire combines a technology platform (Tarif Santé Pro) and expert advisory. The tool without advisory is a dashboard. Advisory without the tool is an opinion. Together, they form technical governance." },
+      { periode: "Foundation", title: "The field observation", desc: "Years of group health engagements. The same pattern: the technical director decides under pressure, with Excel and undocumented assumptions. The rate is an opinion, not a defensible position." },
+      { periode: "Conviction", title: "The CIMA market deserves its own tools", desc: "Local medical inflation, group contracts, CIMA regulations. None of this resembles the European market. Imported tools don't work here." },
+      { periode: "Today", title: "A defensible rate. Not an opinion.", desc: "PrimeActuaire gives the technical director what they need in committee: traceable figures, documented assumptions, a diagnosis in 15 minutes. Advisory and tool. Together." },
     ],
     expertiseEyebrow: "Areas of Expertise",
     expertiseTags: [
